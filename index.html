@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Teardown</title>
+    <style>
+        /*Web Fonts 선언*/
+        @font-face {
+        font-family: 'LINESeedKR-Bd';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+        }
+        @font-face {
+        font-family: 'LINESeedKR-Rg';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+        }
+        @font-face {
+            font-family: 'LEMONMILK';
+            src: url('https://fonts.cdnfonts.com/css/lemonmilk');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "LINESeedKR";
+            font-weight: 400;
+            max-width: 1920px;
+            margin: 0 auto;
+            
+        }
+        h1, h2, h3 {
+            font-family: "LINESeedKR-Bd";
+        }
+        .clear {
+            clear: both;
+        }
+        #header {
+            font-family: "LEMONMILK";
+            background-color: #3b416a;
+     
+        }
+        #navigation {
+            float: right;
+            max-width: 1920px;
+            background-color: #3b416a;
+            margin-top: 35px;
+        }
+        #aside {
+            margin-top: 50px;
+            text-align: center;
+            max-width: 1920px;
+        }
+        #section {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 200px;
+            max-width: 1920px;
+        }
+        #footer {
+            margin-top: 500px;
+            background-color: black;
+            color: #c7c7c7;
+            max-width: 1920px;
+            padding: 15px 15px;
+        }
+
+        .bold {
+            font-family: "LINESeedKR-Bd";
+            font-size: 20px;
+        }
+        .titlemargin {
+            margin-bottom: 10px;
+        }
+        #quickbutton {
+            color: #9c9c9c;
+        }
+        /*div {
+            border: solid 1px;
+        }*/
+        /*링크 데코레이션*/
+        /*a:link {
+            color: green;
+            text-decoration: none;
+        }
+        a:visited {
+            color: pink;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+        a:active {
+            color: yellow;
+            text-decoration: none;
+        }*/
+        /*링크 데코레이션 박스*/
+
+        a:link, a:visited{
+            font-family: "LINESeedKR-Rg";
+            background-color: #3b416a;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover, a:active {
+            font-family: "LINESeedKR-Bd";
+            background-color: #1b0140;
+        }
+
+        .a2:link, .a2:visited{
+            font-family: "LINESeedKR-Bd";
+            background-color: white;
+            font-size: 20px;
+            color: black;
+            border: solid 1.5px;
+            border-color: #9c9c9c;
+            border-radius: 25px 25px 25px 25px;
+            box-shadow: 0px 0px 10px 0px #e8e8e8;
+            padding: 15px 70px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .a2:hover, .a2:active {
+            background-color: #f0f3ff;
+        }
+        .a2{margin-left: 20px;}
+
+        .a3:link, .a3:visited{
+            background-color: #3b416a;
+            padding: 0px 0px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .a3:hover, .a3:active {
+            padding: 0px 0px;
+        }
+        .a3{margin-left: 0px;}
+        /*Dev Area*/
+        /*div {
+            border: solid 1px; 
+        }*/
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a class="a3" href="index.html">
+            <img src="./img/logo.png" height="120">
+        </a>
+        <div id="navigation">
+            <a href="detail_specs.html">상세스펙</a>&nbsp;
+            <a href="teardown_main.html">분해도 단면</a>&nbsp;
+            <a href="suggest.html">기기 제안하기</a>&nbsp;
+            <a href="warning.html">분해 전 유의사항</a>&nbsp;
+            <a href="device_manage.html">효율적인 기기관리</a>
+        </div>
+    </div>
+
+    <!--구분선-->
+
+    <div class="clear"></div>
+
+    <div id="aside">
+        <h1 class="titlemargin">일렉트로닉스 테어다운에 오신 것을 환영합니다</h1><span>여러 기기의 분해도 단면을 확인해보세요.</span>
+    </div>
+        
+    <div id="section">
+        <video src="./img/phone_ani.mp4" width="400" autoplay loop muted></video><br><br>
+        <p class="bold" id="quickbutton">QUICK BUTTON</p>
+        <a class="a2"  href="detail_specs.html">상세 스펙</a>
+        <a class="a2" href="teardown_main.html">분해도</a>
+    </div>
+    <div class="clear"></div>
+
+    <div id="footer"><p>KUAD | DIGITAL MEDIA DESIGN <br> ELECTRONICS TEARDOWN-- Web Publishing. <br> ©️2023. KIM HWIJAE. All rights reserved. <br> 사용된 글꼴 Lemon/Milk, LINE Seed Sans KR은 교육(개인) 목적으로만 사용됩니다.</p></div>
+    <div class="clear"></div>
+</body>
+</html>
