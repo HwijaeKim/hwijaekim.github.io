@@ -1,7 +1,7 @@
 ---
 title:  "제 30회 커뮤니케이션디자인국제공모전 동상 수상작 [청사진]"
 header:
-  teaser: "/assets/images/posts_img/blueprint/teaser.png"
+  teaser: "/assets/images/posts_img/blueprint/teaser.webp"
 categories:
   - Projects
   - Code

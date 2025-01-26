@@ -1,7 +1,7 @@
 ---
 title:  "React 시작 + 문제 해결"
 header:
-  teaser: "/assets/images/posts_img/install-react/teaser.png"
+  teaser: "/assets/images/posts_img/install-react/teaser.webp"
 categories: 
   - Research
 tags:
@@ -113,14 +113,14 @@ npm i react@18 react-dom@18
 Node.js버전은 당시 **v20.17.0**으로 공식적으로는 문제가 없었지만 마지막 방법으로 LTS최신버전인 **v22.12.0** 버전으로 업데이트 함.   
 결과적으로 문제 없이 `npm run dev` 명령어가 작동하였으며 `localhost`로 잘 작동함.   
 <br>
-![Vite + React](/assets/images/posts_img/install-react/vite+react.png)
+![Vite + React](/assets/images/posts_img/install-react/vite+react.webp)
 
 <br>
 
 하지만 여기서 드는 의문점은 **Windows 환경.**   
 Windows에서의 Node.js 버전은 **v20.17.0**으로 **macOS와 동일한 버전**이지만 React 환경이 정상적으로 실행됐음   
-![win-node](/assets/images/posts_img/install-react/win-node.png)
-![win-react](/assets/images/posts_img/install-react/win-react.png)
+![win-node](/assets/images/posts_img/install-react/win-node.webp)
+![win-react](/assets/images/posts_img/install-react/win-react.webp)
 
 
 <br>

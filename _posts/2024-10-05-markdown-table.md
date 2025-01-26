@@ -1,7 +1,7 @@
 ---
 title:  "Markdown에서 표 만들기"
 header:
-  teaser: "/assets/images/posts_img/markdown/markdown.png"
+  teaser: "/assets/images/posts_img/markdown/teaser.webp"
 categories: Research
 tags:
   - markdown

@@ -1,7 +1,7 @@
 ---
 title:  "자바스크립트프로그래밍 교과목 기말 프로젝트 [No CSS Club 미니게임]"
 header:
-  teaser: "/assets/images/posts_img/nocssclub/teaser.png"
+  teaser: "/assets/images/posts_img/nocssclub/teaser.webp"
 categories:
   - Projects
   - Code
@@ -43,11 +43,11 @@ video
 
 <br>
 
-![1](/assets/images/posts_img/nocssclub/1.png)
-![2](/assets/images/posts_img/nocssclub/2.png)
-![3](/assets/images/posts_img/nocssclub/3.png)
-![4](/assets/images/posts_img/nocssclub/4.png)
-![5](/assets/images/posts_img/nocssclub/5.png)
+![1](/assets/images/posts_img/nocssclub/1.webp)
+![2](/assets/images/posts_img/nocssclub/2.webp)
+![3](/assets/images/posts_img/nocssclub/3.webp)
+![4](/assets/images/posts_img/nocssclub/4.webp)
+![5](/assets/images/posts_img/nocssclub/5.webp)
 
 <br><br>
 
@@ -68,7 +68,7 @@ let nameBox = document.getElementById('name');
 
 nameBox.innerHTML = name;
 ```
-![localStorage](/assets/images/posts_img/nocssclub/localstorage.png)
+![localStorage](/assets/images/posts_img/nocssclub/localstorage.webp)
 
 ## 시작 전 준비 카운트
 ```javascript

@@ -1,7 +1,7 @@
 ---
 title:  "웹퍼블리싱 교과목 기말 프로젝트 [자기PR 페이지]"
 header:
-  teaser: "/assets/images/posts_img/pr/teaser.png"
+  teaser: "/assets/images/posts_img/pr/teaser.webp"
 categories:
   - Projects
   - Code

@@ -1,7 +1,7 @@
 ---
 title:  "웹인터랙션프로그래밍 교과목 프로젝트 [My Origin Wizard]"
 header:
-  teaser: "/assets/images/posts_img/web-interaction-final/teaser.png"
+  teaser: "/assets/images/posts_img/web-interaction-final/teaser.webp"
 categories:
   - Projects
   - Code

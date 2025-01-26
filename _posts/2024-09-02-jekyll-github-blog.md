@@ -1,7 +1,7 @@
 ---
 title:  "Jekyll 기반의 GitHub블로그 제작"
 header:
-  teaser: "/assets/images/posts_img/jekyll/teaser.png"
+  teaser: "/assets/images/posts_img/jekyll/teaser.webp"
 categories:
   - Projects
   - Code

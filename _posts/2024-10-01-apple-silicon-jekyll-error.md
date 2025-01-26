@@ -1,7 +1,7 @@
 ---
 title:  "Apple Silicon에서의 Jekyll 오류 발생 해결"
 header:
-  teaser: "/assets/images/posts_img/apple_silicon_jekyll/apple_silicon_jekyll.jpg"
+  teaser: "/assets/images/posts_img/apple_silicon_jekyll/teaser.webp"
 categories:
   - Research
 tags:

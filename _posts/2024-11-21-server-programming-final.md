@@ -1,7 +1,7 @@
 ---
 title:  "서버프로그래밍 교과목 기말 프로젝트 [유니픽스]"
 header:
-  teaser: "/assets/images/posts_img/server_programming/teaser2.png"
+  teaser: "/assets/images/posts_img/server_programming/teaser.webp"
 categories:
   - Projects
   - Code
@@ -262,7 +262,7 @@ router.post(
         })
 )
 ```
-![token](/assets/images/posts_img/server_programming/token.png)
+![token](/assets/images/posts_img/server_programming/token.webp)
 
 
 <br><br>

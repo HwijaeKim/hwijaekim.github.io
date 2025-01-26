@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-26T22:16:09+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><entry><title type="html">macOS에서 데스크톱 아이콘 가리기</title><link href="http://localhost:4000/research/macos-desktio-icon-hidden/" rel="alternate" type="text/html" title="macOS에서 데스크톱 아이콘 가리기" /><published>2025-01-12T00:00:00+09:00</published><updated>2025-01-12T00:00:00+09:00</updated><id>http://localhost:4000/research/macos-desktio-icon-hidden</id><content type="html" xml:base="http://localhost:4000/research/macos-desktio-icon-hidden/"><![CDATA[<p>터미널 실행</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-27T00:50:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><entry><title type="html">macOS에서 데스크톱 아이콘 가리기</title><link href="http://localhost:4000/research/macos-desktio-icon-hidden/" rel="alternate" type="text/html" title="macOS에서 데스크톱 아이콘 가리기" /><published>2025-01-12T00:00:00+09:00</published><updated>2025-01-12T00:00:00+09:00</updated><id>http://localhost:4000/research/macos-desktio-icon-hidden</id><content type="html" xml:base="http://localhost:4000/research/macos-desktio-icon-hidden/"><![CDATA[<p>터미널 실행</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.apple.finder CreateDesktop <span class="nt">-bool</span> FALSE<span class="p">;</span> killall Finder
 </code></pre></div></div>
 
@@ -108,14 +108,14 @@ Error: Build failed with 3 errors:
 <p>Node.js버전은 당시 <strong>v20.17.0</strong>으로 공식적으로는 문제가 없었지만 마지막 방법으로 LTS최신버전인 <strong>v22.12.0</strong> 버전으로 업데이트 함. <br />
 결과적으로 문제 없이 <code class="language-plaintext highlighter-rouge">npm run dev</code> 명령어가 작동하였으며 <code class="language-plaintext highlighter-rouge">localhost</code>로 잘 작동함. <br />
 <br />
-<img src="/assets/images/posts_img/install-react/vite+react.png" alt="Vite + React" /></p>
+<img src="/assets/images/posts_img/install-react/vite+react.webp" alt="Vite + React" /></p>
 
 <p><br /></p>
 
 <p>하지만 여기서 드는 의문점은 <strong>Windows 환경.</strong> <br />
 Windows에서의 Node.js 버전은 <strong>v20.17.0</strong>으로 <strong>macOS와 동일한 버전</strong>이지만 React 환경이 정상적으로 실행됐음 <br />
-<img src="/assets/images/posts_img/install-react/win-node.png" alt="win-node" />
-<img src="/assets/images/posts_img/install-react/win-react.png" alt="win-react" /></p>
+<img src="/assets/images/posts_img/install-react/win-node.webp" alt="win-node" />
+<img src="/assets/images/posts_img/install-react/win-react.webp" alt="win-react" /></p>
 
 <h2><br /></h2>
 <p><br /></p>
@@ -644,7 +644,7 @@ JWT_SECRET= (SECURITY)
         <span class="p">})</span>
 <span class="p">)</span>
 </code></pre></div></div>
-<p><img src="/assets/images/posts_img/server_programming/token.png" alt="token" /></p>
+<p><img src="/assets/images/posts_img/server_programming/token.webp" alt="token" /></p>
 
 <p><br /><br /></p>
 

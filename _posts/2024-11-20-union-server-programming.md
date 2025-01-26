@@ -1,7 +1,7 @@
 ---
 title:  "서버프로그래밍 교과목 실습응용 [블로그 express 서버]"
 header:
-  teaser: "/assets/images/posts_img/union-server-programming/teaser.png"
+  teaser: "/assets/images/posts_img/union-server-programming/teaser.webp"
 categories:
   - Projects
   - Code

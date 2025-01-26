@@ -1,7 +1,7 @@
 ---
 title:  "콘텐츠디자인 교과목 우수작 선정 [아라비아 사막의 반도체 이야기]"
 header:
-  teaser: "/assets/images/posts_img/semiconductor/main.jpg"
+  teaser: "/assets/images/posts_img/semiconductor/teaser.webp"
 categories:
   - Projects
   - Design

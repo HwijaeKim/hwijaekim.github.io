@@ -60,7 +60,7 @@ sidebar:
 ## <span style="color: var(--base-color)">이력서</span>
 <!-- ![profile](/assets/images/profile_real.jpeg){: width="150"} -->
 <div class="profile_grid">
-<img class="profile_img" src="/assets/images/profile_real2.png">
+<img class="profile_img" src="/assets/images/profile_real2.webp">
 
 <div class="profile"> 
 <b><span class="titleName" style="color: var(--base-color)">김휘재</span></b>   <br>
