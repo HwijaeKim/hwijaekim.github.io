@@ -11,6 +11,8 @@ tags:
 ---
 # Chat GPT   
 
+
+
 <sub>*프롬프트*</sub>
 ><sub>macOS 터미널을 이용해서 jekyll bundle을 설치하고 있는데 eventmachine 1.2.7 설치 도중 오류가 난대. 왜 이럴까?</sub>   
 <sub>-2024.09.30</sub>
