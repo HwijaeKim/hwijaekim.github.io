@@ -313,6 +313,7 @@ DEPENDENCIES
   github-pages
   jekyll-include-cache
   jekyll-livereload
+  jekyll-sitemap
 
 BUNDLED WITH
    2.5.20
