@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "이력서/자기소개서"
+  - title: "이력서"
     url: /about
   - title: "최근 게시물"
     url: /recent-posts
@@ -51,10 +51,10 @@ sidebar-category:
   #        url: "categories/figmaxd"
 
 
-  - title: "Experience"
-    children:
-       - title: "전시/박람회"
-         url: "categories/fair"
+  # - title: "Experience"
+  #   children:
+  #      - title: "전시/박람회"
+  #        url: "categories/fair"
 
   # - title: "Blog"
   #   children:
