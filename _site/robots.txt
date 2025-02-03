@@ -1,1 +1,3 @@
+User-agent: *
+Allow: /
 Sitemap: https://hwijaekim.github.io/sitemap.xml
