@@ -311,6 +311,7 @@ PLATFORMS
 DEPENDENCIES
   eventmachine (= 1.2.7)
   github-pages
+  jekyll-feed
   jekyll-include-cache
   jekyll-livereload
   jekyll-sitemap
