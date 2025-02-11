@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "HWIJAE KIM"
 title_separator          : #
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "김휘재"
+name                     : "HWIJAE KIM"
 description              : ""
 url                      : "https://hwijaekim.github.io"
 baseurl                  : #null
@@ -133,9 +133,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-square-github"
       url: "https://github.com/HwijaeKim"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "fa-brands fa-linkedin"
+    # - label: "LinkedIn"
+    #   icon: "fab fa-fw fa-linkedin"
+    #   url: "fa-brands fa-linkedin"
 
 # Site Footer
 footer:
@@ -319,7 +319,7 @@ defaults:
       sidebar:                  # 추가한 부분
         nav: "sidebar-category" # 추가한 부분
 
-
+# _pages
   - scope:
       path: "_pages"
       type: pages

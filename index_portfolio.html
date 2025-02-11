@@ -14,23 +14,15 @@ header:
     overlay_filter: 0.1 # same as adding an opacity of 0.5 to a black background
 ---
 
-<!-- 모든 게시글이 보이도록 -->
-<h1>🖊️ 전체 게시물</h1>
-<sub>사이드바 <b>UNION PORTFOLIO</b> 하위 카테고리에서 포트폴리오/프로젝트 관련 게시물만 열람하실 수 있습니다.</sub>
+<!-- Project 카테고리의 게시물만 보이도록 -->
+<h1>🖊️ 환영합니다: 포트폴리오</h1>
+<sub>연구 중이거나 학습 중인 내용은 <b>Research</b> 카테고리에 수록되어 있습니다.</sub>
 
 <div class="grid__wrapper">
-    {% if paginator %}
-        {% assign posts = paginator.posts %}
-    {% else %}
-        {% assign posts = site.posts %}
-    {% endif %}
-
+    {% assign posts = site.categories.Projects %}
     {% for post in posts %}
-        {% include archive-single3.html type="list" %}
+    {% include archive-single3.html type="list" %}
     {% endfor %}
 </div>
 
-{% include paginator.html %} 
-
-
-
+<br><br>
