@@ -41,7 +41,7 @@ toc_label: "웹 접근성"
 
 - `img`태그 사용 시 반드시 `alt` 속성을 사용하여 어떤 이미지인지 인식할 수 있도록 대체 텍스트를 제공해야 함.   
 - 의미가 없는 장식용 이미지에는 `alt=""` 속성을 사용하여 빈 문자열로 설정해야 함.
-- 간혹 많은 양의 대체 텍스트를 제공해야 하는 경우에는 IR기법을 이용하여 마크업에서 대체 텍스트 작성 후 CSS를 통해 숨김.
+- 간혹 많은 양의 대체 텍스트를 제공해야 하는 경우에는 IR(Image Replacement)기법을 이용하여 마크업에서 대체 텍스트 작성 후 CSS를 통해 숨김.
 ```css
 .blind {
   position: absolute;
@@ -81,6 +81,32 @@ toc_label: "웹 접근성"
 <br><br>
 
 
+---
+
+<br><br>
+
+# 실제 사이트를 검사하며 새롭게 습득
+
+## 버튼에 대한 용도 설명 `aria-label`
+간혹 아이콘만으로 이루어진 버튼에 추가 설명이 제공되지 않는 경우가 있음.   
+![찜하기, 재입고 알림 아이콘 버튼의 설명이 제공되지 않아 스크린 리더에서 공란으로 표시됨](/assets/images/posts_img/web_accessibility/button_captionX.webp)   
+이 경우 스크린 리더에서 어떤 버튼인지 사용자에게 제공할 수 없음.
+<br><br>
+다음과 같이 `aria-label` 속성을 사용하여 버튼의 용도를 설명해야 함.
+```html
+<button class="btn" type="button" aria-label="찜하기">
+<button class="btn" type="button" aria-label="재입고 알림">
+```
+![마크업에 aria-label 속성을 추가하여 이제는 스크린 리더에서 버튼의 용도를 제공해줌](/assets/images/posts_img/web_accessibility/button_captionO.webp)   
+
+<br><br>
+
+## `<div>, <ul>, <li>` 태그 등이 특정 기능을 한다면 `role` 속성을 사용하여 명시
+특정 기능을 하는 요소라면 `role="tab"` 등과 같이 기능을 명시해야 함.
+
+
+
+<br><br>
 **참고링크**   
 [https://velog.io/@leejpsd/CSS-IR-%EA%B8%B0%EB%B2%95](https://velog.io/@leejpsd/CSS-IR-%EA%B8%B0%EB%B2%95)   
 [https://tech.kakaopay.com/post/accessibility-stories-for-everyone/#%ED%91%9C](https://tech.kakaopay.com/post/accessibility-stories-for-everyone/#%ED%91%9C)
