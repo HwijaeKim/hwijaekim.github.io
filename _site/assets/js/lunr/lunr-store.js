@@ -90,7 +90,7 @@ var store = [{
         "teaser": "/assets/images/posts_img/macos-desktop-icon-hidden/teaser.png"
       },{
         "title": "웹 접근성",
-        "excerpt":"웹 접근성이란 장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것 국제 웹 표준기구(W3C)에서 제정한 표준안, 총 33개의 항목으로 평가한다. 기본적인 웹 접근성 준수 가이드 적절한 마크업 시맨틱 태그 사용 &lt;header&gt;, &lt;nav&gt;., &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;와 같이 스크린 리더가 각 섹션의 역할을 인식할 수 있도록...","categories": ["Research"],
+        "excerpt":"웹 접근성이란 장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것 국제 웹 표준기구(W3C)에서 제정한 표준안, 총 33개의 항목으로 평가한다. 웹 접근성 준수 고려사항 시각 실명, 색각 이상, 다양한 형태의 저시력을 포함한 장애 이동성 특정 조건으로 인한 근육 속도 저하, 손으 쓰기 어렵거나 힘든 상태...","categories": ["Research"],
         "tags": ["web_accessibility","W3C"],
         "url": "/research/web-accessibility/",
         "teaser": "/assets/images/posts_img/web_accessibility/teaser.webp"

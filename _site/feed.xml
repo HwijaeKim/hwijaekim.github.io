@@ -1,11 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-20T10:43:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><entry><title type="html">웹 접근성</title><link href="http://localhost:4000/research/web-accessibility/" rel="alternate" type="text/html" title="웹 접근성" /><published>2025-02-20T00:00:00+09:00</published><updated>2025-02-20T00:00:00+09:00</updated><id>http://localhost:4000/research/web-accessibility</id><content type="html" xml:base="http://localhost:4000/research/web-accessibility/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-20T14:33:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><entry><title type="html">웹 접근성</title><link href="http://localhost:4000/research/web-accessibility/" rel="alternate" type="text/html" title="웹 접근성" /><published>2025-02-20T00:00:00+09:00</published><updated>2025-02-20T00:00:00+09:00</updated><id>http://localhost:4000/research/web-accessibility</id><content type="html" xml:base="http://localhost:4000/research/web-accessibility/"><![CDATA[<p><br /></p>
 
 <h1 id="웹-접근성이란">웹 접근성이란</h1>
 <p>장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
 <br />
 국제 웹 표준기구(W3C)에서 제정한 표준안, 총 33개의 항목으로 평가한다.</p>
 
-<h2><br /></h2>
+<p><br /></p>
+
+<h2 id="웹-접근성-준수-고려사항">웹 접근성 준수 고려사항</h2>
+<h3 id="시각">시각</h3>
+<p>실명, 색각 이상, 다양한 형태의 저시력을 포함한 장애
+<br /></p>
+
+<h3 id="이동성">이동성</h3>
+<p>특정 조건으로 인한 근육 속도 저하, 손으 쓰기 어렵거나 힘든 상태
+<br /></p>
+
+<h3 id="청각">청각</h3>
+<p>영상, 음성 콘텐츠에 자막, 원고, 수화등의 대체수단 부재로 인한 인식불가능 상태
+<br /></p>
+
+<h3 id="인지">인지</h3>
+<p>문제해결과 논리 능력, 집중력, 기억력에 문제(난독증, 난산증 등)
+<br /></p>
+
+<h2 id="사용되는-보조기술">사용되는 보조기술</h2>
+<ul>
+  <li>스크린 리더</li>
+  <li>화면 확대 도구</li>
+  <li>음성 인식</li>
+  <li>키보드 오버레이</li>
+</ul>
+
+<hr />
 <p><br /></p>
 
 <h1 id="기본적인-웹-접근성-준수-가이드">기본적인 웹 접근성 준수 가이드</h1>
@@ -15,7 +42,7 @@
   <li>제목태그 사용 <code class="language-plaintext highlighter-rouge">&lt;h1&gt; ~ &lt;h6&gt;</code></li>
 </ul>
 
-<h2 id="-1"><br /></h2>
+<h2><br /></h2>
 <p><br /></p>
 
 <h1 id="중요하게-알아야-할-웹-접근성-항목">중요하게 알아야 할 웹 접근성 항목</h1>
@@ -90,6 +117,10 @@
 
 <h2 id="div-ul-li-태그-등이-특정-기능을-한다면-role-속성을-사용하여-명시"><code class="language-plaintext highlighter-rouge">&lt;div&gt;, &lt;ul&gt;, &lt;li&gt;</code> 태그 등이 특정 기능을 한다면 <code class="language-plaintext highlighter-rouge">role</code> 속성을 사용하여 명시</h2>
 <p>특정 기능을 하는 요소라면 <code class="language-plaintext highlighter-rouge">role="tab"</code> 등과 같이 기능을 명시해야 함.</p>
+
+<p><br /><br /></p>
+
+<h2 id="aria">ARIA</h2>
 
 <p><br /><br />
 <strong>참고링크</strong> <br />
