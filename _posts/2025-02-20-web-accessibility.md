@@ -1,0 +1,86 @@
+---
+title:  "웹 접근성"
+header:
+  teaser: "/assets/images/posts_img/web_accessibility/teaser.webp"
+categories: 
+  - Research
+tags:
+  - web_accessibility
+  - W3C
+toc: true
+toc_sticky: true
+toc_label: "웹 접근성"
+---
+<br>
+
+# 웹 접근성이란
+장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
+<br>
+국제 웹 표준기구(W3C)에서 제정한 표준안, 총 33개의 항목으로 평가한다.
+
+<br>
+---
+<br>
+
+# 기본적인 웹 접근성 준수 가이드
+## 적절한 마크업 시맨틱 태그 사용
+- `<header>, <nav>., <main>, <section>, <article>, <footer>`와 같이 스크린 리더가 각 섹션의 역할을 인식할 수 있도록 적절한 시맨틱 태그를 사용해야 한다.
+- 제목태그 사용 `<h1> ~ <h6>`
+
+<br>
+---
+<br>
+
+
+
+# 중요하게 알아야 할 웹 접근성 항목
+## 텍스트 외 콘텐츠에 대체 텍스트를 제공하여 이해할 수 있도록 해야 한다.
+- 테이블, 이미지 등에 대한 대체 텍스트를 꼭 명시하여야 함.   
+(주석, `font-size: 0;` 등은 스크린 리더도 인식하지 못 하기 떄문에 의미가 없음. CSS를 이용하여 지우기 `clip:rect()` 등)
+<br>
+
+- `img`태그 사용 시 반드시 `alt` 속성을 사용하여 어떤 이미지인지 인식할 수 있도록 대체 텍스트를 제공해야 함.   
+- 의미가 없는 장식용 이미지에는 `alt=""` 속성을 사용하여 빈 문자열로 설정해야 함.
+- 간혹 많은 양의 대체 텍스트를 제공해야 하는 경우에는 IR기법을 이용하여 마크업에서 대체 텍스트 작성 후 CSS를 통해 숨김.
+```css
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+```
+단, `visibility: hidden;, opacity: 0;, font-size: 0;` 등은 스크린 리더가 인식하지 못하기 때문에 사용하면 안됨.   
+ ,`<img>`태그는 이미 이미지라는 의미를 갖고 있기 떄문에 대체 텍스트 내 '이미지' 단어 사용은 중복임.
+
+- QR코드의 경우 `alt` 속성으로 해당 링크 주소까지 필수로 제공해야 함.
+- `longdesc` 속성은 HTML5부터 사용하지 않음.
+
+
+
+<br>
+
+## 모든 기능은 키보드 조작만으로 사용할 수 있어야 한다.
+- 테이블에 대한 정보(이름, 유형, 분류, 내용, 날짜 등)를 `<caption>` 태그에 명시 후 경우에 따라 안 보이게 처리.
+- 단순 데이터용 테이블에는 `<th>` 요소를 제목 셀로 사용할 때 `scope="row"(행), scope="col"(열)` 속성을 사용하여 행과 열의 관계를 명시해야 함.
+
+<br>
+
+## 콘텐츠는 색에 관계 없이 인식될 수 있어야 함.
+- 탭 메뉴 등에서 글꼴 색상만 변화하는 경우 일부 색약 사용자가 구분하기 어럽기 때문에 추가적인 표시 방법을 제공해야 함.
+- 텍스트와 배경간 명도 대비는 4.5:1 이상이어야 함.   
+[명도대비 계산 링크 바로가기(클릭)](https://sitero.co.kr/contrast)
+![명도대비 부적합, +10쿠폰 박스의 텍스트, 배경간 명도대비가 2.917:1로 부적합 수준이다. 배경색은 연한 보라색, 텍스트는 흰색이다.](/assets/images/posts_img/web_accessibility/colorX.webp)
+<br>
+![명도대비 적합, +10%쿠폰박스의 텍스트, 배경간 명도대비가 11.607:1로 적합 수준이다. 배경은 진한 보라색, 텍스트는 흰색이다.](/assets/images/posts_img/web_accessibility/colorO.webp)
+
+<br><br>
+
+
+**참고링크**   
+[https://velog.io/@leejpsd/CSS-IR-%EA%B8%B0%EB%B2%95](https://velog.io/@leejpsd/CSS-IR-%EA%B8%B0%EB%B2%95)   
+[https://tech.kakaopay.com/post/accessibility-stories-for-everyone/#%ED%91%9C](https://tech.kakaopay.com/post/accessibility-stories-for-everyone/#%ED%91%9C)
