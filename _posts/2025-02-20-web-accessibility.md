@@ -60,6 +60,7 @@ toc_label: "웹 접근성"
 <br>
 
 test2 branch
+test2 branch github desktop
 
 # 중요하게 알아야 할 웹 접근성 항목
 ## 텍스트 외 콘텐츠에 대체 텍스트를 제공하여 이해할 수 있도록 해야 한다.
