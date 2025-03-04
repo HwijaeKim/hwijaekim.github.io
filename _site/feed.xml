@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-20T14:33:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><entry><title type="html">웹 접근성</title><link href="http://localhost:4000/research/web-accessibility/" rel="alternate" type="text/html" title="웹 접근성" /><published>2025-02-20T00:00:00+09:00</published><updated>2025-02-20T00:00:00+09:00</updated><id>http://localhost:4000/research/web-accessibility</id><content type="html" xml:base="http://localhost:4000/research/web-accessibility/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-04T11:27:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><entry><title type="html">웹 접근성</title><link href="http://localhost:4000/research/web-accessibility/" rel="alternate" type="text/html" title="웹 접근성" /><published>2025-02-20T00:00:00+09:00</published><updated>2025-02-20T00:00:00+09:00</updated><id>http://localhost:4000/research/web-accessibility</id><content type="html" xml:base="http://localhost:4000/research/web-accessibility/"><![CDATA[<p><br /></p>
 
 <h1 id="웹-접근성이란">웹 접근성이란</h1>
 <p>장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
@@ -44,6 +44,9 @@
 
 <h2><br /></h2>
 <p><br /></p>
+
+<p>test2 branch
+test2 branch github desktop</p>
 
 <h1 id="중요하게-알아야-할-웹-접근성-항목">중요하게 알아야 할 웹 접근성 항목</h1>
 <h2 id="텍스트-외-콘텐츠에-대체-텍스트를-제공하여-이해할-수-있도록-해야-한다">텍스트 외 콘텐츠에 대체 텍스트를 제공하여 이해할 수 있도록 해야 한다.</h2>
