@@ -14,23 +14,23 @@ main:
 sidebar-category:
   - title: "Union Portfolio"
     children:
-       - title: "Projects"
-         url: "/categories/projects"
-         category: "Projects"
-       - title: "Code"
-         url: "/categories/code"
-         category: "Code"
-       - title: "Design"
-         url: "/categories/design"
-         category: "Design"
+      - title: "Projects"
+        url: "/categories/projects"
+        category: "Projects"
+      - title: "Code"
+        url: "/categories/code"
+        category: "Code"
+      - title: "Design"
+        url: "/categories/design"
+        category: "Design"
       #  - title: "Personal"
       #    url: "categories/personal"
 
   - title: "Development"
     children:
-       - title: "Research"
-         url: "/categories/research"
-         category: "Research"
+      - title: "Research"
+        url: "/categories/research"
+        category: "Research"
       #  - title: "Jekyll(지킬)"
       #    url: "categories/jekyll"
       #  - title: "Synology(Server)"
@@ -41,14 +41,10 @@ sidebar-category:
       #    url: "categories/frontend"
 
 
-  # - title: "Design"
-  #   children:
-  #      - title: "Photoshop / Allustrator"
-  #        url: "categories/psai"
-  #      - title: "Premiere Pro / After Effects"
-  #        url: "categories/prae"
-  #      - title: "Figma / XD"
-  #        url: "categories/figmaxd"
+  - title: "Side-Car Project"
+    children:
+      - title: "2025 사이드카 프로젝트"
+        url: "categories/2025-project01"
 
 
   # - title: "Experience"
