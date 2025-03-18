@@ -337,3 +337,11 @@ defaults:
 #  - /assets/js/custom/dark-theme.js
 # slugify: raw
 
+defaults:
+  #카테고리 한글명
+  - scope:
+      path: ""
+      type: posts
+      categories: side-car-project-2025
+    values:
+      category_display_name: "2025 사이드카 프로젝트"

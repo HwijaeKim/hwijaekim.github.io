@@ -96,8 +96,8 @@ var store = [{
         "teaser": "/assets/images/posts_img/web_accessibility/teaser.webp"
       },{
         "title": "2025 사이드카 프로젝트01(가제) - 시작",
-        "excerpt":"웹 접근성이란 장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것 국제 웹 표준기구(W3C)에서 제정한 표준안, 총 33개의 항목으로 평가한다. 웹 접근성 준수 고려사항 시각 실명, 색각 이상, 다양한 형태의 저시력을 포함한 장애 이동성 특정 조건으로 인한 근육 속도 저하, 손으 쓰기 어렵거나 힘든 상태...","categories": ["2025-project01"],
+        "excerpt":"    ","categories": ["side-car-project-2025"],
         "tags": ["web_accessibility","W3C"],
-        "url": "/2025-project01/2025-side-car-project01-1/",
+        "url": "/side-car-project-2025/2025-side-car-project01-1/",
         "teaser": "/assets/images/posts_img/web_accessibility/teaser.webp"
       }]

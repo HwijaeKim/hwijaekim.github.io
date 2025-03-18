@@ -44,7 +44,7 @@ sidebar-category:
   - title: "Side-Car Project"
     children:
       - title: "2025 사이드카 프로젝트"
-        url: "categories/2025-project01"
+        url: "categories/side-car-project-2025"
 
 
   # - title: "Experience"
