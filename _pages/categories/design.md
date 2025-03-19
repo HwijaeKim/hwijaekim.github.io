@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: categories/design
-title: "Design"
+title: "디자인"
 
 author_profile: true
 sidebar:

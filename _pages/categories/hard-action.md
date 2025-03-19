@@ -1,7 +1,7 @@
 ---
 layout: archive
-permalink: categories/projects
-title: "포트폴리오"
+permalink: categories/hard-action
+title: "뻘짓"
 
 author_profile: true
 sidebar:
@@ -9,7 +9,7 @@ sidebar:
 ---
 
 <div class="grid__wrapper">
-{% assign posts = site.categories.Projects %}
+{% assign posts = site.categories.hard-action %}
 {% for post in posts %}
 {% include archive-single3.html type="list" %}
 {% endfor %}

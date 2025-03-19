@@ -95,9 +95,9 @@ var store = [{
         "url": "/research/web-accessibility/",
         "teaser": "/assets/images/posts_img/web_accessibility/teaser.webp"
       },{
-        "title": "2025 사이드카 프로젝트01(가제) - 시작",
-        "excerpt":"    ","categories": ["side-car-project-2025"],
+        "title": "250317(월) 사이드카 프로젝트01(가제) - 시작",
+        "excerpt":"    개요  첫 직장 입사 후 개인역량이 많이 부족하다는 것을 느끼고 맨땅에 헤딩 격으로 시작한 React기반 웹앱 개발 프로젝트.   참고로 React는 프로젝트 생성만 해봤지, 그 외에는 아무 것도 모름. 실시간으로 공부하면서 진행 할 예정       프로젝트 소개  6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨  ","categories": ["side-car-project-2025"],
         "tags": ["web_accessibility","W3C"],
         "url": "/side-car-project-2025/2025-side-car-project01-1/",
-        "teaser": "/assets/images/posts_img/web_accessibility/teaser.webp"
+        "teaser": "/assets/images/posts_img/ready.webp"
       }]

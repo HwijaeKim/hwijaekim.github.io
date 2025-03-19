@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: categories/code
-title: "Code"
+title: "코드"
 
 author_profile: true
 sidebar:

@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "이력서"
+  - title: "Profile"
     url: /about
   - title: "최근 게시물"
     url: /recent-posts
@@ -8,15 +8,15 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap.xml/
+  # - title: "Sitemap"
+  #   url: /sitemap.xml/
 
 sidebar-category:
   - title: "Union Portfolio"
     children:
-      - title: "프로젝트"
+      - title: "포트폴리오"
         url: "/categories/projects"
-        category: "프로젝트"
+        category: "포트폴리오"
       - title: "코드"
         url: "/categories/code"
         category: "코드"
@@ -41,7 +41,7 @@ sidebar-category:
       #    url: "categories/frontend"
 
 
-  - title: "Side-Car Project"
+  - title: "Side-Car Projects"
     children:
       - title: "2025 사이드카 프로젝트"
         url: "categories/side-car-project-2025"
@@ -52,11 +52,11 @@ sidebar-category:
   #      - title: "전시/박람회"
   #        url: "categories/fair"
 
-  # - title: "Blog"
-  #   children:
-  #     - title: "와"
-  #       url: "categories/dog"
-  #     - title: "여행"
-  #       url: "categories/travel"
-  #     - title: "--"
-  #       url: "/CategoryC"
+  - title: "Geek"
+    children:
+      - title: "뻘짓"
+        url: "categories/hard-action"
+      - title: "전자기기 분해"
+        url: "categories/teardown"
+      # - title: "--"
+      #   url: "/CategoryC"

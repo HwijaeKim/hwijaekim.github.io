@@ -1,6 +1,16 @@
 # _data/categories.yml
-projects: "프로젝트"
+
+# Union Portfolio
+projects: "포트폴리오"
 code: "코드"
 design: "디자인"
+
+# Development
 research: "리서치"
+
+# Side-Car Projects
 side-car-project-2025: "2025 사이드카 프로젝트"
+
+# Geek
+hard-action: "뻘짓"
+teardown: "전자기기 분해"

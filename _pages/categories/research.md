@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: categories/research
-title: "Research"
+title: "리서치"
 
 author_profile: true
 sidebar:
