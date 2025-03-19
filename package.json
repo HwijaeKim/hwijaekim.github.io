@@ -1,7 +1,7 @@
 {
-  "name": "Hwijae Kim Jekyll",
+  "name": "Hwijae Kim Devlog",
   "private": true,
-  "version": "2.0.2-250318v1",
+  "version": "2.1.0b-250319v1",
   "description": "Portfolio",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "minimal",
     "portfolio"
   ],
-  "author": "Michael Rose",
+  "author": "Hwijae Kim",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/HwijaeKim/hwijaekim.github.io.git"
