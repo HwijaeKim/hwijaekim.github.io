@@ -39,6 +39,11 @@ sidebar-category:
       #    url: "categories/frontend"
       #  - title: "node.js"
       #    url: "categories/frontend"
+  
+  - title : "Works"
+    children:
+      - title: "T51X"
+        url: "categories/t51x"
 
 
   - title: "Side-Car Projects"
