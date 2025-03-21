@@ -333,6 +333,6 @@ defaults:
       author_profile: true
 
 
-#after_footer_scripts:
-#  - /assets/js/custom/dark-theme.js
+after_footer_scripts:
+ - /assets/js/custom/dark-theme.js
 # slugify: raw
