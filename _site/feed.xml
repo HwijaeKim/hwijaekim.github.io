@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-20T13:22:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><entry><title type="html">250317(월) 사이드카 프로젝트01(가제) - 시작</title><link href="http://localhost:4000/side-car-project-2025/2025-side-car-project01-1/" rel="alternate" type="text/html" title="250317(월) 사이드카 프로젝트01(가제) - 시작" /><published>2025-03-17T00:00:00+09:00</published><updated>2025-03-17T00:00:00+09:00</updated><id>http://localhost:4000/side-car-project-2025/2025-side-car-project01-1</id><content type="html" xml:base="http://localhost:4000/side-car-project-2025/2025-side-car-project01-1/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-26T08:39:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><entry><title type="html">사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배</title><link href="http://localhost:4000/side-car-project-2025/sidecar02_2/" rel="alternate" type="text/html" title="사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배" /><published>2025-03-20T00:00:00+09:00</published><updated>2025-03-20T00:00:00+09:00</updated><id>http://localhost:4000/side-car-project-2025/sidecar02_2</id><content type="html" xml:base="http://localhost:4000/side-car-project-2025/sidecar02_2/"><![CDATA[<p><br /></p>
+
+<h1 id="개요">개요</h1>
+<p>오늘은 개발자들끼리 모여 간단한 컴포넌트 관련 회의를 했다. <br />
+아직 기획, 디자인 모두 나오기 전이라 필수적으로 요구되는 컴포넌트(버튼, 인풋 등)에 대한 기본적인 틀만 잡을 수 있도록 파트분배를 진행했다.</p>
+
+<p><br /></p>
+
+<h1 id="회의-내용">회의 내용</h1>
+<p><img src="/assets/images/posts_img/side-car-pj-2025-01/02/components.webp" alt="도출된 컴포넌트" />
+컴포넌트는 다음과 같이 토출되었다. <br />
+나는 그중 버튼, 인풋, 투두리스트(인풋, 체크박스) 컴포넌트를 담당했다. <br />
+처음 해봐서 어려워 하는 나에게 감사하게도 배려를 해주셔서 비교적 간단한 컴포넌트를 배정받았다.
+<br /></p>
+
+<h1 id="오늘의-회고">오늘의 회고</h1>
+<p>회의가 끝난 후 막막한 감정이 제일 많이 들었다. <br />
+어디서부터 어떻게 코드를 작성해야 할지 도저히 감 조차 잡히지 않았지만 어떻게 해서든 최대한 만들어보고 싶다. <br />
+우선 React 관련 강의와 AI에이전트, 인터넷 검색을 통해 최대한 학습해보려 하는 중이다.
+<br />
+일단 컴포넌트 제작 자체는 회사에서 진행 중인 프로젝트에서 컴포넌트를 만드는 것과 살짝은 비슷한 것 같기도 하다. React 기반이라는 것을 제외한다면 큰 논리는 비슷한 것 같다. (사실 React가 생각보다 파일구조, 작성방법이 생소해서 아직도 애를 먹고 있다ㅎ..) <br />
+문제는 DB와 연동하는 것이다. 계원에서 한학기 동안 짧게 백엔드 강의를 수강했지만 응용이 굉장히 어려운 것 같다..백엔드 개발자분께 어떤 요청을 날리고 받아야 하는지 정리해서 알려드려야 하는데 애초에 컴포넌트에서 어떻게 요청을 받고 날리는지도 모른다^^…… <br />
+지금은 퍼블영역</p>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="side-car-project-2025" /><category term="side-project" /><category term="frontend" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">사이드카 프로젝트 Ep.01 - 시작</title><link href="http://localhost:4000/side-car-project-2025/sidecar01_1/" rel="alternate" type="text/html" title="사이드카 프로젝트 Ep.01 - 시작" /><published>2025-03-17T00:00:00+09:00</published><updated>2025-03-17T00:00:00+09:00</updated><id>http://localhost:4000/side-car-project-2025/sidecar01_1</id><content type="html" xml:base="http://localhost:4000/side-car-project-2025/sidecar01_1/"><![CDATA[<p><br /></p>
 
 <h1 id="개요">개요</h1>
 <p>첫 직장 입사 후 개인역량이 많이 부족하다는 것을 느끼고 맨땅에 헤딩 격으로 시작한 React기반 웹앱 개발 프로젝트. <br />
@@ -7,7 +29,10 @@
 <p><br /></p>
 
 <h1 id="프로젝트-소개">프로젝트 소개</h1>
-<p>6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨</p>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="side-car-project-2025" /><category term="web_accessibility" /><category term="W3C" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">웹 접근성</title><link href="http://localhost:4000/research/web-accessibility/" rel="alternate" type="text/html" title="웹 접근성" /><published>2025-02-20T00:00:00+09:00</published><updated>2025-02-20T00:00:00+09:00</updated><id>http://localhost:4000/research/web-accessibility</id><content type="html" xml:base="http://localhost:4000/research/web-accessibility/"><![CDATA[<p><br /></p>
+<p>6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨</p>
+
+<h1 id="허허">허허</h1>
+<p>걱정이 크다. 프론트쪽은 아예 모른다고 해도 무방. 어떻게든 해야 한다</p>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="side-car-project-2025" /><category term="side-project" /><category term="frontend" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">웹 접근성</title><link href="http://localhost:4000/research/web-accessibility/" rel="alternate" type="text/html" title="웹 접근성" /><published>2025-02-20T00:00:00+09:00</published><updated>2025-02-20T00:00:00+09:00</updated><id>http://localhost:4000/research/web-accessibility</id><content type="html" xml:base="http://localhost:4000/research/web-accessibility/"><![CDATA[<p><br /></p>
 
 <h1 id="웹-접근성이란">웹 접근성이란</h1>
 <p>장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
@@ -137,7 +162,7 @@ test2 branch github desktop</p>
 <p><br /><br />
 <strong>참고링크</strong> <br />
 <a href="https://velog.io/@leejpsd/CSS-IR-%EA%B8%B0%EB%B2%95">https://velog.io/@leejpsd/CSS-IR-%EA%B8%B0%EB%B2%95</a> <br />
-<a href="https://tech.kakaopay.com/post/accessibility-stories-for-everyone/#%ED%91%9C">https://tech.kakaopay.com/post/accessibility-stories-for-everyone/#%ED%91%9C</a></p>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="web_accessibility" /><category term="W3C" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">macOS에서 데스크톱 아이콘 가리기</title><link href="http://localhost:4000/research/macos-desktio-icon-hidden/" rel="alternate" type="text/html" title="macOS에서 데스크톱 아이콘 가리기" /><published>2025-01-12T00:00:00+09:00</published><updated>2025-01-12T00:00:00+09:00</updated><id>http://localhost:4000/research/macos-desktio-icon-hidden</id><content type="html" xml:base="http://localhost:4000/research/macos-desktio-icon-hidden/"><![CDATA[<p>터미널 실행</p>
+<a href="https://tech.kakaopay.com/post/accessibility-stories-for-everyone/#%ED%91%9C">https://tech.kakaopay.com/post/accessibility-stories-for-everyone/#%ED%91%9C</a></p>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="web_accessibility" /><category term="W3C" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">macOS에서 데스크톱 아이콘 가리기</title><link href="http://localhost:4000/hard-action/macos-desktio-icon-hidden/" rel="alternate" type="text/html" title="macOS에서 데스크톱 아이콘 가리기" /><published>2025-01-12T00:00:00+09:00</published><updated>2025-01-12T00:00:00+09:00</updated><id>http://localhost:4000/hard-action/macos-desktio-icon-hidden</id><content type="html" xml:base="http://localhost:4000/hard-action/macos-desktio-icon-hidden/"><![CDATA[<p>터미널 실행</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.apple.finder CreateDesktop <span class="nt">-bool</span> FALSE<span class="p">;</span> killall Finder
 </code></pre></div></div>
 
@@ -146,7 +171,7 @@ test2 branch github desktop</p>
 </code></pre></div></div>
 <p><br /><br /></p>
 
-<p>터미널 없이 손쉽게 가려주는 유틸리티도 있지만 유료</p>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="macos" /><category term="terminal" /><summary type="html"><![CDATA[터미널 실행 defaults write com.apple.finder CreateDesktop -bool FALSE; killall Finder]]></summary></entry><entry><title type="html">React 시작 + 문제 해결</title><link href="http://localhost:4000/research/react-start/" rel="alternate" type="text/html" title="React 시작 + 문제 해결" /><published>2024-12-20T00:00:00+09:00</published><updated>2024-12-20T00:00:00+09:00</updated><id>http://localhost:4000/research/react-start</id><content type="html" xml:base="http://localhost:4000/research/react-start/"><![CDATA[<table>
+<p>터미널 없이 손쉽게 가려주는 유틸리티도 있지만 유료</p>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="hard-action" /><category term="macos" /><category term="terminal" /><summary type="html"><![CDATA[터미널 실행 defaults write com.apple.finder CreateDesktop -bool FALSE; killall Finder]]></summary></entry><entry><title type="html">React 시작 + 문제 해결</title><link href="http://localhost:4000/research/react-start/" rel="alternate" type="text/html" title="React 시작 + 문제 해결" /><published>2024-12-20T00:00:00+09:00</published><updated>2024-12-20T00:00:00+09:00</updated><id>http://localhost:4000/research/react-start</id><content type="html" xml:base="http://localhost:4000/research/react-start/"><![CDATA[<table>
   <tbody>
     <tr>
       <td><strong>참고 강의</strong></td>
@@ -1233,190 +1258,4 @@ JWT_SECRET= (SECURITY)
       </li>
     </ul>
   </li>
-</ul>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="Projects" /><category term="Code" /><category term="front-end" /><category term="html/css/js" /><category term="figma" /><category term="졸업작품" /><summary type="html"><![CDATA[📝 유아기 아이들의 식습관 문제 개선을 위한 XR글래스 콘텐츠]]></summary></entry><entry><title type="html">Markdown에서 표 만들기</title><link href="http://localhost:4000/research/markdown-table/" rel="alternate" type="text/html" title="Markdown에서 표 만들기" /><published>2024-10-05T00:00:00+09:00</published><updated>2024-10-05T00:00:00+09:00</updated><id>http://localhost:4000/research/markdown-table</id><content type="html" xml:base="http://localhost:4000/research/markdown-table/"><![CDATA[<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">제목</th>
-      <th style="text-align: right">내용</th>
-      <th style="text-align: center">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">테스트1</td>
-      <td style="text-align: right">동해물과백두산이마르고닳도록</td>
-      <td style="text-align: center">테스트3</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">First Header</th>
-      <th style="text-align: center">Second Header</th>
-      <th style="text-align: right">Third Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">First row</td>
-      <td style="text-align: center">Data</td>
-      <td style="text-align: right">Very long data entry</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Second row</td>
-      <td style="text-align: center"><strong>Cell</strong></td>
-      <td style="text-align: right"><em>Cell</em></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Third row</td>
-      <td style="text-align: center">Cell that spans across two columns</td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tbody>
-</table>
-
-<p><br /></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>날짜</th>
-      <th>내용</th>
-      <th>기관/결과</th>
-      <th>기여</th>
-      <th>구분</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2025.02</td>
-      <td>계원예술대학교 디지털미디어디자인과 전문학사</td>
-      <td>졸업 예정</td>
-      <td> </td>
-      <td>학력</td>
-    </tr>
-    <tr>
-      <td>2024.07</td>
-      <td>계원예술대학교 디지털미디어디자인과 2024-2학기 수석</td>
-      <td>계원예술대학교</td>
-      <td> </td>
-      <td>학력</td>
-    </tr>
-    <tr>
-      <td>2024.07</td>
-      <td>제 30회 커뮤니케이션디자인국제공모전 (3인)</td>
-      <td>한국커뮤니케이션디자인협회 / 동상</td>
-      <td>팀장/웹 개발</td>
-      <td>수상</td>
-    </tr>
-    <tr>
-      <td>2024.06</td>
-      <td>계원예술대학교 디지털미디어디자인과 우수작 프레젠테이션 1과목 출품</td>
-      <td>(과목)유니티프로그래밍</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2023.12</td>
-      <td>계원예술대학교 디지털미디어디자인과 우수작 프레젠테이션 3과목 출품</td>
-      <td>(과목)콘텐츠디자인, 모션그래픽스, 웹퍼블리싱</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2021-2023</td>
-      <td>2021-1학기, 2023-2학기, 2024-1학기 성적우수 장학생</td>
-      <td>계원예술대학교</td>
-      <td> </td>
-      <td>학력</td>
-    </tr>
-    <tr>
-      <td>2021.03</td>
-      <td>계원예술대학교 디지털미디어디자인과 전문학사</td>
-      <td>입학</td>
-      <td> </td>
-      <td>학력</td>
-    </tr>
-    <tr>
-      <td>2019.09.27</td>
-      <td>컴퓨터그래픽스운용기능사</td>
-      <td>한국산업인력공단</td>
-      <td> </td>
-      <td>자격/면혀</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><br /></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>날짜</th>
-      <th>내용</th>
-      <th>기관/결과</th>
-      <th>기여</th>
-      <th>구분</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2021.09 - 2023.03</td>
-      <td>입시학원 온라인 비디오 콘테늧 제작</td>
-      <td>졸업 예정</td>
-      <td>촬</td>
-      <td>학력</td>
-    </tr>
-    <tr>
-      <td>2024.07</td>
-      <td>계원예술대학교 디지털미디어디자인과 2024-2학기 수석</td>
-      <td>계원예술대학교</td>
-      <td> </td>
-      <td>학력</td>
-    </tr>
-    <tr>
-      <td>2024.07</td>
-      <td>제 30회 커뮤니케이션디자인국제공모전 (3인)</td>
-      <td>한국커뮤니케이션디자인협회 / 동상</td>
-      <td>팀장/웹 개발</td>
-      <td>수상</td>
-    </tr>
-    <tr>
-      <td>2024.06</td>
-      <td>계원예술대학교 디지털미디어디자인과 우수작 프레젠테이션 1과목 출품</td>
-      <td>(과목)유니티프로그래밍</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2023.12</td>
-      <td>계원예술대학교 디지털미디어디자인과 우수작 프레젠테이션 3과목 출품</td>
-      <td>(과목)콘텐츠디자인, 모션그래픽스, 웹퍼블리싱</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2021-2023</td>
-      <td>2021-1학기, 2023-2학기, 2024-1학기 성적우수 장학생</td>
-      <td>계원예술대학교</td>
-      <td> </td>
-      <td>학력</td>
-    </tr>
-    <tr>
-      <td>2021.03</td>
-      <td>계원예술대학교 디지털미디어디자인과 전문학사</td>
-      <td>입학</td>
-      <td> </td>
-      <td>학력</td>
-    </tr>
-    <tr>
-      <td>2019.09.27</td>
-      <td>컴퓨터그래픽스운용기능사</td>
-      <td>한국산업인력공단</td>
-      <td> </td>
-      <td>자격/면혀</td>
-    </tr>
-  </tbody>
-</table>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="markdown" /><category term="table" /><summary type="html"><![CDATA[제목 내용 설명 테스트1 동해물과백두산이마르고닳도록 테스트3]]></summary></entry></feed>
+</ul>]]></content><author><name>김휘재 Hwijae Kim</name><email>dusan960766@gmail.com</email></author><category term="Projects" /><category term="Code" /><category term="front-end" /><category term="html/css/js" /><category term="figma" /><category term="졸업작품" /><summary type="html"><![CDATA[📝 유아기 아이들의 식습관 문제 개선을 위한 XR글래스 콘텐츠]]></summary></entry></feed>

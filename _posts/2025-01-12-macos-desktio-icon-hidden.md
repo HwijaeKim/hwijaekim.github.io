@@ -3,7 +3,7 @@ title:  "macOS에서 데스크톱 아이콘 가리기"
 header:
   teaser: "/assets/images/posts_img/macos-desktop-icon-hidden/teaser.png"
 categories: 
-  - Research
+  - hard-action
 tags:
   - macos
   - terminal

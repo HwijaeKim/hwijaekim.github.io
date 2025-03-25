@@ -84,9 +84,9 @@ var store = [{
         "teaser": "/assets/images/posts_img/install-react/teaser.webp"
       },{
         "title": "macOS에서 데스크톱 아이콘 가리기",
-        "excerpt":"터미널 실행  defaults write com.apple.finder CreateDesktop -bool FALSE; killall Finder   복귀  defaults write com.apple.finder CreateDesktop -bool TRUE; killall Finder       터미널 없이 손쉽게 가려주는 유틸리티도 있지만 유료  ","categories": ["Research"],
+        "excerpt":"터미널 실행  defaults write com.apple.finder CreateDesktop -bool FALSE; killall Finder   복귀  defaults write com.apple.finder CreateDesktop -bool TRUE; killall Finder       터미널 없이 손쉽게 가려주는 유틸리티도 있지만 유료  ","categories": ["hard-action"],
         "tags": ["macos","terminal"],
-        "url": "/research/macos-desktio-icon-hidden/",
+        "url": "/hard-action/macos-desktio-icon-hidden/",
         "teaser": "/assets/images/posts_img/macos-desktop-icon-hidden/teaser.png"
       },{
         "title": "웹 접근성",
@@ -95,9 +95,15 @@ var store = [{
         "url": "/research/web-accessibility/",
         "teaser": "/assets/images/posts_img/web_accessibility/teaser.webp"
       },{
-        "title": "250317(월) 사이드카 프로젝트01(가제) - 시작",
-        "excerpt":"    개요  첫 직장 입사 후 개인역량이 많이 부족하다는 것을 느끼고 맨땅에 헤딩 격으로 시작한 React기반 웹앱 개발 프로젝트.   참고로 React는 프로젝트 생성만 해봤지, 그 외에는 아무 것도 모름. 실시간으로 공부하면서 진행 할 예정       프로젝트 소개  6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨  ","categories": ["side-car-project-2025"],
-        "tags": ["web_accessibility","W3C"],
-        "url": "/side-car-project-2025/2025-side-car-project01-1/",
+        "title": "사이드카 프로젝트 Ep.01 - 시작",
+        "excerpt":"개요 첫 직장 입사 후 개인역량이 많이 부족하다는 것을 느끼고 맨땅에 헤딩 격으로 시작한 React기반 웹앱 개발 프로젝트. 참고로 React는 프로젝트 생성만 해봤지, 그 외에는 아무 것도 모름. 실시간으로 공부하면서 진행 할 예정 프로젝트 소개 6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨 허허 걱정이 크다. 프론트쪽은 아예 모른다고 해도 무방....","categories": ["side-car-project-2025"],
+        "tags": ["side-project","frontend"],
+        "url": "/side-car-project-2025/sidecar01_1/",
+        "teaser": "/assets/images/posts_img/ready.webp"
+      },{
+        "title": "사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배",
+        "excerpt":"개요 오늘은 개발자들끼리 모여 간단한 컴포넌트 관련 회의를 했다. 아직 기획, 디자인 모두 나오기 전이라 필수적으로 요구되는 컴포넌트(버튼, 인풋 등)에 대한 기본적인 틀만 잡을 수 있도록 파트분배를 진행했다. 회의 내용 컴포넌트는 다음과 같이 토출되었다. 나는 그중 버튼, 인풋, 투두리스트(인풋, 체크박스) 컴포넌트를 담당했다. 처음 해봐서 어려워 하는 나에게 감사하게도 배려를 해주셔서...","categories": ["side-car-project-2025"],
+        "tags": ["side-project","frontend"],
+        "url": "/side-car-project-2025/sidecar02_2/",
         "teaser": "/assets/images/posts_img/ready.webp"
       }]
