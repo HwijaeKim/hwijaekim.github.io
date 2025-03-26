@@ -106,4 +106,10 @@ var store = [{
         "tags": ["side-project","frontend"],
         "url": "/side-car-project-2025/sidecar02_2/",
         "teaser": "/assets/images/posts_img/ready.webp"
+      },{
+        "title": "프롬프트 엔지니어링 Part.01",
+        "excerpt":"    ","categories": ["Research"],
+        "tags": ["prompt-engineering","llm","ai","chatgpt","prompt"],
+        "url": "/research/prompt-engineering/",
+        "teaser": "/assets/images/posts_img/ready.webp"
       }]

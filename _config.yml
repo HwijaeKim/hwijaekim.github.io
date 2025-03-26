@@ -113,20 +113,20 @@ analytics:
 
 # Site Author
 author:
-  name             : "김휘재 Hwijae Kim"
+  name             : "김휘재 - KCT"
   avatar           : "assets/images/profile2.webp"
-  bio              : "안녕하세요"
+  bio              : "기술 블로그에 오신 것을 환영합니다."
   email            : "dusan960766@gmail.com"
   links:
     - label: "dusan960766@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: # "dusan960766@gmail.com"
-    - label: "이력서"
-      icon: "fas fa-fw fa-address-card"
-      url: "/about"
-    - label: "이력서/자기소개서 다운로드"
-      icon: "fa-solid fa-file-pdf"
-      url: "https://drive.google.com/file/d/17v4ii3Ho0RFTFdj0Rg6RkoxpiD4jC89s/view?usp=sharing"
+    # - label: "이력서"
+    #   icon: "fas fa-fw fa-address-card"
+    #   url: "/about"
+    # - label: "이력서/자기소개서 다운로드"
+    #   icon: "fa-solid fa-file-pdf"
+    #   url: "https://drive.google.com/file/d/17v4ii3Ho0RFTFdj0Rg6RkoxpiD4jC89s/view?usp=sharing"
     - label: "Git"
       icon: "fab fa-fw fa-git-alt"
       url: "https://github.com/HwijaeKim/hwijaekim.github.io.git"
@@ -146,9 +146,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-square-github"
       url: "https://github.com/HwijaeKim"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/hwijaekim"
+    # - label: "LinkedIn"
+    #   icon: "fab fa-fw fa-linkedin"
+    #   url: "https://linkedin.com/in/hwijaekim"
 
 
 # Reading Files
