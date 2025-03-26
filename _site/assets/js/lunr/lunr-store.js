@@ -96,7 +96,7 @@ var store = [{
         "teaser": "/assets/images/posts_img/web_accessibility/teaser.webp"
       },{
         "title": "사이드카 프로젝트 Ep.01 - 시작",
-        "excerpt":"개요 첫 직장 입사 후 개인역량이 많이 부족하다는 것을 느끼고 맨땅에 헤딩 격으로 시작한 React기반 웹앱 개발 프로젝트. 참고로 React는 프로젝트 생성만 해봤지, 그 외에는 아무 것도 모름. 실시간으로 공부하면서 진행 할 예정 프로젝트 소개 6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨 허허 걱정이 크다. 프론트쪽은 아예 모른다고 해도 무방....","categories": ["side-car-project-2025"],
+        "excerpt":"    개요  첫 직장 입사 후 개인역량이 많이 부족하다는 것을 느끼고 맨땅에 헤딩 격으로 시작한 React기반 웹앱 개발 프로젝트.   참고로 React는 프로젝트 생성만 해봤지, 그 외에는 아무 것도 모름. 실시간으로 공부하면서 진행 할 예정       프로젝트 소개  6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨  ","categories": ["side-car-project-2025"],
         "tags": ["side-project","frontend"],
         "url": "/side-car-project-2025/sidecar01_1/",
         "teaser": "/assets/images/posts_img/ready.webp"
@@ -107,7 +107,7 @@ var store = [{
         "url": "/side-car-project-2025/sidecar02_2/",
         "teaser": "/assets/images/posts_img/ready.webp"
       },{
-        "title": "프롬프트 엔지니어링 Part.01",
+        "title": "프롬프트 엔지니어링 Part.01 - 이론 정리",
         "excerpt":"개요 회사에 퍼블리셔로 입사 후 AI에이전트(ChatGPT, Claude 등)를 사용하는 빈도가 급격히 증가했다. 물론 이전에도 자주 사용했지만 특히 더 사용하게 되는 것 같다는 생각이 들었다. 이전부터 AI에게 질문을 날리는 것에 대해 크게 생각하지 않고 생각하는 대로 적어 질문을 날리곤 했고, 지금도 마찬가지다. 그러다보니 원하는 답변을 빠른 시간 내 얻는데 문제가 생기는...","categories": ["Research"],
         "tags": ["prompt-engineering","llm","ai","chatgpt","prompt"],
         "url": "/research/prompt-engineering/",
