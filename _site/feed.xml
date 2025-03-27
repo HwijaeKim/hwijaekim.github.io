@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-27T11:09:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><entry><title type="html">프롬프트 엔지니어링 Part.01 - 이론 정리</title><link href="http://localhost:4000/research/prompt-engineering/" rel="alternate" type="text/html" title="프롬프트 엔지니어링 Part.01 - 이론 정리" /><published>2025-03-26T00:00:00+09:00</published><updated>2025-03-26T00:00:00+09:00</updated><id>http://localhost:4000/research/prompt-engineering</id><content type="html" xml:base="http://localhost:4000/research/prompt-engineering/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-27T11:27:09+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><entry><title type="html">프롬프트 엔지니어링 Part.01 - 이론 정리</title><link href="http://localhost:4000/research/prompt-engineering/" rel="alternate" type="text/html" title="프롬프트 엔지니어링 Part.01 - 이론 정리" /><published>2025-03-26T00:00:00+09:00</published><updated>2025-03-26T00:00:00+09:00</updated><id>http://localhost:4000/research/prompt-engineering</id><content type="html" xml:base="http://localhost:4000/research/prompt-engineering/"><![CDATA[<p><br /></p>
 
 <h1 id="개요">개요</h1>
 <hr />
@@ -133,7 +133,37 @@ A: //마지막 A는 LLM이 답변
 OpenAI에서 제공하는 Playground로 간단하게 시작해보자!</p>
 <ul>
   <li><a href="https://platform.openai.com/playground">OpenAI Playground 바로가기</a></li>
-</ul>]]></content><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="prompt-engineering" /><category term="llm" /><category term="ai" /><category term="chatgpt" /><category term="prompt" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배</title><link href="http://localhost:4000/side-car-project-2025/sidecar02_2/" rel="alternate" type="text/html" title="사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배" /><published>2025-03-20T00:00:00+09:00</published><updated>2025-03-20T00:00:00+09:00</updated><id>http://localhost:4000/side-car-project-2025/sidecar02_2</id><content type="html" xml:base="http://localhost:4000/side-car-project-2025/sidecar02_2/"><![CDATA[<p><br /></p>
+</ul>
+
+<h2 id="지시">지시</h2>
+<p>‘작성하기’, ‘분류하기’, ‘요약하기’, ‘번역하기’, ‘정렬하기’ 등의 명령어를 사용하여 달성하고자 하는 결과를 지시해 효과적인 프롬프트를 설계할 수 있다. <br />
+<br />
+물론 무엇이 가장 효과적인지 확인하기 위해서는 여러 시도와 시행착오를 겪어야 한다는 것을 명힘하자… <br />
+다양한 키워드, 문백과 데이터를 활용하여 다양한 명령을 내려보고, 특정 사용 사례와 작업에 적합한 방법을 찾는 것이 중요하다. <br />
+어쩌면 당연한 말일 수도 잆지만 수행하고자 하는 작업과 관련된 문맥이 구체적이고 적합할수록 더 좋은 결과를 얻을 확률이 높아진다. <br />
+<br /><br /></p>
+
+<p>프롬프트의 시작 부분에서 지시 사항을 명시하는 것이 좋다는 의견도 있다. <br />
+‘###’과 같이 명확한 구분기호를 사용하여 명령어와 지시사항을 구부하는 것을 예로 들 수 있다. <br />
+<br /></p>
+
+<p><em>Prompt.</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### 지시 ###
+다음 텍스트를 스페인어로 번역해줘
+글자: "안녕하세요"
+</code></pre></div></div>
+
+<p><em>Output.</em>
+<em><sub>(OpenAI ChatGPT-4.5)</sub></em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>스페인어로 번역하면:
+
+"Hola"
+</code></pre></div></div>
+
+<h2 id="특이성">특이성</h2>
+
+<hr />
+<p><br /><br /></p>]]></content><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="prompt-engineering" /><category term="llm" /><category term="ai" /><category term="chatgpt" /><category term="prompt" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배</title><link href="http://localhost:4000/side-car-project-2025/sidecar02_2/" rel="alternate" type="text/html" title="사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배" /><published>2025-03-20T00:00:00+09:00</published><updated>2025-03-20T00:00:00+09:00</updated><id>http://localhost:4000/side-car-project-2025/sidecar02_2</id><content type="html" xml:base="http://localhost:4000/side-car-project-2025/sidecar02_2/"><![CDATA[<p><br /></p>
 
 <h1 id="개요">개요</h1>
 <p>오늘은 개발자들끼리 모여 간단한 컴포넌트 관련 회의를 했다. <br />
