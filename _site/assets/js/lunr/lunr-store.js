@@ -110,6 +110,12 @@ var store = [{
         "title": "프롬프트 엔지니어링 Part.01 - 이론 정리",
         "excerpt":"개요 회사에 퍼블리셔로 입사 후 AI에이전트(ChatGPT, Claude 등)를 사용하는 빈도가 급격히 증가했다. 물론 이전에도 자주 사용했지만 특히 더 사용하게 되는 것 같다는 생각이 들었다. 이전부터 AI에게 질문을 날리는 것에 대해 크게 생각하지 않고 생각하는 대로 적어 질문을 날리곤 했고, 지금도 마찬가지다. 그러다보니 원하는 답변을 빠른 시간 내 얻는데 문제가 생기는...","categories": ["Research"],
         "tags": ["prompt-engineering","llm","ai","chatgpt","prompt"],
-        "url": "/research/prompt-engineering/",
+        "url": "/research/prompt-engineering1-1/",
+        "teaser": "/assets/images/posts_img/prompt_engineering/teaser.webp"
+      },{
+        "title": "프롬프트 엔지니어링 Part.02 - 예제 적용",
+        "excerpt":"    개요   이전 포스트에서 프롬프트 엔지니어링에 대한 기초적인 이론을 정리했다.   이렇게 이론을 학습하고 정리했으니 이번 포스트에서는 실제 예제 프롬프트를 작성해보자.     프롬프트를 작성해 Vanilla JavaScript 코드를 만들고 HTML, CSS 코드 등을 리펙토링   React의 작동 원리를 설명하고 Vajilla JavaScript와의 차이점 서술  ","categories": ["Research"],
+        "tags": ["prompt-engineering","llm","ai","chatgpt","prompt"],
+        "url": "/research/prompt-engineering1-2/",
         "teaser": "/assets/images/posts_img/prompt_engineering/teaser.webp"
       }]
