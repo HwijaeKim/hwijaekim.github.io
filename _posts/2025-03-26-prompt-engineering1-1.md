@@ -663,4 +663,4 @@ LLM의 발전이 눈부시다... 공부 중인 문서에서는 틀린 결과를 
 <br>
 이렇게 이론을 학습하고 정리했으니 다음 포스트에서는 실제 예제 프롬프트를 작성해보자.   
 - 프롬프트를 작성해 Vanilla JavaScript 코드를 만들고 HTML, CSS 코드 등을 리펙토링
-- React의 작동 원리를 설명하고 Vajilla JavaScript와의 차이점 서술
+- React의 작동 원리를 설명하고 Vanilla JavaScript와의 차이점 서술

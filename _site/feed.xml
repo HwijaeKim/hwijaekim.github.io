@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-29T00:34:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><entry><title type="html">프롬프트 엔지니어링 Part.02 - 예제 적용</title><link href="http://localhost:4000/research/prompt-engineering1-2/" rel="alternate" type="text/html" title="프롬프트 엔지니어링 Part.02 - 예제 적용" /><published>2025-03-28T00:00:00+09:00</published><updated>2025-03-28T00:00:00+09:00</updated><id>http://localhost:4000/research/prompt-engineering1-2</id><content type="html" xml:base="http://localhost:4000/research/prompt-engineering1-2/"><![CDATA[<p><br /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-03-30T00:38:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">HWIJAE KIM</title><subtitle></subtitle><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><entry><title type="html">프롬프트 엔지니어링 Part.02 - 예제 적용</title><link href="http://localhost:4000/research/prompt-engineering1-2/" rel="alternate" type="text/html" title="프롬프트 엔지니어링 Part.02 - 예제 적용" /><published>2025-03-28T00:00:00+09:00</published><updated>2025-03-28T00:00:00+09:00</updated><id>http://localhost:4000/research/prompt-engineering1-2</id><content type="html" xml:base="http://localhost:4000/research/prompt-engineering1-2/"><![CDATA[<p><br /></p>
 
 <h1 id="개요">개요</h1>
 <hr />
@@ -6,8 +6,171 @@
 이렇게 이론을 학습하고 정리했으니 이번 포스트에서는 실제 예제 프롬프트를 작성해보자.</p>
 <ul>
   <li>프롬프트를 작성해 Vanilla JavaScript 코드를 만들고 HTML, CSS 코드 등을 리펙토링</li>
-  <li>React의 작동 원리를 설명하고 Vajilla JavaScript와의 차이점 서술</li>
-</ul>]]></content><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="prompt-engineering" /><category term="llm" /><category term="ai" /><category term="chatgpt" /><category term="prompt" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">프롬프트 엔지니어링 Part.01 - 이론 정리</title><link href="http://localhost:4000/research/prompt-engineering1-1/" rel="alternate" type="text/html" title="프롬프트 엔지니어링 Part.01 - 이론 정리" /><published>2025-03-26T00:00:00+09:00</published><updated>2025-03-26T00:00:00+09:00</updated><id>http://localhost:4000/research/prompt-engineering1-1</id><content type="html" xml:base="http://localhost:4000/research/prompt-engineering1-1/"><![CDATA[<p><br /></p>
+  <li>React의 작동 원리를 설명하고 Vanilla JavaScript와의 차이점 서술</li>
+</ul>
+
+<hr />
+<p><br /><br /></p>
+
+<h1 id="연습">연습</h1>
+<h2 id="01-vanilla-javascript-코드-작성">01. Vanilla JavaScript 코드 작성</h2>
+<p>첫 번째 연습으로 아주 간단한 코드 짜는 요청을 날려보자. <br />
+요구사항은 다음과 같다:</p>
+<ul>
+  <li>JavaScript로 작성될 것</li>
+  <li>prompt로 입력받을 것</li>
+  <li>alert으로 출력할 것</li>
+</ul>
+
+<p><br />
+첫 번째로 아주 단순하게 딱 한줄로만 요청을 보내보자. <br />
+<br />
+<em>Prompt.</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>이름 받고 이름 말하면서 인사하는 코드 짜줘
+</code></pre></div></div>
+<p><br /></p>
+
+<p><em>Output.</em>
+<em><sub>(OpenAI ChatGPT-4o)</sub></em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>물론이지! 아래는 사용자의 이름을 입력받고, 그 이름을 사용해서 인사하는 간단한 파이썬 코드야
+name = input("이름을 입력해주세요: ")
+print(f"{name}님, 안녕하세요!")
+
+실행하면 예를 들어:
+이름을 입력해주세요: 지민
+지민님, 안녕하세요!
+</code></pre></div></div>
+<p>당연한 결과일 수 있다… <br />
+프롬프트에 자세한 요구사항을 적어놓지 않으니 전혀 다른 결과를 출력했다. <br />
+<br /></p>
+
+<p>이제 자세한 프롬프트를 작성해보자. <br />
+<br /></p>
+
+<p><em>Prompt.</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*
+이름을 prompt로 입력받고 alert으로 이름을 포함한 인사 문구를 출력해줘
+*/
+</code></pre></div></div>
+<p><br /></p>
+
+<p><em>Output.</em>
+<em><sub>(OpenAI ChatGPT-4o)</sub></em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 이름을 입력받는다
+let name = prompt("이름을 입력해주세요:");
+
+// 인사 문구를 출력한다
+alert("안녕하세요, " + name + "님! 반갑습니다 :)");
+</code></pre></div></div>
+<p>아주 간단한 연습이지만 결과 개선이 있다. <br />
+<br /><br /></p>
+
+<h2 id="02-html-리펙토링">02. HTML 리펙토링</h2>
+<p>이번에는 HTML 코드를 리펙토링 하는 프롬프트를 작성해보자. <br />
+<br /></p>
+
+<p><em>Prompt.</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### HTML 리펙토링 요청 ###
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Electronics Teardown&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="header"&gt;
+        &lt;a class="a3" href="index.html"&gt;
+            &lt;img src="./img/logo.png" height="120"&gt;
+        &lt;/a&gt;
+        &lt;div id="navigation"&gt;
+            &lt;a href="detail_specs.html"&gt;상세스펙&lt;/a&gt;&amp;nbsp;
+            &lt;a href="teardown_main.html"&gt;분해도 단면&lt;/a&gt;&amp;nbsp;
+            &lt;a href="suggest.html"&gt;기기 제안하기&lt;/a&gt;&amp;nbsp;
+            &lt;a href="warning.html"&gt;분해 전 유의사항&lt;/a&gt;&amp;nbsp;
+            &lt;a href="device_manage.html"&gt;효율적인 기기관리&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--구분선--&gt;
+
+    &lt;div class="clear"&gt;&lt;/div&gt;
+
+    &lt;div id="aside"&gt;
+        &lt;h1 class="titlemargin"&gt;일렉트로닉스 테어다운에 오신 것을 환영합니다&lt;/h1&gt;&lt;span&gt;여러 기기의 분해도 단면을 확인해보세요.&lt;/span&gt;
+    &lt;/div&gt;
+        
+    &lt;div id="section"&gt;
+        &lt;video src="./img/phone_ani.mp4" width="400" autoplay loop muted&gt;&lt;/video&gt;&lt;br&gt;&lt;br&gt;
+        &lt;p class="bold" id="quickbutton"&gt;QUICK BUTTON&lt;/p&gt;
+        &lt;a class="a2"  href="detail_specs.html"&gt;상세 스펙&lt;/a&gt;
+        &lt;a class="a2" href="teardown_main.html"&gt;분해도&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="clear"&gt;&lt;/div&gt;
+
+    &lt;div id="footer"&gt;&lt;p&gt;KUAD | DIGITAL MEDIA DESIGN &lt;br&gt; ELECTRONICS TEARDOWN-- Web Publishing. &lt;br&gt; ©️2023. KIM HWIJAE. All rights reserved. &lt;br&gt; 사용된 글꼴 Lemon/Milk, LINE Seed Sans KR은 교육(개인) 목적으로만 사용됩니다.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+<p><br /></p>
+
+<p><em>Output.</em>
+<em><sub>(OpenAI ChatGPT-4o)</sub></em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Electronics Teardown&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt; &lt;!-- 스타일 분리 추천 --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;header id="header"&gt;
+    &lt;a href="index.html" class="logo"&gt;
+      &lt;img src="./img/logo.png" alt="Electronics Teardown 로고" height="120"&gt;
+    &lt;/a&gt;
+    &lt;nav id="navigation"&gt;
+      &lt;a href="detail_specs.html"&gt;상세스펙&lt;/a&gt;
+      &lt;a href="teardown_main.html"&gt;분해도 단면&lt;/a&gt;
+      &lt;a href="suggest.html"&gt;기기 제안하기&lt;/a&gt;
+      &lt;a href="warning.html"&gt;분해 전 유의사항&lt;/a&gt;
+      &lt;a href="device_manage.html"&gt;효율적인 기기관리&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;section id="intro"&gt;
+      &lt;h1 class="title"&gt;일렉트로닉스 테어다운에 오신 것을 환영합니다&lt;/h1&gt;
+      &lt;p class="subtitle"&gt;여러 기기의 분해도 단면을 확인해보세요.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="media"&gt;
+      &lt;video src="./img/phone_ani.mp4" width="400" autoplay loop muted&gt;&lt;/video&gt;
+    &lt;/section&gt;
+
+    &lt;section id="quick-buttons"&gt;
+      &lt;p class="bold"&gt;QUICK BUTTON&lt;/p&gt;
+      &lt;div class="button-group"&gt;
+        &lt;a href="detail_specs.html" class="button"&gt;상세 스펙&lt;/a&gt;
+        &lt;a href="teardown_main.html" class="button"&gt;분해도&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer id="footer"&gt;
+    &lt;p&gt;
+      KUAD | DIGITAL MEDIA DESIGN &lt;br&gt;
+      ELECTRONICS TEARDOWN - Web Publishing. &lt;br&gt;
+      ©️2023. KIM HWIJAE. All rights reserved. &lt;br&gt;
+      사용된 글꼴 Lemon/Milk, LINE Seed Sans KR은 교육(개인) 목적으로만 사용됩니다.
+    &lt;/p&gt;
+  &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>]]></content><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="prompt-engineering" /><category term="llm" /><category term="ai" /><category term="chatgpt" /><category term="prompt" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">프롬프트 엔지니어링 Part.01 - 이론 정리</title><link href="http://localhost:4000/research/prompt-engineering1-1/" rel="alternate" type="text/html" title="프롬프트 엔지니어링 Part.01 - 이론 정리" /><published>2025-03-26T00:00:00+09:00</published><updated>2025-03-26T00:00:00+09:00</updated><id>http://localhost:4000/research/prompt-engineering1-1</id><content type="html" xml:base="http://localhost:4000/research/prompt-engineering1-1/"><![CDATA[<p><br /></p>
 
 <h1 id="개요">개요</h1>
 <hr />
@@ -596,7 +759,7 @@ A: 40
 이렇게 이론을 학습하고 정리했으니 다음 포스트에서는 실제 예제 프롬프트를 작성해보자.</p>
 <ul>
   <li>프롬프트를 작성해 Vanilla JavaScript 코드를 만들고 HTML, CSS 코드 등을 리펙토링</li>
-  <li>React의 작동 원리를 설명하고 Vajilla JavaScript와의 차이점 서술</li>
+  <li>React의 작동 원리를 설명하고 Vanilla JavaScript와의 차이점 서술</li>
 </ul>]]></content><author><name>김휘재 - KCT</name><email>dusan960766@gmail.com</email></author><category term="Research" /><category term="prompt-engineering" /><category term="llm" /><category term="ai" /><category term="chatgpt" /><category term="prompt" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배</title><link href="http://localhost:4000/side-car-project-2025/sidecar02_2/" rel="alternate" type="text/html" title="사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배" /><published>2025-03-20T00:00:00+09:00</published><updated>2025-03-20T00:00:00+09:00</updated><id>http://localhost:4000/side-car-project-2025/sidecar02_2</id><content type="html" xml:base="http://localhost:4000/side-car-project-2025/sidecar02_2/"><![CDATA[<p><br /></p>
 
 <h1 id="개요">개요</h1>
