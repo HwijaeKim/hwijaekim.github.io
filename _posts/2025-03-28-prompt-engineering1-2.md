@@ -190,3 +190,72 @@ alert("안녕하세요, " + name + "님! 반갑습니다 :)");
 </body>
 </html>
 ```
+<br><br>
+
+
+## 03. React 설명
+*Prompt.*
+```
+나: 너는 고도로 학습된 IT어드바이저야. 너가 설명할 대상은 기본적인 HTML/CSS/JS는 인지하고 있는 상태야.
+너: 네, 알겠습니다.
+나: React의 작동 원리를 설명해주고 2~3가지 핵심으로 요약해줘
+너:
+```
+<br>
+
+*Output.*
+*<sub>(OpenAI ChatGPT-4o)</sub>*
+```
+✅ React의 작동 원리
+React는 사용자 인터페이스(UI)를 컴포넌트 단위로 쪼개어 개발할 수 있게 해주고, 변화가 생겼을 때 최소한의 DOM 조작만으로 빠르게 UI를 업데이트해주는 JavaScript 라이브러리야.
+
+🔑 핵심 요약 (2~3가지 포인트)
+1.	Virtual DOM (가상 DOM)
+  •	실제 DOM 조작은 느리기 때문에, React는 먼저 Virtual DOM에서 상태 변화에 따른 UI 변경을 시뮬레이션함.
+  •	변경 전후의 Virtual DOM을 비교(Diffing)하고, 바뀐 부분만 실제 DOM에 적용함 (Reconciliation).
+  •	👉 이 과정을 통해 성능을 크게 개선함. 
+
+2.	컴포넌트 기반 구조
+  •	UI를 독립적이고 재사용 가능한 컴포넌트(Component) 단위로 구성.
+  •	각각의 컴포넌트는 자신만의 상태(state)와 속성(props)을 가짐.
+  •	👉 유지보수성과 재사용성이 매우 뛰어남.
+  
+3.	단방향 데이터 흐름 (One-way Data Binding)
+  •	데이터는 부모 → 자식 방향으로만 흐름.
+  •	컴포넌트 간의 데이터 흐름이 예측 가능하고, 디버깅이 쉬워짐.
+  •	상태 관리는 useState/useReducer 같은 Hook으로 처리함.
+```
+<br><br><br>
+
+
+*Prompt.*
+```
+나: 너는 고도로 학습된 IT어드바이저야. 너가 설명할 대상은 기본적인 HTML/CSS/JS는 인지하고 있는 상태야.
+너: 네, 알겠습니다.
+나: React의 작동 원리를 설명해주고 2~3가지 핵심으로 요약해줘
+너:
+```
+<br>
+
+*Output.*
+*<sub>(OpenAI ChatGPT-4o)</sub>*
+```
+✅ React의 작동 원리
+React는 사용자 인터페이스(UI)를 컴포넌트 단위로 쪼개어 개발할 수 있게 해주고, 변화가 생겼을 때 최소한의 DOM 조작만으로 빠르게 UI를 업데이트해주는 JavaScript 라이브러리야.
+
+🔑 핵심 요약 (2~3가지 포인트)
+1.	Virtual DOM (가상 DOM)
+  •	실제 DOM 조작은 느리기 때문에, React는 먼저 Virtual DOM에서 상태 변화에 따른 UI 변경을 시뮬레이션함.
+  •	변경 전후의 Virtual DOM을 비교(Diffing)하고, 바뀐 부분만 실제 DOM에 적용함 (Reconciliation).
+  •	👉 이 과정을 통해 성능을 크게 개선함. 
+
+2.	컴포넌트 기반 구조
+  •	UI를 독립적이고 재사용 가능한 컴포넌트(Component) 단위로 구성.
+  •	각각의 컴포넌트는 자신만의 상태(state)와 속성(props)을 가짐.
+  •	👉 유지보수성과 재사용성이 매우 뛰어남.
+  
+3.	단방향 데이터 흐름 (One-way Data Binding)
+  •	데이터는 부모 → 자식 방향으로만 흐름.
+  •	컴포넌트 간의 데이터 흐름이 예측 가능하고, 디버깅이 쉬워짐.
+  •	상태 관리는 useState/useReducer 같은 Hook으로 처리함.
+```
