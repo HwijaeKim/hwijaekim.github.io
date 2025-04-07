@@ -1,7 +1,0 @@
----
-layout: null
-permalink: /robots.txt
----
-User-agent: *
-Disallow: 
-Sitemap: https://hwijaekim.github.io/sitemap.xml
