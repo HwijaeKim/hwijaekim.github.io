@@ -6,3 +6,6 @@
 	path = content
 	url = https://github.com/HwijaeKim/hwijaekim.github.io.git
 	branch = content
+[submodule "themes/Stack"]
+	path = themes/Stack
+	url = https://github.com/HwijaeKim/hugo-theme-stack.git
