@@ -7,7 +7,23 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>ko</language>
         <copyright>KCT</copyright>
-        <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Development</title>
+        <link>https://hwijaekim.github.io/categories/development/</link>
+        <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/categories/development/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Research</title>
+        <link>https://hwijaekim.github.io/categories/research/</link>
+        <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/categories/research/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Syntax</title>
         <link>https://hwijaekim.github.io/categories/syntax/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -29,22 +45,6 @@
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
         <guid>https://hwijaekim.github.io/categories/%EB%A6%AC%EC%84%9C%EC%B9%98/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Development</title>
-        <link>https://hwijaekim.github.io/categories/development/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://hwijaekim.github.io/categories/development/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Research</title>
-        <link>https://hwijaekim.github.io/categories/research/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://hwijaekim.github.io/categories/research/</guid>
         <description></description>
         </item>
         

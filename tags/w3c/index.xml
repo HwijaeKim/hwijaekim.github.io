@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>W3c on Kim, Hwijae</title>
-        <link>http://localhost:1313/tags/w3c/</link>
+        <link>https://hwijaekim.github.io/tags/w3c/</link>
         <description>Recent content in W3c on Kim, Hwijae</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ko</language>
         <copyright>KCT</copyright>
-        <lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/w3c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/tags/w3c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>웹 접근성</title>
-        <link>http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</link>
+        <link>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</link>
         <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.webp" alt="Featured image of post 웹 접근성" /&gt;&lt;h1 id=&#34;웹-접근성이란&#34;&gt;웹 접근성이란
+        <guid>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</guid>
+        <description>&lt;img src="https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.webp" alt="Featured image of post 웹 접근성" /&gt;&lt;h1 id=&#34;웹-접근성이란&#34;&gt;웹 접근성이란
 &lt;/h1&gt;&lt;p&gt;장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
 &lt;br&gt;
 국제 웹 표준기구(W3C)에서 제정한 표준안, 총 33개의 항목으로 평가한다.&lt;/p&gt;
@@ -112,10 +112,10 @@
 &lt;li&gt;텍스트와 배경간 명도 대비는 4.5:1 이상이어야 함.&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://sitero.co.kr/contrast&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;명도대비 계산 링크 바로가기(클릭)&lt;/a&gt;
-&lt;img src=&#34;http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX.webp&#34;
+&lt;img src=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX.webp&#34;
 	width=&#34;1305&#34;
 	height=&#34;461&#34;
-	srcset=&#34;http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX_hu_ac4ac7ecac345f96.webp 480w, http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX_hu_f01e1cad3600b687.webp 1024w&#34;
+	srcset=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX_hu_ac4ac7ecac345f96.webp 480w, https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX_hu_f01e1cad3600b687.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;명도대비 부적합, &amp;#43;10쿠폰 박스의 텍스트, 배경간 명도대비가 2.917:1로 부적합 수준이다. 배경색은 연한 보라색, 텍스트는 흰색이다.&#34;
@@ -127,10 +127,10 @@
 	
 &gt;
 &lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO.webp&#34;
+&lt;img src=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO.webp&#34;
 	width=&#34;1180&#34;
 	height=&#34;704&#34;
-	srcset=&#34;http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO_hu_18607d2a7637bdcd.webp 480w, http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO_hu_292109c93d0c8835.webp 1024w&#34;
+	srcset=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO_hu_18607d2a7637bdcd.webp 480w, https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO_hu_292109c93d0c8835.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;명도대비 적합, &amp;#43;10%쿠폰박스의 텍스트, 배경간 명도대비가 11.607:1로 적합 수준이다. 배경은 진한 보라색, 텍스트는 흰색이다.&#34;
@@ -148,10 +148,10 @@
 &lt;h1 id=&#34;실제-사이트를-검사하며-새롭게-습득&#34;&gt;실제 사이트를 검사하며 새롭게 습득
 &lt;/h1&gt;&lt;h2 id=&#34;버튼에-대한-용도-설명-aria-label&#34;&gt;버튼에 대한 용도 설명 &lt;code&gt;aria-label&lt;/code&gt;
 &lt;/h2&gt;&lt;p&gt;간혹 아이콘만으로 이루어진 버튼에 추가 설명이 제공되지 않는 경우가 있음.&lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX.webp&#34;
+&lt;img src=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX.webp&#34;
 	width=&#34;998&#34;
 	height=&#34;344&#34;
-	srcset=&#34;http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX_hu_6970687f87c28c4b.webp 480w, http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX_hu_fe3701cb374b4b.webp 1024w&#34;
+	srcset=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX_hu_6970687f87c28c4b.webp 480w, https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX_hu_fe3701cb374b4b.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;찜하기, 재입고 알림 아이콘 버튼의 설명이 제공되지 않아 스크린 리더에서 공란으로 표시됨&#34;
@@ -175,10 +175,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;button&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;btn&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;button&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;aria-label&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;재입고 알림&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO.webp&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO.webp&#34;
 	width=&#34;724&#34;
 	height=&#34;296&#34;
-	srcset=&#34;http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO_hu_11c2bf959a0ed786.webp 480w, http://localhost:1313/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO_hu_d042a3c0bed0ea0b.webp 1024w&#34;
+	srcset=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO_hu_11c2bf959a0ed786.webp 480w, https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO_hu_d042a3c0bed0ea0b.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;마크업에 aria-label 속성을 추가하여 이제는 스크린 리더에서 버튼의 용도를 제공해줌&#34;
