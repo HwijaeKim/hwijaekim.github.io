@@ -26,18 +26,6 @@ git push origin source
 # `main` 브랜치로 이동
 cd ..
 
-# `content` 브랜치로 이동
-cd content
-git add .
-
-if [ $# -eq 1 ]
-  then msg="$1"
-fi
-git commit -m "$msg"
-git push origin content
-
-cd ..
-
 # 현재까지의 변경사항을 `main` 브랜치에 반영
 git add .
 
