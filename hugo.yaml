@@ -29,7 +29,7 @@ services:
     #     shortname: "Stack"
     # GA Tracking ID
     googleAnalytics:
-        id:
+        id: G-6T7TRT5EHK
 
 pagination:
     pagerSize: 5
