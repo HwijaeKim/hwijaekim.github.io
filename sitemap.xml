@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hwijaekim.github.io/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwijaekim.github.io/post/</loc>
+    <lastmod>2025-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hwijaekim.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
@@ -24,9 +27,6 @@
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hwijaekim.github.io/p/markdown-syntax-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hwijaekim.github.io/post/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hwijaekim.github.io/categories/syntax/</loc>
@@ -56,19 +56,20 @@
     <loc>https://hwijaekim.github.io/tags/tag-with-whitespaces/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hwijaekim.github.io/categories/test/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hwijaekim.github.io/categories/test-with-whitespaces/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hwijaekim.github.io/tags/text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwijaekim.github.io/categories/%EB%A6%AC%EC%84%9C%EC%B9%98/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hwijaekim.github.io/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://hwijaekim.github.io/categories/development/</loc>
+  </url><url>
     <loc>https://hwijaekim.github.io/links/</loc>
+  </url><url>
+    <loc>https://hwijaekim.github.io/categories/research/</loc>
   </url><url>
     <loc>https://hwijaekim.github.io/search/</loc>
   </url>
