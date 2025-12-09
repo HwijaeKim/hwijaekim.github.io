@@ -1,6 +1,6 @@
 +++
 date = '2025-02-20'
-draft = true
+draft = false
 title = '웹 접근성'
 categories = [
     'Development',
