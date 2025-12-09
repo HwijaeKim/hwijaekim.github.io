@@ -11,6 +11,7 @@ hugo -t Stack --gc
 
 # `source` 브랜치로 이동
 cd public
+git checkout source 2>/dev/null || git checkout -b source
 git add .
 
 # 인자가 없을 경우 현재 시간을 커밋 메시지로 등록
@@ -21,7 +22,7 @@ fi
 git commit -m "$msg"
 
 # 빌드 결과를 `source` 브랜치에 반영
-git push origin source
+git push origin HEAD:source
 
 # `main` 브랜치로 이동
 cd ..
