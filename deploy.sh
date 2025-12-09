@@ -27,6 +27,19 @@ git push origin HEAD:source
 # `main` 브랜치로 이동
 cd ..
 
+# `content` 브랜치로 이동
+cd content
+git checkout content 2>/dev/null || git checkout -b content
+git add .
+
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+git push origin HEAD:content
+
+cd ..
+
 # 현재까지의 변경사항을 `main` 브랜치에 반영
 git add .
 
