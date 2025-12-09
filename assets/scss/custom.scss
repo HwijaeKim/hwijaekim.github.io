@@ -1,0 +1,105 @@
+/* 카테고리 계층 구조 스타일 */
+.widget.categories {
+    .widget-archive--list {
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        background-color: var(--card-background);
+    }
+
+    .category-parent {
+        &:not(:last-of-type) {
+            border-bottom: 1.5px solid var(--card-separator-color);
+        }
+
+        .category-parent-header {
+            font-size: 1.4rem;
+            padding: 18px 25px;
+            display: flex;
+            font-weight: bold;
+
+            span.year {
+                flex: 1;
+                color: var(--card-text-color-main);
+            }
+
+            span.count {
+                color: var(--card-text-color-tertiary);
+            }
+        }
+
+        a {
+            font-size: 1.4rem;
+            padding: 18px 25px;
+            display: flex;
+
+            span.year {
+                flex: 1;
+                color: var(--card-text-color-main);
+                font-weight: bold;
+            }
+
+            span.count {
+                color: var(--card-text-color-tertiary);
+            }
+        }
+
+        .category-children {
+            padding-left: 20px;
+            background-color: var(--card-background-selected);
+
+            .category-child {
+                border-bottom: 1px solid var(--card-separator-color);
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                a {
+                    font-size: 1.3rem;
+                    padding: 12px 25px;
+                    display: flex;
+                    color: var(--card-text-color-secondary);
+
+                    span.year {
+                        flex: 1;
+                        color: var(--card-text-color-secondary);
+                        font-weight: normal;
+                    }
+
+                    span.count {
+                        color: var(--card-text-color-tertiary);
+                    }
+
+                    &:hover {
+                        color: var(--card-text-color-main);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 카테고리 위젯 2depth 스타일 */
+.widget.archives {
+    .archives-year--child {
+        padding-left: 30px;
+        background-color: var(--card-background-selected, rgba(0, 0, 0, 0.02));
+        border-bottom: 1px solid var(--card-separator-color);
+
+        a {
+            font-size: 1.3rem;
+            padding: 12px 25px;
+
+            span.year {
+                font-weight: normal;
+                color: var(--card-text-color-secondary, var(--card-text-color-main));
+            }
+
+            &:hover {
+                span.year {
+                    color: var(--card-text-color-main);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{{- $context := .Context -}}
+{{- $limit := default 10 .Params.limit -}}
+<section class="widget archives">
+    <div class="widget-icon">
+        {{ partial "helper/icon" "categories" }}
+    </div>
+    <h2 class="widget-title section-title">{{ T "widget.categoriesCloud.title" }}</h2>
+
+    <div class="widget-archive--list">
+        {{/* 정렬된 카테고리 리스트 가져오기 (글 개수 많은 순) */}}
+        {{ $sortedCategories := $context.Site.Taxonomies.categories.ByCount }}
+        
+        {{/* 1. 부모 카테고리 먼저 순회 */}}
+        {{ range $term := $sortedCategories }}
+            {{ $isParent := true }}
+            {{ with $term.Page.Params.parent }}
+                {{ $isParent = false }}
+            {{ end }}
+
+            {{/* 부모인 경우 출력 */}}
+            {{ if $isParent }}
+                <div class="archives-year">
+                    <a href="{{ $term.Page.RelPermalink }}">
+                        <span class="year">{{ $term.Page.Title }}</span>
+                        <span class="count">{{ $term.Count }}</span>
+                    </a>
+                </div>
+
+                {{/* 2. 현재 부모에 속한 자식 카테고리 찾기 (역시 정렬된 리스트에서 검색) */}}
+                {{ $currentParentTitle := $term.Page.Title }}
+                {{ $currentParentName := $term.Name }}
+                
+                {{ range $childTerm := $sortedCategories }}
+                    {{ $childParent := $childTerm.Page.Params.parent }}
+                    
+                    {{/* 자식의 parent가 현재 부모의 이름이나 제목과 같으면 출력 */}}
+                    {{ if or (eq $childParent $currentParentTitle) (eq $childParent $currentParentName) }}
+                        <div class="archives-year" style="padding-left: 20px; font-size: 0.9em; opacity: 0.8;">
+                            <a href="{{ $childTerm.Page.RelPermalink }}">
+                                <span class="year">└ {{ $childTerm.Page.Title }}</span>
+                                <span class="count">{{ $childTerm.Count }}</span>
+                            </a>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+</section>
