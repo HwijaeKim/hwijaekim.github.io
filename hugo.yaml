@@ -39,6 +39,7 @@ permalinks:
     page: /:slug/
 
 params:
+    googleSiteVerification: "s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI" # Google Site Verification Code
     mainSections:
         - post
     featuredImageField: image
