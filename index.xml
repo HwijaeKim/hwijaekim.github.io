@@ -143,7 +143,7 @@
 &lt;img src=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX.webp&#34;
 	width=&#34;1305&#34;
 	height=&#34;461&#34;
-	srcset=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX_hu_ac4ac7ecac345f96.webp 480w, https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorX_hu_f01e1cad3600b687.webp 1024w&#34;
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;명도대비 부적합, &amp;#43;10쿠폰 박스의 텍스트, 배경간 명도대비가 2.917:1로 부적합 수준이다. 배경색은 연한 보라색, 텍스트는 흰색이다.&#34;
@@ -158,7 +158,7 @@
 &lt;img src=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO.webp&#34;
 	width=&#34;1180&#34;
 	height=&#34;704&#34;
-	srcset=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO_hu_18607d2a7637bdcd.webp 480w, https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/colorO_hu_292109c93d0c8835.webp 1024w&#34;
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;명도대비 적합, &amp;#43;10%쿠폰박스의 텍스트, 배경간 명도대비가 11.607:1로 적합 수준이다. 배경은 진한 보라색, 텍스트는 흰색이다.&#34;
@@ -179,7 +179,7 @@
 &lt;img src=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX.webp&#34;
 	width=&#34;998&#34;
 	height=&#34;344&#34;
-	srcset=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX_hu_6970687f87c28c4b.webp 480w, https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX_hu_fe3701cb374b4b.webp 1024w&#34;
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;찜하기, 재입고 알림 아이콘 버튼의 설명이 제공되지 않아 스크린 리더에서 공란으로 표시됨&#34;
@@ -206,7 +206,7 @@
 &lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO.webp&#34;
 	width=&#34;724&#34;
 	height=&#34;296&#34;
-	srcset=&#34;https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO_hu_11c2bf959a0ed786.webp 480w, https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionO_hu_d042a3c0bed0ea0b.webp 1024w&#34;
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;마크업에 aria-label 속성을 추가하여 이제는 스크린 리더에서 버튼의 용도를 제공해줌&#34;

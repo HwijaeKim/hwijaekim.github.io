@@ -23,6 +23,22 @@
         <guid>https://hwijaekim.github.io/categories/research/</guid>
         <description></description>
         </item>
+        <item>
+        <title>Design</title>
+        <link>https://hwijaekim.github.io/categories/design/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/categories/design/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Projects</title>
+        <link>https://hwijaekim.github.io/categories/projects/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/categories/projects/</guid>
+        <description></description>
+        </item>
         
     </channel>
 </rss>
