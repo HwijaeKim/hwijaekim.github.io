@@ -1,6 +1,6 @@
 +++
 date = '2023-12-20'
-draft = true
+draft = false
 title = '콘텐츠디자인 교과목 우수작 선정 [아라비아 사막의 반도체 이야기]'
 categories = [
     'Projects',
@@ -20,7 +20,7 @@ image = 'teaser.webp'
 </style>
 <br>
 
-# 📝 아랍에미리트와 20디르함, 두 개의 키워드로 도출한 웹 디자인 콘텐츠
+## 📝 아랍에미리트와 20디르함, 두 개의 키워드로 도출한 웹 디자인 콘텐츠
 
 | **기간**    | 2023.09 ~ 2023.12 (1-2학기)                                                                                     |
 | **인원**    | 개인                                                                                    |
@@ -29,7 +29,7 @@ image = 'teaser.webp'
 
 <br><br>
 
-# 🔑 핵심 포인트 요약
+## 🔑 핵심 포인트 요약
 - Figma를 접한 후 처음으로 제작한 개인 프로젝트
 - 컴포넌트와 프로토타입 제작
 - Illustrator 3D + RayTracing을 이용한 3D 오브젝트 제작
@@ -44,16 +44,16 @@ image = 'teaser.webp'
 
 <br><br>
 
-# 📌 강조
-## Illustrator 3D + RayTracing
+## 📌 강조
+### Illustrator 3D + RayTracing
 ![1-1](1-1.webp)
 
-## After Effects로 3D 아이콘에 모션 추가
+### After Effects로 3D 아이콘에 모션 추가
 ![1-1](2-1.webp)
 
 <br><br>
 
-# 🖥️ 사용 기술
+## 🖥️ 사용 기술
 <img class="ico" src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black">
 <img class="ico" src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white">
 <img class="ico" src="https://img.shields.io/badge/Adobe%20after%20affects-CF96FD?style=for-the-badge&logo=Adobe%20after%20effects&logoColor=393665">
@@ -61,7 +61,7 @@ image = 'teaser.webp'
 
 <br><br>
 
-# ⌨️ 총평
+## ⌨️ 총평
 - Good Parts
   - 약점인 3D 영역에서 Illustrator 3D 기술을 이용하여 적절하게 포장함
   - 프로토타입 플로우가 부드럽게 이어짐
