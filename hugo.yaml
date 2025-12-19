@@ -208,6 +208,12 @@ menu:
           url: https://github.com/HwijaeKim
           params:
               icon: brand-github
+        - identifier: email
+          name: Mail
+          url: mailto:dusan960766@gmail.com
+          params:
+            icon: messages
+
 
 related:
     includeNewer: true
