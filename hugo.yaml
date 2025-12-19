@@ -2,7 +2,7 @@ baseurl: https://hwijaekim.github.io/
 languageCode: ko
 theme: Stack
 title: Kim, Hwijae
-copyright: KCT
+copyright: Kim, Hwijae
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -60,7 +60,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/profile.jpg
 
     article:
         math: false
@@ -68,7 +68,7 @@ params:
         readingTime: false
         license:
             enabled: true
-            default: KCT
+            default: Kim, Hwijae
 
     # comments:
     #     enabled: true
