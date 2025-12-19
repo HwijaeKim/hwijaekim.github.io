@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="계원예술대학교">
+<title>서버프로그래밍 교과목 실습응용 [블로그 express 서버]</title>
+
+<link rel='canonical' href='https://hwijaekim.github.io/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/'>
+
+<link rel="stylesheet" href="/scss/style.min.2c41e22842a77617df0f77ecf5f47951be0fa0bded07ec841129dd98b0329db1.css"><meta property='og:title' content="서버프로그래밍 교과목 실습응용 [블로그 express 서버]">
+<meta property='og:description' content="계원예술대학교">
+<meta property='og:url' content='https://hwijaekim.github.io/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/'>
+<meta property='og:site_name' content='Kim, Hwijae'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='back-end' /><meta property='article:tag' content='node.js' /><meta property='article:tag' content='mongodb' /><meta property='article:tag' content='npm' /><meta property='article:published_time' content='2024-11-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-11-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://hwijaekim.github.io/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/teaser.webp' />
+<meta name="twitter:title" content="서버프로그래밍 교과목 실습응용 [블로그 express 서버]">
+<meta name="twitter:description" content="계원예술대학교"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://hwijaekim.github.io/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/teaser.webp' />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7TRT5EHK"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-6T7TRT5EHK');
+        }
+      </script>
+    <meta name="google-site-verification" content="s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI" />
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="메뉴 여닫기">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/profile_hu_14c890d5cc38f303.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Kim, Hwijae</a></h1>
+            <h2 class="site-description">기술 블로그</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/HwijaeKim'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:dusan960766@gmail.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle" role="switch" tabindex="0" aria-checked="false" aria-label="다크 모드">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>다크 모드</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">목차</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#-핵심-기술-요약">🔑 핵심 기술 요약</a></li>
+    <li><a href="#-주요-코드">📌 주요 코드</a>
+      <ol>
+        <li><a href="#디렉토리-구조">디렉토리 구조</a></li>
+        <li><a href="#npm-패키지">npm 패키지</a></li>
+        <li><a href="#env-설정">env 설정</a></li>
+        <li><a href="#mainejs">main.ejs</a></li>
+        <li><a href="#appjs-mainjs에-선언한-모듈">app.js, main.js에 선언한 모듈</a></li>
+        <li><a href="#routesmainjs--홈-라우트">routes/main.js &raquo; 홈 라우트</a></li>
+      </ol>
+    </li>
+    <li><a href="#-사용-기술">🖥️ 사용 기술</a></li>
+    <li><a href="#-총평">⌨️ 총평</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/">
+                <img src="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/teaser_hu_3e28d1fd2fb987e0.webp"
+                        srcset="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/teaser_hu_3e28d1fd2fb987e0.webp 800w, /p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/teaser_hu_3a5d8ea40ec811a4.webp 1600w"
+                        width="800" 
+                        height="411" 
+                        loading="lazy"
+                        alt="Featured image of post 서버프로그래밍 교과목 실습응용 [블로그 express 서버]" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/projects/" style="background-color: #2a9d8f; color: #fff;">
+                Projects
+            </a>
+        
+            <a href="/categories/code/" style="background-color: #2a9d8f; color: #fff;">
+                Code
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/">서버프로그래밍 교과목 실습응용 [블로그 express 서버]</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            계원예술대학교
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2024-11-20T00:00:00Z'>2024년 11월 20일</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <style>
+  .ico {
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+</style>
+<br>
+## 📝 MongoDB를 이용한 이미지 업로드를 지원하는 블로그 express 서버
+<p>| <strong>기간</strong>    | 2024.11 ~ 2024.12  (2-2학기)                                                                                       |
+| <strong>인원</strong>    | 개인                                                                                         |
+| <strong>담당분야</strong>  | 개발환경 구축, MongoDB 연결, <code>multer</code>를 이용한 이미지 업로드, 그 외 일부 <code>html, css</code>를 제외한 요소 구현     |
+| <strong>관련 링크</strong> | <sub>학습 교재</sub><br>고영희 저 Do it! Node.js 프로그래밍 입문<br>쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기! |</p>
+<p><br><br></p>
+<h2 id="-핵심-기술-요약">🔑 핵심 기술 요약
+</h2><ul>
+<li><code>js, Node.js, express, MongoDB</code>를 이용한 기초 express 서버 제작</li>
+<li><code>GET, POST, PUT, DELETE</code> 메서드를 요청하고 처리</li>
+<li>요청/응답을 처리하는 미들웨어 구성</li>
+<li>템플릿 엔진으로 <code>ejs</code> 연결</li>
+<li><code>jsonwebtoken(JWT), cookie</code>를 이용한 비밀번호 암호화 및 토큰, 쿠키로 어드민 회원가입/로그인 관리</li>
+<li><code>multer</code>를 이용한 이미지 업로드</li>
+</ul>
+<p><br><br></p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0P2YOqhIdNU?si=8fWrtM4jE-sBGi4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br><br>
+<h2 id="-주요-코드">📌 주요 코드
+</h2><h3 id="디렉토리-구조">디렉토리 구조
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">├── app.js
+</span></span><span class="line"><span class="cl">├── config
+</span></span><span class="line"><span class="cl">│   └── db.js
+</span></span><span class="line"><span class="cl">├── models
+</span></span><span class="line"><span class="cl">│   ├── Images.js
+</span></span><span class="line"><span class="cl">│   ├── Post.js
+</span></span><span class="line"><span class="cl">│   └── User.js
+</span></span><span class="line"><span class="cl">├── package-lock.json
+</span></span><span class="line"><span class="cl">├── package.json
+</span></span><span class="line"><span class="cl">├── public
+</span></span><span class="line"><span class="cl">│   ├── css
+</span></span><span class="line"><span class="cl">│   │   └── style.css
+</span></span><span class="line"><span class="cl">│   ├── img
+</span></span><span class="line"><span class="cl">│   │   ├── 000446340005_2.jpg
+</span></span><span class="line"><span class="cl">│   │   ├── 1.webp
+</span></span><span class="line"><span class="cl">│   │   ├── banner.jpg
+</span></span><span class="line"><span class="cl">│   │   └── logo.svg
+</span></span><span class="line"><span class="cl">│   └── scripts
+</span></span><span class="line"><span class="cl">├── routes
+</span></span><span class="line"><span class="cl">│   ├── admin.js
+</span></span><span class="line"><span class="cl">│   ├── main.js
+</span></span><span class="line"><span class="cl">├── uploads
+</span></span><span class="line"><span class="cl">└── views
+</span></span><span class="line"><span class="cl">    ├── about.ejs
+</span></span><span class="line"><span class="cl">    ├── addImage.ejs
+</span></span><span class="line"><span class="cl">    ├── admin
+</span></span><span class="line"><span class="cl">    │   ├── add.ejs
+</span></span><span class="line"><span class="cl">    │   ├── allPosts.ejs
+</span></span><span class="line"><span class="cl">    │   ├── edit.ejs
+</span></span><span class="line"><span class="cl">    │   └── index.ejs
+</span></span><span class="line"><span class="cl">    ├── index.ejs
+</span></span><span class="line"><span class="cl">    ├── layouts
+</span></span><span class="line"><span class="cl">    │   ├── admin-nologout.ejs
+</span></span><span class="line"><span class="cl">    │   ├── admin.ejs
+</span></span><span class="line"><span class="cl">    │   └── main.ejs
+</span></span><span class="line"><span class="cl">    └── post.ejs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="npm-패키지">npm 패키지
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">  <span class="s2">&#34;dependencies&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;bcrypt&#34;</span><span class="p">:</span> <span class="s2">&#34;^5.1.1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;cookie-parser&#34;</span><span class="p">:</span> <span class="s2">&#34;^1.4.7&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;dotenv&#34;</span><span class="p">:</span> <span class="s2">&#34;^16.4.5&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;ejs&#34;</span><span class="p">:</span> <span class="s2">&#34;^3.1.10&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;express&#34;</span><span class="p">:</span> <span class="s2">&#34;^4.21.1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;express-async-handler&#34;</span><span class="p">:</span> <span class="s2">&#34;^1.2.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;express-ejs-layouts&#34;</span><span class="p">:</span> <span class="s2">&#34;^2.5.1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;gridfs-stream&#34;</span><span class="p">:</span> <span class="s2">&#34;^1.1.1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;install&#34;</span><span class="p">:</span> <span class="s2">&#34;^0.13.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;jsonwebtoken&#34;</span><span class="p">:</span> <span class="s2">&#34;^9.0.2&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;method-override&#34;</span><span class="p">:</span> <span class="s2">&#34;^3.0.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;mongoose&#34;</span><span class="p">:</span> <span class="s2">&#34;^8.8.1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;multer&#34;</span><span class="p">:</span> <span class="s2">&#34;^1.4.5-lts.1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;nodemon&#34;</span><span class="p">:</span> <span class="s2">&#34;^3.1.7&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;npm&#34;</span><span class="p">:</span> <span class="s2">&#34;^10.9.0&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="env-설정">env 설정
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DB_CONNECT = mongodb+srv://(SECURITY).mongodb.net/myBlog
+</span></span><span class="line"><span class="cl">JWT_SECRET= (SECURITY)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="mainejs">main.ejs
+</h3><p><em>메인 레이아웃을 지정</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;ko&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;IE=edge&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1.0&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span><span class="err">&lt;</span>%= locals.title %&gt;<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;description&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;My first application using Node.js, Express and MongoDB&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/style.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 헤더 : 로고, 상단 메뉴, 로그인 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">header</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 로고 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header-logo&#34;</span><span class="p">&gt;</span>{ Geek Code }<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 상단 메뉴 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header-nav&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/home&#34;</span><span class="p">&gt;</span>{ Home }<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/about&#34;</span><span class="p">&gt;</span>{ About }<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/upload&#34;</span><span class="p">&gt;</span>{ Upload }<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 관리자 로그인 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;header-button&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/admin&#34;</span><span class="p">&gt;</span>관리자 로그인<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 메인 : 실제 내용이 들어갈 부분 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;main&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="err">&lt;</span>%- body %&gt;
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="appjs-mainjs에-선언한-모듈">app.js, main.js에 선언한 모듈
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="cm">/*==========app.js==========*/</span>
+</span></span><span class="line"><span class="cl"><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;dotenv&#39;</span><span class="p">).</span><span class="nx">config</span><span class="p">({</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;./path/to/.env&#39;</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;express&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">expressEjsLayouts</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;express-ejs-layouts&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">connectDb</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;./config/db&#34;</span><span class="p">);</span> <span class="c1">// DB 연결 함수 가져오기
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">cookieParser</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;cookie-parser&#34;</span><span class="p">);</span> <span class="c1">// 쿠키 파서 가져오기
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">methodOverride</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;method-override&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 이미지 업로드 관련
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">multer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;multer&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Image</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./models/Images&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PORT</span> <span class="o">||</span> <span class="mi">3001</span> <span class="c1">// .env에 포트가 없으면 3001번 포트로 설정
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/*==========main.js==========*/</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;express&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">router</span> <span class="o">=</span> <span class="nx">express</span><span class="p">.</span><span class="nx">Router</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">mainLayout</span> <span class="o">=</span> <span class="s2">&#34;layouts/main&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Post</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;../models/Post&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">asynchandler</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;express-async-handler&#34;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="routesmainjs--홈-라우트">routes/main.js &raquo; 홈 라우트
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// &#34;/home&#34; 라우트
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">router</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s2">&#34;/&#34;</span><span class="p">,</span> <span class="s2">&#34;/home&#34;</span><span class="p">],</span>  <span class="c1">//루트경로와 /home 경로에서 GET 요청 발생시 동작
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">asynchandler</span><span class="p">(</span><span class="kr">async</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>  <span class="c1">//비동기 처리
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">locals</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1">//title은 각 ejs의 타이틀명을 설정
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nx">title</span><span class="o">:</span> <span class="s2">&#34;Home&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">      <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">       * MongoDB에서 데이터 조회 후 정렬.
+</span></span></span><span class="line"><span class="cl"><span class="cm">       * 이때 .sort를 이용하여 최신순으로 재졍렬
+</span></span></span><span class="line"><span class="cl"><span class="cm">       */</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">Post</span><span class="p">.</span><span class="nx">find</span><span class="p">().</span><span class="nx">sort</span><span class="p">({</span> <span class="nx">updatedAt</span><span class="o">:</span> <span class="s2">&#34;desc&#34;</span><span class="p">,</span> <span class="nx">createdAt</span><span class="o">:</span> <span class="s2">&#34;desc&#34;</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">       * mainLayout을 레이아웃 템플릿으로 사용.
+</span></span></span><span class="line"><span class="cl"><span class="cm">       * const mainLayout = &#34;layouts/main&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="cm">       */</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">res</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s2">&#34;index&#34;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">locals</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">layout</span><span class="o">:</span> <span class="nx">mainLayout</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><br><br></p>
+<h2 id="-사용-기술">🖥️ 사용 기술
+</h2><img class="ico" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img class="ico" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img class="ico" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+<img class="ico" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
+<img class="ico" src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+<img class="ico" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
+<img class="ico" src="https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black">
+<img class="ico" src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB">
+<img class="ico" src="https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD">
+<img class="ico" src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens">
+<p><br><br></p>
+<h2 id="-총평">⌨️ 총평
+</h2><ul>
+<li><strong>Good Parts</strong>
+<ul>
+<li>최초로 시도한 백엔드 프로세스</li>
+<li>Node.js와 npm 그리고 express서버 구축에 대한 기초를 경험</li>
+</ul>
+</li>
+<li><strong>Bad Parts</strong>
+<ul>
+<li>처음 경험하는 다소 높은 난이도의 백엔드 구축으로 완전히 본인의 것으로 소화하지 못 하여 지속적인 학습 필요</li>
+<li>능동적으로 코드를 이해하고 작성하는 것에 다소 미흡함이 존재</li>
+</ul>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/back-end/">Back-End</a>
+        
+            <a href="/tags/node.js/">Node.js</a>
+        
+            <a href="/tags/mongodb/">Mongodb</a>
+        
+            <a href="/tags/npm/">Npm</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Kim, Hwijae</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">관련 글</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9C%A0%EB%8B%88%ED%94%BD%EC%8A%A4/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9C%A0%EB%8B%88%ED%94%BD%EC%8A%A4/teaser.0ed4b76fe5f91ddfdf76a7045271666e_hu_903c4524338d30bd.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 서버프로그래밍 교과목 기말 프로젝트 [유니픽스]"
+                        
+                        data-hash="md5-DtS3b&#43;X5Hd/fdqcEUnFmbg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">서버프로그래밍 교과목 기말 프로젝트 [유니픽스]</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%EC%9B%B9%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-my-origin-wizard/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%EC%9B%B9%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-my-origin-wizard/teaser.a70d72245ff66abf3e3e227831248bda_hu_f624713ed2b7304c.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 웹인터랙션프로그래밍 교과목 프로젝트 [My Origin Wizard]"
+                        
+                        data-hash="md5-pw1yJF/2ar8&#43;PiJ4MSSL2g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">웹인터랙션프로그래밍 교과목 프로젝트 [My Origin Wizard]</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%EA%B3%84%EC%9B%90%EC%98%88%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90-%EB%94%94%EC%A7%80%ED%84%B8%EB%AF%B8%EB%94%94%EC%96%B4%EB%94%94%EC%9E%90%EC%9D%B8%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88-%ED%95%99%EA%B3%BC%EC%9A%B0%EC%88%98%EC%9E%91%EC%9E%87%ED%86%A0%ED%94%BC%EC%95%84/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%EA%B3%84%EC%9B%90%EC%98%88%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90-%EB%94%94%EC%A7%80%ED%84%B8%EB%AF%B8%EB%94%94%EC%96%B4%EB%94%94%EC%9E%90%EC%9D%B8%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88-%ED%95%99%EA%B3%BC%EC%9A%B0%EC%88%98%EC%9E%91%EC%9E%87%ED%86%A0%ED%94%BC%EC%95%84/teaser.b0af4b3629637ce792b223c3eaacf8d8_hu_a0e59b846db0cd5c.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 계원예술대학교 디지털미디어디자인과 졸업작품 학과우수작[잇토피아]"
+                        
+                        data-hash="md5-sK9LNiljfOeSsiPD6qz42A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">계원예술대학교 디지털미디어디자인과 졸업작품 학과우수작[잇토피아]</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/">
+        
+        
+            <div class="article-image">
+                <img src="/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser.8fc85094c8600c5a714c725645fd8617_hu_49857c6d1ec74677.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Jekyll 기반의 GitHub블로그 제작"
+                        
+                        data-hash="md5-j8hQlMhgDFpxTHJWRf2GFw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Jekyll 기반의 GitHub블로그 제작</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-no-css-club-%EB%AF%B8%EB%8B%88%EA%B2%8C%EC%9E%84/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-no-css-club-%EB%AF%B8%EB%8B%88%EA%B2%8C%EC%9E%84/teaser.05129cc3ece4097cc7fdc72ecb430a8e_hu_e76d0ceaf9b252ca.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 자바스크립트프로그래밍 교과목 기말 프로젝트 [No CSS Club 미니게임]"
+                        
+                        data-hash="md5-BRKcw&#43;zkCXzH/ccuy0MKjg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">자바스크립트프로그래밍 교과목 기말 프로젝트 [No CSS Club 미니게임]</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Kim, Hwijae
+    </section>
+    
+    <section class="powerby">
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>로 구동됨 <br />
+        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>의 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> 테마 사용 중
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.41e0f9b89b9948187677dd0ee0a0577485fa17dd3e73ae1bb63732da12eaa4a5.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

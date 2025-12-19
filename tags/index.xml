@@ -7,7 +7,63 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>ko</language>
         <copyright>Kim, Hwijae</copyright>
-        <lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 28 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Ai</title>
+        <link>https://hwijaekim.github.io/tags/ai/</link>
+        <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/ai/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Chatgpt</title>
+        <link>https://hwijaekim.github.io/tags/chatgpt/</link>
+        <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/chatgpt/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Llm</title>
+        <link>https://hwijaekim.github.io/tags/llm/</link>
+        <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/llm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Prompt</title>
+        <link>https://hwijaekim.github.io/tags/prompt/</link>
+        <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/prompt/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Prompt-Engineering</title>
+        <link>https://hwijaekim.github.io/tags/prompt-engineering/</link>
+        <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/prompt-engineering/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Frontend</title>
+        <link>https://hwijaekim.github.io/tags/frontend/</link>
+        <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/frontend/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Side-Project</title>
+        <link>https://hwijaekim.github.io/tags/side-project/</link>
+        <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/side-project/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>W3c</title>
         <link>https://hwijaekim.github.io/tags/w3c/</link>
         <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
@@ -21,6 +77,206 @@
         <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://hwijaekim.github.io/tags/web-accessibility/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Node.js</title>
+        <link>https://hwijaekim.github.io/tags/node.js/</link>
+        <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/node.js/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Npm</title>
+        <link>https://hwijaekim.github.io/tags/npm/</link>
+        <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/npm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>React</title>
+        <link>https://hwijaekim.github.io/tags/react/</link>
+        <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/react/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Vite</title>
+        <link>https://hwijaekim.github.io/tags/vite/</link>
+        <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/vite/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Git</title>
+        <link>https://hwijaekim.github.io/tags/git/</link>
+        <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/git/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Html/Css</title>
+        <link>https://hwijaekim.github.io/tags/html/css/</link>
+        <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/html/css/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Html/Css/Js</title>
+        <link>https://hwijaekim.github.io/tags/html/css/js/</link>
+        <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/html/css/js/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Web-Publishing</title>
+        <link>https://hwijaekim.github.io/tags/web-publishing/</link>
+        <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/web-publishing/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Back-End</title>
+        <link>https://hwijaekim.github.io/tags/back-end/</link>
+        <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/back-end/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Mongodb</title>
+        <link>https://hwijaekim.github.io/tags/mongodb/</link>
+        <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/mongodb/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Figma</title>
+        <link>https://hwijaekim.github.io/tags/figma/</link>
+        <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/figma/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>졸업작품</title>
+        <link>https://hwijaekim.github.io/tags/%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88/</link>
+        <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Markdown</title>
+        <link>https://hwijaekim.github.io/tags/markdown/</link>
+        <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/markdown/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Table</title>
+        <link>https://hwijaekim.github.io/tags/table/</link>
+        <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/table/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Apple Silicon</title>
+        <link>https://hwijaekim.github.io/tags/apple-silicon/</link>
+        <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/apple-silicon/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Jekyll</title>
+        <link>https://hwijaekim.github.io/tags/jekyll/</link>
+        <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/jekyll/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Macos</title>
+        <link>https://hwijaekim.github.io/tags/macos/</link>
+        <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/macos/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Blog</title>
+        <link>https://hwijaekim.github.io/tags/blog/</link>
+        <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/blog/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Github</title>
+        <link>https://hwijaekim.github.io/tags/github/</link>
+        <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/github/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Game</title>
+        <link>https://hwijaekim.github.io/tags/game/</link>
+        <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/game/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>공모전</title>
+        <link>https://hwijaekim.github.io/tags/%EA%B3%B5%EB%AA%A8%EC%A0%84/</link>
+        <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/%EA%B3%B5%EB%AA%A8%EC%A0%84/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Illustrator</title>
+        <link>https://hwijaekim.github.io/tags/illustrator/</link>
+        <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/illustrator/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Photoshop</title>
+        <link>https://hwijaekim.github.io/tags/photoshop/</link>
+        <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/photoshop/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Ui/Ux</title>
+        <link>https://hwijaekim.github.io/tags/ui/ux/</link>
+        <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/ui/ux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Web-Design</title>
+        <link>https://hwijaekim.github.io/tags/web-design/</link>
+        <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/tags/web-design/</guid>
         <description></description>
         </item>
         

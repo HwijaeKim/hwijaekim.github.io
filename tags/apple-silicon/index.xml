@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Apple Silicon on Kim, Hwijae</title>
+        <link>https://hwijaekim.github.io/tags/apple-silicon/</link>
+        <description>Recent content in Apple Silicon on Kim, Hwijae</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ko</language>
+        <copyright>Kim, Hwijae</copyright>
+        <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/tags/apple-silicon/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Apple Silicon에서의 Jekyll 오류 발생 해결</title>
+        <link>https://hwijaekim.github.io/p/apple-silicon%EC%97%90%EC%84%9C%EC%9D%98-jekyll-%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D-%ED%95%B4%EA%B2%B0/</link>
+        <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://hwijaekim.github.io/p/apple-silicon%EC%97%90%EC%84%9C%EC%9D%98-jekyll-%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D-%ED%95%B4%EA%B2%B0/</guid>
+        <description>&lt;img src="https://hwijaekim.github.io/p/apple-silicon%EC%97%90%EC%84%9C%EC%9D%98-jekyll-%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D-%ED%95%B4%EA%B2%B0/teaser.webp" alt="Featured image of post Apple Silicon에서의 Jekyll 오류 발생 해결" /&gt;&lt;h2 id=&#34;chat-gpt&#34;&gt;Chat GPT
+&lt;/h2&gt;&lt;p&gt;&lt;sub&gt;&lt;em&gt;프롬프트&lt;/em&gt;&lt;/sub&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;sub&gt;macOS 터미널을 이용해서 jekyll bundle을 설치하고 있는데 eventmachine 1.2.7 설치 도중 오류가 난대. 왜 이럴까?&lt;/sub&gt;&lt;br&gt;
+&lt;sub&gt;-2024.09.30&lt;/sub&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;1. Xcode Command Line Tools 재설치&lt;/strong&gt;
+이미 명령줄 도구를 설치했더라도 일부 구성 요소가 손상되었을 수 있으니, 다시 설치하거나 업데이트를 시도해 보세요.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo rm -rf /Library/Developer/CommandLineTools
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xcode-select --install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;2. g++와 clang 설치 확인 및 설정&lt;/strong&gt;
+macOS에서는 기본적으로 clang을 C++ 컴파일러로 사용합니다. 그러나 환경에 따라 g++ 컴파일러를 사용하는 것이 필요할 수도 있습니다.&lt;/p&gt;
+&lt;p&gt;• 먼저, clang이나 g++이 설치되어 있는지 확인하세요&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clang --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;g++ --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;• clang이 기본 컴파일러로 설정되어 있는지 확인하기 위해 다음 명령어를 입력해 보세요:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install gcc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- ```bash
+eval $(/opt/homebrew/bin/brew shellenv)
+``` --&gt;
+&lt;br&gt;
+---
+&lt;br&gt;
+&lt;h2 id=&#34;웹-서칭&#34;&gt;웹 서칭
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;해결과정&lt;/strong&gt;&lt;br&gt;
+터미널 내 zsh 환경변수가 꼬여 모든 명령(brew, gem, bundle, clear 등)이 작동하지 않아 환경변수 초기화 후 재시도&lt;/p&gt;
+&lt;p&gt;명령이 작동하지 않는 문제는 해결 됐지만 번들링 도중 지속적으로 &lt;code&gt;an error occurred while installing eventmachine (1.2.7), and bundler cannot continue.&lt;/code&gt; 오류가 발생하여 &lt;code&gt;eventmachine&lt;/code&gt; 설치가 되지 않아 프로세스가 중지 되었다.&lt;/p&gt;
+&lt;p&gt;인터넷 서칭 결과 완벽한 해결책은 아니지만 &lt;code&gt;Gemfile&lt;/code&gt;을 다음과 같이 수정하여 번들링을 성공했다.&lt;/p&gt;
+&lt;p&gt;&lt;sub&gt;&lt;em&gt;Gemfile&lt;/em&gt;&lt;/sub&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;gem&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;eventmachine&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;1.2.5&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;기본적으로 &lt;code&gt;eventmachine(1.2.7)&lt;/code&gt; 설치 도중 오류가 발생한 것이며 1.2.5로 버전을 한 단계 낮춰 설치하도록 코드를 수정하여 문제를 해결했다.&lt;br&gt;
+완벽한 해결책은 아니지만 작동에는 문제가 없어 보이며 추후 Apple Silicon Mac에서 1.2.7버전 설치를 시도해볼 것이다.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
