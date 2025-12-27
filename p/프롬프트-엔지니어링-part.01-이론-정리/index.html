@@ -14,20 +14,6 @@
 <meta name="twitter:title" content="프롬프트 엔지니어링 Part.01 - 이론 정리">
 <meta name="twitter:description" content="개요 회사에 퍼블리셔로 입사 후 AI에이전트(ChatGPT, Claude 등)를 사용하는 빈도가 급격히 증가했다.\n물론 이전에도 자주 사용했지만 특히 더 사용하게 되는 것 같다는 생각이 들었다.\n이전부터 AI에게 질문을 날리는 것에 대해 크게 생각하지 않고 생각하는 대로 적어 질문을 날리곤 했고, 지금도 마찬가지다.\n그러다보니 원하는 답변을 빠른 시간 내 얻는데 문제가 생기는 경우가 종종 발생했고, 그럴 때마다 조건을 하나하나 추가하면서 추가질문을 던졌다.\n이것이 반복되다보니 총 답변 양도 길어지고 그래서 결론적으로 내가 어떤 질문을 했는지, 어디의 어느 코드가 내가 원하는 코드인지 헷갈리는 경우가 많아졌다.\n대형언어모델(LLM)에게 질문을 하는 이유가 빠른 시간 내 원하는 해결책, 답변을 얻는 것인데 그 장점이 약간 사라지는 것이다. (물론 인터넷 검색보다는 빠른 경우가 대부분이긴 하다.)\n아무튼 나는 LLM에 질문을 던질 때 더 확실하고 정확한 값을 적은 프롬프트로 얻기 위해 프롬프트 엔지니어링에 대해 공부해 보기로 했다.\n이 문서는 프롬프트 엔지니어링에 대한 기본적인 개념과 원리를 이해하고, 실제 프롬프트를 작성하는 방법을 정리한다.\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hwijaekim.github.io/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser.webp' />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T7TRT5EHK"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-6T7TRT5EHK');
-        }
-      </script>
     <meta name="google-site-verification" content="s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI" />
 
 
@@ -74,7 +60,7 @@
                     
                     
                         
-                        <img src="/img/profile_hu_14c890d5cc38f303.jpg" width="300"
+                        <img src="/img/profile_hu_a2a9d757a28bb2e2.jpg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -330,8 +316,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/">
-                <img src="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser_hu_202d3c60923cd70b.webp"
-                        srcset="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser_hu_202d3c60923cd70b.webp 800w, /p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser_hu_6dd915433e2251ba.webp 1600w"
+                <img src="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser_hu_9e711502d24032e7.webp"
+                        srcset="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser_hu_9e711502d24032e7.webp 800w, /p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser_hu_b8aa70d9842514b8.webp 1600w"
                         width="800" 
                         height="450" 
                         loading="lazy"
@@ -1428,7 +1414,7 @@ LLM이 처음 공개되었을 때 사실 대중에게 가장 와닿았던 것은
         
         
             <div class="article-image">
-                <img src="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.02-%EC%98%88%EC%A0%9C-%EC%A0%81%EC%9A%A9/teaser.3a109af9260d6f9ac6a4742bbeecc73c_hu_c183e1f577b35ead.webp" 
+                <img src="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.02-%EC%98%88%EC%A0%9C-%EC%A0%81%EC%9A%A9/teaser.3a109af9260d6f9ac6a4742bbeecc73c_hu_e036c05869a46020.webp" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1452,7 +1438,7 @@ LLM이 처음 공개되었을 때 사실 대중에게 가장 와닿았던 것은
         
         
             <div class="article-image">
-                <img src="/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.f5fd353e34f7b765e86edd8d63933a40_hu_74cd33278ac9baf6.webp" 
+                <img src="/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.f5fd353e34f7b765e86edd8d63933a40_hu_7a5a51e8b1525920.webp" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1476,7 +1462,7 @@ LLM이 처음 공개되었을 때 사실 대중에게 가장 와닿았던 것은
         
         
             <div class="article-image">
-                <img src="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser.9f07ec142193d5b255934d8c2a68ce2d_hu_e1002087b5d4f453.webp" 
+                <img src="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser.9f07ec142193d5b255934d8c2a68ce2d_hu_f0181a8a3a34e850.webp" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1500,7 +1486,7 @@ LLM이 처음 공개되었을 때 사실 대중에게 가장 와닿았던 것은
         
         
             <div class="article-image">
-                <img src="/p/git-%EC%82%AC%EC%9A%A9/teaser.87df33c00f7a762ce672dcd59b9f64e6_hu_678bb0df870ecb03.webp" 
+                <img src="/p/git-%EC%82%AC%EC%9A%A9/teaser.87df33c00f7a762ce672dcd59b9f64e6_hu_46dfc92197ab75a8.webp" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1524,7 +1510,7 @@ LLM이 처음 공개되었을 때 사실 대중에게 가장 와닿았던 것은
         
         
             <div class="article-image">
-                <img src="/p/markdown%EC%97%90%EC%84%9C-%ED%91%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/teaser.50facdac0e61723f1555225168da007a_hu_805f015c949efcf5.webp" 
+                <img src="/p/markdown%EC%97%90%EC%84%9C-%ED%91%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/teaser.50facdac0e61723f1555225168da007a_hu_4852efa3a081a7b3.webp" 
                         width="250" 
                         height="150" 
                         loading="lazy"
