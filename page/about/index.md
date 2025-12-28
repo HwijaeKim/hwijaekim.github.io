@@ -13,4 +13,4 @@ menu:
             icon: user
 ---
 
-반갑습니다.
+Hugo Site.
