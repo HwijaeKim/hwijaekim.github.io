@@ -20,12 +20,15 @@ image = 'teaser.webp'
   }
 </style>
 <br>
+
 ## 📝 학교 밖 청소년들의 미래를 준비하기 위한 솔루션
 
-| **기간**    | 2024.03 ~ 2024.06 (2-1학기)                                                                                     |
-| **인원**    | 기획1, 디자인1, **개발1**                                                                                         |
-| **담당분야**  | 팀장 및 서비스 비디오 촬영,<br>웹 콘텐츠 소스 제작 및 HTML/CSS/JS를 이용한 웹 제작 및 GitHub 배포                                    |
-| **관련 링크** | <a href="https://hwijaekim.github.io/blueprint2024" target="_blank">https://hwijaekim.github.io/blueprint2024</a> |
+| 구분 | 내용 |
+| :--- | :--- |
+| **기간** | 2024.03 ~ 2024.06 (2-1학기) |
+| **인원** | 기획 1, 디자인 1, **개발 1** |
+| **담당분야** | 팀장 및 서비스 비디오 촬영,<br>웹 콘텐츠 소스 제작 및 HTML/CSS/JS를 이용한 웹 제작 및 GitHub 배포 |
+| **관련 링크** | [https://hwijaekim.github.io/blueprint2024](https://hwijaekim.github.io/blueprint2024) |
 
    <br><br>
 

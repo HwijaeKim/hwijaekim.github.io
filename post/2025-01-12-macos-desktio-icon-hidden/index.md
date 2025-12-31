@@ -10,6 +10,7 @@ tags = [
 ]
 image = 'teaser.png'
 +++
+
 터미널 실행   
 ```bash
 defaults write com.apple.finder CreateDesktop -bool FALSE; killall Finder

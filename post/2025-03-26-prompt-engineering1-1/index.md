@@ -10,6 +10,7 @@ tags = [
 ]
 image = 'teaser.webp'
 +++
+
 ## 개요
 ---
 회사에 퍼블리셔로 입사 후 AI에이전트(ChatGPT, Claude 등)를 사용하는 빈도가 급격히 증가했다.   
