@@ -4,6 +4,6 @@ description: "뻘짓"
 slug: "뻘짓"
 # image: "hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg"
 style:
-    background: "#2a9d8f"
+    background: "#3A4B37"
     color: "#fff"
 ---
