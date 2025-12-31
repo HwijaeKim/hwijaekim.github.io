@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Synology on Kim, Hwijae</title>
-        <link>https://hwijaekim.github.io/categories/synology/</link>
-        <description>Recent content in Synology on Kim, Hwijae</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>ko</language>
-        <copyright>Kim, Hwijae</copyright><atom:link href="https://hwijaekim.github.io/categories/synology/index.xml" rel="self" type="application/rss+xml" />
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Synology on Kim, Hwijae</title><link>https://hwijaekim.github.io/categories/synology/</link><description>Recent content in Synology on Kim, Hwijae</description><generator>Hugo -- gohugo.io</generator><language>ko</language><copyright>Kim, Hwijae</copyright><atom:link href="https://hwijaekim.github.io/categories/synology/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

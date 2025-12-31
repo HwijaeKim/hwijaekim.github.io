@@ -1,979 +1,176 @@
-<!DOCTYPE html>
-<html lang="ko" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="| 참고 강의 | coding apple - React 리액트 기초부터 쇼핑몰 프로젝트까지! |\nNode.js 사전설치 완료\n처음에는 create-react-app 명령어로 시도했지만 추후 vite를 이용함.\nVite를 이용한 React 프로젝트 생성 1 npm create vite@latest 1 2 3 4 5 6 gimhwijae@gimhwijaeui-MacBookPro react01 % npm create vite@latest &gt; react01@0.0.0 npx &gt; create-vite ? Project name: › vite-project [프로젝트명 입력] 1 2 3 4 5 6 7 8 9 10 11 ? Select a framework: › - Use arrow-keys. Return to submit. ❯ Vanilla Vue React Preact Lit Svelte Solid Qwik Angular Others 방향키를 사용해 React에서 엔터\n">
-<title>React 시작 &#43; 문제 해결</title>
-
-<link rel='canonical' href='https://hwijaekim.github.io/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/'>
-
-<link rel="stylesheet" href="/scss/style.min.2c41e22842a77617df0f77ecf5f47951be0fa0bded07ec841129dd98b0329db1.css"><meta property='og:title' content="React 시작 + 문제 해결">
-<meta property='og:description' content="| 참고 강의 | coding apple - React 리액트 기초부터 쇼핑몰 프로젝트까지! |\nNode.js 사전설치 완료\n처음에는 create-react-app 명령어로 시도했지만 추후 vite를 이용함.\nVite를 이용한 React 프로젝트 생성 1 npm create vite@latest 1 2 3 4 5 6 gimhwijae@gimhwijaeui-MacBookPro react01 % npm create vite@latest &gt; react01@0.0.0 npx &gt; create-vite ? Project name: › vite-project [프로젝트명 입력] 1 2 3 4 5 6 7 8 9 10 11 ? Select a framework: › - Use arrow-keys. Return to submit. ❯ Vanilla Vue React Preact Lit Svelte Solid Qwik Angular Others 방향키를 사용해 React에서 엔터\n">
-<meta property='og:url' content='https://hwijaekim.github.io/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/'>
-<meta property='og:site_name' content='Kim, Hwijae'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='node.js' /><meta property='article:tag' content='npm' /><meta property='article:tag' content='vite' /><meta property='article:tag' content='react' /><meta property='article:published_time' content='2024-12-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-12-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://hwijaekim.github.io/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser.webp' />
-<meta name="twitter:title" content="React 시작 + 문제 해결">
-<meta name="twitter:description" content="| 참고 강의 | coding apple - React 리액트 기초부터 쇼핑몰 프로젝트까지! |\nNode.js 사전설치 완료\n처음에는 create-react-app 명령어로 시도했지만 추후 vite를 이용함.\nVite를 이용한 React 프로젝트 생성 1 npm create vite@latest 1 2 3 4 5 6 gimhwijae@gimhwijaeui-MacBookPro react01 % npm create vite@latest &gt; react01@0.0.0 npx &gt; create-vite ? Project name: › vite-project [프로젝트명 입력] 1 2 3 4 5 6 7 8 9 10 11 ? Select a framework: › - Use arrow-keys. Return to submit. ❯ Vanilla Vue React Preact Lit Svelte Solid Qwik Angular Others 방향키를 사용해 React에서 엔터\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://hwijaekim.github.io/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser.webp' />
-    <meta name="google-site-verification" content="s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI" />
-
-
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="메뉴 여닫기">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/profile_hu_14c890d5cc38f303.jpg" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">Kim, Hwijae</a></h1>
-            <h2 class="site-description">기술 블로그</h2>
-        </div>
-    </header><ol class="menu-social">
-            
-                <li>
-                    <a 
-                        href='https://github.com/HwijaeKim'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='mailto:dusan960766@gmail.com'
-                        target="_blank"
-                        title="Mail"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
-  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>Home</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>README</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>Links</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle" role="switch" tabindex="0" aria-checked="false" aria-label="다크 모드">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>다크 모드</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
-
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">목차</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#vite를-이용한-react-프로젝트-생성">Vite를 이용한 React 프로젝트 생성</a>
-      <ol>
-        <li><a href="#오류-빌생">오류 빌생</a>
-          <ol>
-            <li><a href="#실패과정">실패과정</a></li>
-          </ol>
-        </li>
-        <li><a href="#해결">해결</a></li>
-      </ol>
-    </li>
-    <li><a href="#프로젝트-시작">프로젝트 시작</a>
-      <ol>
-        <li><a href="#기본-형식">기본 형식</a></li>
-        <li><a href="#jsx-내에서-클래스-선언">JSX 내에서 클래스 선언</a></li>
-        <li><a href="#중괄호-문법">중괄호 문법</a></li>
-        <li><a href="#jsx-내에서-인라인-스타일-작성">JSX 내에서 인라인 스타일 작성</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
-            <main class="main full-width">
-    <article class="has-image main-article">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/">
-                <img src="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser_hu_6efc12e323ee2aa1.webp"
-                        srcset="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser_hu_6efc12e323ee2aa1.webp 800w, /p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser_hu_6813de2a31c55b75.webp 1600w"
-                        width="800" 
-                        height="454" 
-                        loading="lazy"
-                        alt="Featured image of post React 시작 &#43; 문제 해결" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/development/" style="background-color: #2a9d8f; color: #fff;">
-                Development
-            </a>
-        
-            <a href="/categories/research/" style="background-color: #2a9d8f; color: #fff;">
-                Research
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/">React 시작 &#43; 문제 해결</a>
-        </h2>
-    
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published" datetime='2024-12-20T00:00:00Z'>2024년 12월 20일</time>
-            </div>
-        
-
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-
-    <section class="article-content">
-    
-    
-    <p>| <strong>참고 강의</strong> | <a href="https://codingapple.com/course/react-basic/" target="_blank">coding apple - React 리액트 기초부터 쇼핑몰 프로젝트까지!</a> |</p>
-<br>
-<p><em><strong>Node.js 사전설치 완료</strong></em><br>
-처음에는 <code>create-react-app</code> 명령어로 시도했지만 추후 vite를 이용함.</p>
-<h2 id="vite를-이용한-react-프로젝트-생성">Vite를 이용한 React 프로젝트 생성
-</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm create vite@latest
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gimhwijae@gimhwijaeui-MacBookPro react01 % npm create vite@latest
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&gt; react01@0.0.0 npx
-</span></span><span class="line"><span class="cl">&gt; create-vite
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">? Project name: › vite-project <span class="o">[</span>프로젝트명 입력<span class="o">]</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">? Select a framework: › - Use arrow-keys. Return to submit.
-</span></span><span class="line"><span class="cl">❯   Vanilla
-</span></span><span class="line"><span class="cl">    Vue
-</span></span><span class="line"><span class="cl">    React
-</span></span><span class="line"><span class="cl">    Preact
-</span></span><span class="line"><span class="cl">    Lit
-</span></span><span class="line"><span class="cl">    Svelte
-</span></span><span class="line"><span class="cl">    Solid
-</span></span><span class="line"><span class="cl">    Qwik
-</span></span><span class="line"><span class="cl">    Angular
-</span></span><span class="line"><span class="cl">    Others
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>방향키를 사용해 React에서 엔터</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">? Select a variant: › - Use arrow-keys. Return to submit.
-</span></span><span class="line"><span class="cl">❯   TypeScript
-</span></span><span class="line"><span class="cl">    TypeScript + SWC
-</span></span><span class="line"><span class="cl">    JavaScript
-</span></span><span class="line"><span class="cl">    JavaScript + SWC
-</span></span><span class="line"><span class="cl">    React Router v7 ↗
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>방향키를 이용해 JavaScript에서 엔터</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Scaffolding project in /Users/gimhwijae/Git/react-practice/react01...
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Done. Now run:
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nb">cd</span> react01
-</span></span><span class="line"><span class="cl">  npm install
-</span></span><span class="line"><span class="cl">  npm run dev
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">gimhwijae@gimhwijaeui-MacBookPro react-practice % 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>다음 명령을 차례로 입력하여 실행</p>
-<br>
-<h3 id="오류-빌생">오류 빌생
-</h3><p>macOS 환경에서 다음과 같은 오류가 발생함</p>
-<blockquote>
-<p><sub><code>failed to load config from /Users/gimhwijae/Git/react-practice/react01/vite.config.js error when starting dev server: Error: Build failed with 3 errors: (define name):1:0: ERROR: Expected identifier but found &quot;import&quot; (define name):1:0: ERROR: Expected identifier but found &quot;import&quot; (define name):1:0: ERROR: Expected identifier but found &quot;import&quot; at failureErrorWithLog (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:1476:15) at /Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:945:25 at runOnEndCallbacks (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:1316:45) at buildResponseToResult (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:943:7) at /Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:970:16 at responseCallbacks.&lt;computed&gt; (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:622:9) at handleIncomingPacket (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:677:12) at Socket.readFromStdout (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:600:7) at Socket.emit (node:events:519:28) at addChunk (node:internal/streams/readable:559:12)</code></sub></p>
-</blockquote>
-<br>
-<h4 id="실패과정">실패과정
-</h4><p>Google 검색과 chatGPT를 이용하여 오류를 검색하고 많은 해결법을 시도해 봤지만 여전히 같은 오류가 발생했음.<br>
-<br>
-<strong>터미널 입력</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm i react@18 react-dom@18
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>설명: 최근 출시된 리액트19 릴리즈에서 의존성 버전 문제를 일으킨 것으로 추정. 하지만 어디까지나 임시 해결책으로 장기적으로는 권장되지 않음.<br>
-<br></p>
-<p>하지만 위와 같은 해결법은 임시 해결법으로 <strong>React 19 출시와 함께 의존성에 대한 오류</strong>가 발생한 것으로 추정되었음.</p>
-<br>
-<h3 id="해결">해결
-</h3><p>Node.js버전은 당시 <strong>v20.17.0</strong>으로 공식적으로는 문제가 없었지만 마지막 방법으로 LTS최신버전인 <strong>v22.12.0</strong> 버전으로 업데이트 함.<br>
-결과적으로 문제 없이 <code>npm run dev</code> 명령어가 작동하였으며 <code>localhost</code>로 잘 작동함.<br>
-<br>
-<img src="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/vite&#43;react.webp"
-	width="2560"
-	height="1655"
-	
-	loading="lazy"
-	
-		alt="Vite &#43; React"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="154"
-		data-flex-basis="371px"
-	
-></p>
-<br>
-<p>하지만 여기서 드는 의문점은 <strong>Windows 환경.</strong><br>
-Windows에서의 Node.js 버전은 <strong>v20.17.0</strong>으로 <strong>macOS와 동일한 버전</strong>이지만 React 환경이 정상적으로 실행됐음<br>
-<img src="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/win-node.webp"
-	width="944"
-	height="493"
-	
-	loading="lazy"
-	
-		alt="win-node"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="191"
-		data-flex-basis="459px"
-	
->
-<img src="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/win-react.webp"
-	width="2560"
-	height="1540"
-	
-	loading="lazy"
-	
-		alt="win-react"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="166"
-		data-flex-basis="398px"
-	
-></p>
-<br>
----
-<br>
-<h2 id="프로젝트-시작">프로젝트 시작
-</h2><h3 id="기본-형식">기본 형식
-</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">reactLogo</span> <span class="nx">from</span> <span class="s1">&#39;./assets/react.svg&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">viteLogo</span> <span class="nx">from</span> <span class="s1">&#39;/vite.svg&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;./App.css&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;black-nav&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span><span class="nx">Code</span> <span class="nx">Blog</span><span class="p">.&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>기본이 되는 <code>App.jsx</code>파일.<br>
-<code>return{}</code> 내부에 HTML을 작성하면 된다.
-<br><br>
-*<code>JavaScript</code> 내에서 HTML을 작성할 수 있는 이유는 사실 해당 코드는 HTML이 아닌 JSX이기 때문.
-하지만 우리에게 친숙한 HTML 문법을 사용하여 코드를 작성할 수 있도록 보여지는 것.</p>
-<p><br><br></p>
-<h3 id="jsx-내에서-클래스-선언">JSX 내에서 클래스 선언
-</h3><p><sub>틀린 예</sub></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">classe</span><span class="o">=</span><span class="s">&#34;black-nav&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span><span class="nx">Code</span> <span class="nx">Blog</span><span class="p">.&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><sub>옳은 예</sub></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">classeName</span><span class="o">=</span><span class="s">&#34;black-nav&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span><span class="nx">Code</span> <span class="nx">Blog</span><span class="p">.&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>JSX 내에서 클래스를 선언하기 위해 기존 HTML 문법과 같이 <code>class=&quot;test&quot;</code>로 작성해서는 안 된다.
-<br><br>
-기본적으로 JSX(JavaScript XML)는 마크업 언어인 HTML과는 다르게 프로그래밍 언어이기 때문에 CSS에서의 <code>class</code> 아닌 프로그래밍 부분의 <code>class</code>와 혼동될 수 있다.
-<br><br>
-이러한 혼동을 막기 위해 JSX내에서 <code>div</code>에 클래스를 선언하기 위해서는 <code>className</code>으로 선언해야 한다.</p>
-<p><br><br></p>
-<h3 id="중괄호-문법">중괄호 문법
-</h3><p>JSX에서는 중괄호 문법을 이용하여 어디든 변수를 선언하고 삽입할 수 있다.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">post</span> <span class="o">=</span> <span class="s1">&#39;변수선언&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="o">=</span><span class="s">&#34;black-nav&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span><span class="nx">Code</span> <span class="nx">Blog</span><span class="p">.&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;{</span> <span class="nx">post</span> <span class="p">}&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h4</span> <span class="na">style</span><span class="o">=</span><span class="p">{</span> <span class="p">{</span><span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">}</span> <span class="p">}&gt;</span><span class="nx">JSX에서</span> <span class="nx">Inline</span> <span class="nx">Style은</span> <span class="nx">다음과</span> <span class="nx">같이</span> <span class="nx">작성해야</span> <span class="nx">합니다</span><span class="p">.&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>위와 같이 <code>let post = '변수선언';</code>와 같이 변수를 선언한다. (문법 자체는 JS와 동일)
-<br><br>
-다음 단계부터 JS와의 차이가 존재하는데 실제 JS에서 변수를 선언하고 HTML에 삽입하려면 <code>document.getElementbyID('title').innetHTML = '변수선언'</code>과 같이 길고 복잡한 코드를 작성해야 했지만 JSX에서는 <code>{ post }</code>만 작성하면 해당 변수가 삽입된다.</p>
-<p><br><br></p>
-<h3 id="jsx-내에서-인라인-스타일-작성">JSX 내에서 인라인 스타일 작성
-</h3><p>JSX에서 작성하는 인라인 스타일은 HTML과 유사하면서 차이가 존재한다.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h4</span> <span class="na">style</span><span class="o">=</span><span class="p">{</span> <span class="p">{</span><span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="nx">fontSize</span><span class="o">:</span> <span class="s1">&#39;24px&#39;</span><span class="p">}</span> <span class="p">}&gt;</span><span class="nx">JSX에서</span> <span class="nx">Inline</span> <span class="nx">Style은</span> <span class="nx">다음과</span> <span class="nx">같이</span> <span class="nx">작성해야</span> <span class="nx">합니다</span><span class="p">.&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>기본적으로 중괄호가 추가된 모습이고 카멜케이스를 적용하여 작성해야 한다.<br>
-예시. <code>font-size</code> -&gt;  <code>fontSize</code></p>
-
-</section>
-
-
-    <footer class="article-footer">
-    
-    <section class="article-tags">
-        
-            <a href="/tags/node.js/">Node.js</a>
-        
-            <a href="/tags/npm/">Npm</a>
-        
-            <a href="/tags/vite/">Vite</a>
-        
-            <a href="/tags/react/">React</a>
-        
-    </section>
-
-
-    
-    <section class="article-copyright">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
-</svg>
-
-
-
-        <span>Kim, Hwijae</span>
-    </section>
-    </footer>
-
-
-    
-</article>
-
-    
-
-    
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">관련 글</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.02-%EC%98%88%EC%A0%9C-%EC%A0%81%EC%9A%A9/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.02-%EC%98%88%EC%A0%9C-%EC%A0%81%EC%9A%A9/teaser.3a109af9260d6f9ac6a4742bbeecc73c_hu_c183e1f577b35ead.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 프롬프트 엔지니어링 Part.02 - 예제 적용"
-                        
-                        data-hash="md5-OhCa&#43;SYNb5rGpHQrvuzHPA==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">프롬프트 엔지니어링 Part.02 - 예제 적용</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser.3a109af9260d6f9ac6a4742bbeecc73c_hu_c183e1f577b35ead.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 프롬프트 엔지니어링 Part.01 - 이론 정리"
-                        
-                        data-hash="md5-OhCa&#43;SYNb5rGpHQrvuzHPA==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">프롬프트 엔지니어링 Part.01 - 이론 정리</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.f5fd353e34f7b765e86edd8d63933a40_hu_74cd33278ac9baf6.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 웹 접근성"
-                        
-                        data-hash="md5-9f01PjT3t2Xobt2NY5M6QA==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">웹 접근성</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/">
-        
-        
-            <div class="article-image">
-                <img src="/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/teaser.64d582761878bd9e192652485050d4f4_hu_abf08891c5369629.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post macOS에서 데스크톱 아이콘 가리기"
-                        
-                        data-hash="md5-ZNWCdhh4vZ4ZJlJIUFDU9A==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">macOS에서 데스크톱 아이콘 가리기</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/git-%EC%82%AC%EC%9A%A9/">
-        
-        
-            <div class="article-image">
-                <img src="/p/git-%EC%82%AC%EC%9A%A9/teaser.87df33c00f7a762ce672dcd59b9f64e6_hu_678bb0df870ecb03.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Git 사용"
-                        
-                        data-hash="md5-h98zwA96dizmctzVm59k5g==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Git 사용</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
-
-     
-    
-        
-    
-
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2025 Kim, Hwijae
-    </section>
-    
-    <section class="powerby">
-        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>로 구동됨 <br />
-        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>의 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> 테마 사용 중
-    </section>
-</footer>
-
-
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.41e0f9b89b9948187677dd0ee0a0577485fa17dd3e73ae1bb63732da12eaa4a5.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
-</html>
+<!doctype html><html lang=ko dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="| 참고 강의 | coding apple - React 리액트 기초부터 쇼핑몰 프로젝트까지! |\nNode.js 사전설치 완료\n처음에는 create-react-app 명령어로 시도했지만 추후 vite를 이용함.\nVite를 이용한 React 프로젝트 생성 1 npm create vite@latest 1 2 3 4 5 6 gimhwijae@gimhwijaeui-MacBookPro react01 % npm create vite@latest > react01@0.0.0 npx > create-vite ? Project name: › vite-project [프로젝트명 입력] 1 2 3 4 5 6 7 8 9 10 11 ? Select a framework: › - Use arrow-keys. Return to submit. ❯ Vanilla Vue React Preact Lit Svelte Solid Qwik Angular Others 방향키를 사용해 React에서 엔터\n"><title>React 시작 + 문제 해결</title><link rel=canonical href=https://hwijaekim.github.io/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/><link rel=stylesheet href=/scss/style.min.2c41e22842a77617df0f77ecf5f47951be0fa0bded07ec841129dd98b0329db1.css><meta property='og:title' content="React 시작 + 문제 해결"><meta property='og:description' content="| 참고 강의 | coding apple - React 리액트 기초부터 쇼핑몰 프로젝트까지! |\nNode.js 사전설치 완료\n처음에는 create-react-app 명령어로 시도했지만 추후 vite를 이용함.\nVite를 이용한 React 프로젝트 생성 1 npm create vite@latest 1 2 3 4 5 6 gimhwijae@gimhwijaeui-MacBookPro react01 % npm create vite@latest > react01@0.0.0 npx > create-vite ? Project name: › vite-project [프로젝트명 입력] 1 2 3 4 5 6 7 8 9 10 11 ? Select a framework: › - Use arrow-keys. Return to submit. ❯ Vanilla Vue React Preact Lit Svelte Solid Qwik Angular Others 방향키를 사용해 React에서 엔터\n"><meta property='og:url' content='https://hwijaekim.github.io/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/'><meta property='og:site_name' content='Kim, Hwijae'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='node.js'><meta property='article:tag' content='npm'><meta property='article:tag' content='vite'><meta property='article:tag' content='react'><meta property='article:published_time' content='2024-12-20T00:00:00+00:00'><meta property='article:modified_time' content='2024-12-20T00:00:00+00:00'><meta property='og:image' content='https://hwijaekim.github.io/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser.webp'><meta name=twitter:title content="React 시작 + 문제 해결"><meta name=twitter:description content="| 참고 강의 | coding apple - React 리액트 기초부터 쇼핑몰 프로젝트까지! |\nNode.js 사전설치 완료\n처음에는 create-react-app 명령어로 시도했지만 추후 vite를 이용함.\nVite를 이용한 React 프로젝트 생성 1 npm create vite@latest 1 2 3 4 5 6 gimhwijae@gimhwijaeui-MacBookPro react01 % npm create vite@latest > react01@0.0.0 npx > create-vite ? Project name: › vite-project [프로젝트명 입력] 1 2 3 4 5 6 7 8 9 10 11 ? Select a framework: › - Use arrow-keys. Return to submit. ❯ Vanilla Vue React Preact Lit Svelte Solid Qwik Angular Others 방향키를 사용해 React에서 엔터\n"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://hwijaekim.github.io/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser.webp'><meta name=google-site-verification content="s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="메뉴 여닫기">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/profile_hu_14c890d5cc38f303.jpg width=300 height=300 class=site-logo loading=lazy alt=Avatar></a></figure><div class=site-meta><h1 class=site-name><a href=/>Kim, Hwijae</a></h1><h2 class=site-description>기술 블로그</h2></div></header><ol class=menu-social><li><a href=https://github.com/HwijaeKim target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=mailto:dusan960766@gmail.com target=_blank title=Mail rel=me><svg class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M21 14l-3-3h-7a1 1 0 01-1-1V4a1 1 0 011-1h9a1 1 0 011 1v10"/><path d="M14 15v2a1 1 0 01-1 1H6l-3 3V11a1 1 0 011-1h2"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>Home</span></a></li><li><a href=/about/><svg class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>README</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span></a></li><li><a href=/links/><svg class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>Links</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle role=switch tabindex=0 aria-checked=false aria-label="다크 모드"><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>다크 모드</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">목차</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#vite를-이용한-react-프로젝트-생성>Vite를 이용한 React 프로젝트 생성</a><ol><li><a href=#오류-빌생>오류 빌생</a><ol><li><a href=#실패과정>실패과정</a></li></ol></li><li><a href=#해결>해결</a></li></ol></li><li><a href=#프로젝트-시작>프로젝트 시작</a><ol><li><a href=#기본-형식>기본 형식</a></li><li><a href=#jsx-내에서-클래스-선언>JSX 내에서 클래스 선언</a></li><li><a href=#중괄호-문법>중괄호 문법</a></li><li><a href=#jsx-내에서-인라인-스타일-작성>JSX 내에서 인라인 스타일 작성</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/><img src=/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser_hu_6efc12e323ee2aa1.webp srcset="/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser_hu_6efc12e323ee2aa1.webp 800w, /p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/teaser_hu_6813de2a31c55b75.webp 1600w" width=800 height=454 loading=lazy alt="Featured image of post React 시작 + 문제 해결"></a></div><div class=article-details><header class=article-category><a href=/categories/development/ style=background-color:#b8660e;color:#fff>Development
+</a><a href=/categories/research/ style=background-color:#93701f;color:#fff>Research</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/>React 시작 + 문제 해결</a></h2></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published datetime=2024-12-20T00:00:00Z>2024년 12월 20일</time></div></footer></div></header><section class=article-content><p>| <strong>참고 강의</strong> | <a href=https://codingapple.com/course/react-basic/ target=_blank>coding apple - React 리액트 기초부터 쇼핑몰 프로젝트까지!</a> |</p><br><p><em><strong>Node.js 사전설치 완료</strong></em><br>처음에는 <code>create-react-app</code> 명령어로 시도했지만 추후 vite를 이용함.</p><h2 id=vite를-이용한-react-프로젝트-생성>Vite를 이용한 React 프로젝트 생성</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>npm create vite@latest
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gimhwijae@gimhwijaeui-MacBookPro react01 % npm create vite@latest
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>&gt; react01@0.0.0 npx
+</span></span><span class=line><span class=cl>&gt; create-vite
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>? Project name: › vite-project <span class=o>[</span>프로젝트명 입력<span class=o>]</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>? Select a framework: › - Use arrow-keys. Return to submit.
+</span></span><span class=line><span class=cl>❯   Vanilla
+</span></span><span class=line><span class=cl>    Vue
+</span></span><span class=line><span class=cl>    React
+</span></span><span class=line><span class=cl>    Preact
+</span></span><span class=line><span class=cl>    Lit
+</span></span><span class=line><span class=cl>    Svelte
+</span></span><span class=line><span class=cl>    Solid
+</span></span><span class=line><span class=cl>    Qwik
+</span></span><span class=line><span class=cl>    Angular
+</span></span><span class=line><span class=cl>    Others
+</span></span></code></pre></td></tr></table></div></div><p>방향키를 사용해 React에서 엔터</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>? Select a variant: › - Use arrow-keys. Return to submit.
+</span></span><span class=line><span class=cl>❯   TypeScript
+</span></span><span class=line><span class=cl>    TypeScript + SWC
+</span></span><span class=line><span class=cl>    JavaScript
+</span></span><span class=line><span class=cl>    JavaScript + SWC
+</span></span><span class=line><span class=cl>    React Router v7 ↗
+</span></span></code></pre></td></tr></table></div></div><p>방향키를 이용해 JavaScript에서 엔터</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Scaffolding project in /Users/gimhwijae/Git/react-practice/react01...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Done. Now run:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nb>cd</span> react01
+</span></span><span class=line><span class=cl>  npm install
+</span></span><span class=line><span class=cl>  npm run dev
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>gimhwijae@gimhwijaeui-MacBookPro react-practice % 
+</span></span></code></pre></td></tr></table></div></div><p>다음 명령을 차례로 입력하여 실행</p><br><h3 id=오류-빌생>오류 빌생</h3><p>macOS 환경에서 다음과 같은 오류가 발생함</p><blockquote><p><sub><code>failed to load config from /Users/gimhwijae/Git/react-practice/react01/vite.config.js error when starting dev server: Error: Build failed with 3 errors: (define name):1:0: ERROR: Expected identifier but found "import" (define name):1:0: ERROR: Expected identifier but found "import" (define name):1:0: ERROR: Expected identifier but found "import" at failureErrorWithLog (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:1476:15) at /Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:945:25 at runOnEndCallbacks (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:1316:45) at buildResponseToResult (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:943:7) at /Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:970:16 at responseCallbacks.&lt;computed> (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:622:9) at handleIncomingPacket (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:677:12) at Socket.readFromStdout (/Users/gimhwijae/Git/react-practice/react01/node_modules/esbuild/lib/main.js:600:7) at Socket.emit (node:events:519:28) at addChunk (node:internal/streams/readable:559:12)</code></sub></p></blockquote><br><h4 id=실패과정>실패과정</h4><p>Google 검색과 chatGPT를 이용하여 오류를 검색하고 많은 해결법을 시도해 봤지만 여전히 같은 오류가 발생했음.<br><br><strong>터미널 입력</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>npm i react@18 react-dom@18
+</span></span></code></pre></td></tr></table></div></div><p>설명: 최근 출시된 리액트19 릴리즈에서 의존성 버전 문제를 일으킨 것으로 추정. 하지만 어디까지나 임시 해결책으로 장기적으로는 권장되지 않음.<br><br></p><p>하지만 위와 같은 해결법은 임시 해결법으로 <strong>React 19 출시와 함께 의존성에 대한 오류</strong>가 발생한 것으로 추정되었음.</p><br><h3 id=해결>해결</h3><p>Node.js버전은 당시 <strong>v20.17.0</strong>으로 공식적으로는 문제가 없었지만 마지막 방법으로 LTS최신버전인 <strong>v22.12.0</strong> 버전으로 업데이트 함.<br>결과적으로 문제 없이 <code>npm run dev</code> 명령어가 작동하였으며 <code>localhost</code>로 잘 작동함.<br><br><img src=/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/vite+react.webp width=2560 height=1655 loading=lazy alt="Vite + React" class=gallery-image data-flex-grow=154 data-flex-basis=371px></p><br><p>하지만 여기서 드는 의문점은 <strong>Windows 환경.</strong><br>Windows에서의 Node.js 버전은 <strong>v20.17.0</strong>으로 <strong>macOS와 동일한 버전</strong>이지만 React 환경이 정상적으로 실행됐음<br><img src=/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/win-node.webp width=944 height=493 loading=lazy alt=win-node class=gallery-image data-flex-grow=191 data-flex-basis=459px>
+<img src=/p/react-%EC%8B%9C%EC%9E%91--%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0/win-react.webp width=2560 height=1540 loading=lazy alt=win-react class=gallery-image data-flex-grow=166 data-flex-basis=398px></p><br>---<br><h2 id=프로젝트-시작>프로젝트 시작</h2><h3 id=기본-형식>기본 형식</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>useState</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>reactLogo</span> <span class=nx>from</span> <span class=s1>&#39;./assets/react.svg&#39;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>viteLogo</span> <span class=nx>from</span> <span class=s1>&#39;/vite.svg&#39;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=s1>&#39;./App.css&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>App</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>count</span><span class=p>,</span> <span class=nx>setCount</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>className</span><span class=o>=</span><span class=s>&#34;black-nav&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>h4</span><span class=p>&gt;</span><span class=nx>Code</span> <span class=nx>Blog</span><span class=p>.&lt;/</span><span class=nt>h4</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=nx>App</span>
+</span></span></code></pre></td></tr></table></div></div><p>기본이 되는 <code>App.jsx</code>파일.<br><code>return{}</code> 내부에 HTML을 작성하면 된다.<br><br>*<code>JavaScript</code> 내에서 HTML을 작성할 수 있는 이유는 사실 해당 코드는 HTML이 아닌 JSX이기 때문.
+하지만 우리에게 친숙한 HTML 문법을 사용하여 코드를 작성할 수 있도록 보여지는 것.</p><p><br><br></p><h3 id=jsx-내에서-클래스-선언>JSX 내에서 클래스 선언</h3><p><sub>틀린 예</sub></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>classe</span><span class=o>=</span><span class=s>&#34;black-nav&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>h4</span><span class=p>&gt;</span><span class=nx>Code</span> <span class=nx>Blog</span><span class=p>.&lt;/</span><span class=nt>h4</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p><sub>옳은 예</sub></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>classeName</span><span class=o>=</span><span class=s>&#34;black-nav&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>h4</span><span class=p>&gt;</span><span class=nx>Code</span> <span class=nx>Blog</span><span class=p>.&lt;/</span><span class=nt>h4</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>JSX 내에서 클래스를 선언하기 위해 기존 HTML 문법과 같이 <code>class="test"</code>로 작성해서는 안 된다.<br><br>기본적으로 JSX(JavaScript XML)는 마크업 언어인 HTML과는 다르게 프로그래밍 언어이기 때문에 CSS에서의 <code>class</code> 아닌 프로그래밍 부분의 <code>class</code>와 혼동될 수 있다.<br><br>이러한 혼동을 막기 위해 JSX내에서 <code>div</code>에 클래스를 선언하기 위해서는 <code>className</code>으로 선언해야 한다.</p><p><br><br></p><h3 id=중괄호-문법>중괄호 문법</h3><p>JSX에서는 중괄호 문법을 이용하여 어디든 변수를 선언하고 삽입할 수 있다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=kd>function</span> <span class=nx>App</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>count</span><span class=p>,</span> <span class=nx>setCount</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kd>let</span> <span class=nx>post</span> <span class=o>=</span> <span class=s1>&#39;변수선언&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>className</span><span class=o>=</span><span class=s>&#34;black-nav&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>h4</span><span class=p>&gt;</span><span class=nx>Code</span> <span class=nx>Blog</span><span class=p>.&lt;/</span><span class=nt>h4</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>h4</span><span class=p>&gt;{</span> <span class=nx>post</span> <span class=p>}&lt;/</span><span class=nt>h4</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>h4</span> <span class=na>style</span><span class=o>=</span><span class=p>{</span> <span class=p>{</span><span class=nx>color</span><span class=o>:</span> <span class=s1>&#39;blue&#39;</span><span class=p>}</span> <span class=p>}&gt;</span><span class=nx>JSX에서</span> <span class=nx>Inline</span> <span class=nx>Style은</span> <span class=nx>다음과</span> <span class=nx>같이</span> <span class=nx>작성해야</span> <span class=nx>합니다</span><span class=p>.&lt;/</span><span class=nt>h4</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>위와 같이 <code>let post = '변수선언';</code>와 같이 변수를 선언한다. (문법 자체는 JS와 동일)<br><br>다음 단계부터 JS와의 차이가 존재하는데 실제 JS에서 변수를 선언하고 HTML에 삽입하려면 <code>document.getElementbyID('title').innetHTML = '변수선언'</code>과 같이 길고 복잡한 코드를 작성해야 했지만 JSX에서는 <code>{ post }</code>만 작성하면 해당 변수가 삽입된다.</p><p><br><br></p><h3 id=jsx-내에서-인라인-스타일-작성>JSX 내에서 인라인 스타일 작성</h3><p>JSX에서 작성하는 인라인 스타일은 HTML과 유사하면서 차이가 존재한다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>h4</span> <span class=na>style</span><span class=o>=</span><span class=p>{</span> <span class=p>{</span><span class=nx>color</span><span class=o>:</span> <span class=s1>&#39;blue&#39;</span><span class=p>,</span> <span class=nx>fontSize</span><span class=o>:</span> <span class=s1>&#39;24px&#39;</span><span class=p>}</span> <span class=p>}&gt;</span><span class=nx>JSX에서</span> <span class=nx>Inline</span> <span class=nx>Style은</span> <span class=nx>다음과</span> <span class=nx>같이</span> <span class=nx>작성해야</span> <span class=nx>합니다</span><span class=p>.&lt;/</span><span class=nt>h4</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>기본적으로 중괄호가 추가된 모습이고 카멜케이스를 적용하여 작성해야 한다.<br>예시. <code>font-size</code> -> <code>fontSize</code></p></section><footer class=article-footer><section class=article-tags><a href=/tags/node.js/>Node.js</a>
+<a href=/tags/npm/>Npm</a>
+<a href=/tags/vite/>Vite</a>
+<a href=/tags/react/>React</a></section><section class=article-copyright><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Kim, Hwijae</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>관련 글</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.02-%EC%98%88%EC%A0%9C-%EC%A0%81%EC%9A%A9/><div class=article-image><img src=/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.02-%EC%98%88%EC%A0%9C-%EC%A0%81%EC%9A%A9/teaser.3a109af9260d6f9ac6a4742bbeecc73c_hu_c183e1f577b35ead.webp width=250 height=150 loading=lazy alt="Featured image of post 프롬프트 엔지니어링 Part.02 - 예제 적용" data-hash="md5-OhCa+SYNb5rGpHQrvuzHPA=="></div><div class=article-details><h2 class=article-title>프롬프트 엔지니어링 Part.02 - 예제 적용</h2></div></a></article><article class=has-image><a href=/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/><div class=article-image><img src=/p/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-part.01-%EC%9D%B4%EB%A1%A0-%EC%A0%95%EB%A6%AC/teaser.3a109af9260d6f9ac6a4742bbeecc73c_hu_c183e1f577b35ead.webp width=250 height=150 loading=lazy alt="Featured image of post 프롬프트 엔지니어링 Part.01 - 이론 정리" data-hash="md5-OhCa+SYNb5rGpHQrvuzHPA=="></div><div class=article-details><h2 class=article-title>프롬프트 엔지니어링 Part.01 - 이론 정리</h2></div></a></article><article class=has-image><a href=/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/><div class=article-image><img src=/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.f5fd353e34f7b765e86edd8d63933a40_hu_74cd33278ac9baf6.webp width=250 height=150 loading=lazy alt="Featured image of post 웹 접근성" data-hash="md5-9f01PjT3t2Xobt2NY5M6QA=="></div><div class=article-details><h2 class=article-title>웹 접근성</h2></div></a></article><article class=has-image><a href=/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/><div class=article-image><img src=/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/teaser.64d582761878bd9e192652485050d4f4_hu_abf08891c5369629.png width=250 height=150 loading=lazy alt="Featured image of post macOS에서 데스크톱 아이콘 가리기" data-hash="md5-ZNWCdhh4vZ4ZJlJIUFDU9A=="></div><div class=article-details><h2 class=article-title>macOS에서 데스크톱 아이콘 가리기</h2></div></a></article><article class=has-image><a href=/p/git-%EC%82%AC%EC%9A%A9/><div class=article-image><img src=/p/git-%EC%82%AC%EC%9A%A9/teaser.87df33c00f7a762ce672dcd59b9f64e6_hu_678bb0df870ecb03.webp width=250 height=150 loading=lazy alt="Featured image of post Git 사용" data-hash="md5-h98zwA96dizmctzVm59k5g=="></div><div class=article-details><h2 class=article-title>Git 사용</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2025 Kim, Hwijae</section><section class=powerby><a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a>로 구동됨<br><a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a>의 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.32.0>Stack</a></b> 테마 사용 중</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.41e0f9b89b9948187677dd0ee0a0577485fa17dd3e73ae1bb63732da12eaa4a5.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

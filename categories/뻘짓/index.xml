@@ -1,40 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>뻘짓 on Kim, Hwijae</title>
-        <link>https://hwijaekim.github.io/categories/%EB%BB%98%EC%A7%93/</link>
-        <description>Recent content in 뻘짓 on Kim, Hwijae</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>ko</language>
-        <copyright>Kim, Hwijae</copyright>
-        <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/categories/%EB%BB%98%EC%A7%93/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>macOS에서 데스크톱 아이콘 가리기</title>
-        <link>https://hwijaekim.github.io/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/</link>
-        <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://hwijaekim.github.io/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/</guid>
-        <description>&lt;img src="https://hwijaekim.github.io/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/teaser.png" alt="Featured image of post macOS에서 데스크톱 아이콘 가리기" /&gt;&lt;p&gt;터미널 실행&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>뻘짓 on Kim, Hwijae</title><link>https://hwijaekim.github.io/categories/%EB%BB%98%EC%A7%93/</link><description>Recent content in 뻘짓 on Kim, Hwijae</description><generator>Hugo -- gohugo.io</generator><language>ko</language><copyright>Kim, Hwijae</copyright><lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/categories/%EB%BB%98%EC%A7%93/index.xml" rel="self" type="application/rss+xml"/><item><title>macOS에서 데스크톱 아이콘 가리기</title><link>https://hwijaekim.github.io/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/</link><pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate><guid>https://hwijaekim.github.io/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/</guid><description>&lt;img src="https://hwijaekim.github.io/p/macos%EC%97%90%EC%84%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%86%B1-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B0%80%EB%A6%AC%EA%B8%B0/teaser.png" alt="Featured image of post macOS에서 데스크톱 아이콘 가리기" /&gt;&lt;p&gt;터미널 실행&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;defaults write com.apple.finder CreateDesktop -bool FALSE&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; killall Finder
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;defaults write com.apple.finder CreateDesktop -bool FALSE&lt;span class="p"&gt;;&lt;/span&gt; killall Finder
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;복귀&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;defaults write com.apple.finder CreateDesktop -bool TRUE&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; killall Finder
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;defaults write com.apple.finder CreateDesktop -bool TRUE&lt;span class="p"&gt;;&lt;/span&gt; killall Finder
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;터미널 없이 손쉽게 가려주는 유틸리티도 있지만 유료&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;p&gt;터미널 없이 손쉽게 가려주는 유틸리티도 있지만 유료&lt;/p&gt;</description></item></channel></rss>

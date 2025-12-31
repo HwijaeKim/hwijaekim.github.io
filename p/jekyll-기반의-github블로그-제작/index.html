@@ -1,837 +1,138 @@
-<!DOCTYPE html>
-<html lang="ko" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="계원예술대학교">
-<title>Jekyll 기반의 GitHub블로그 제작</title>
-
-<link rel='canonical' href='https://hwijaekim.github.io/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/'>
-
-<link rel="stylesheet" href="/scss/style.min.2c41e22842a77617df0f77ecf5f47951be0fa0bded07ec841129dd98b0329db1.css"><meta property='og:title' content="Jekyll 기반의 GitHub블로그 제작">
-<meta property='og:description' content="계원예술대학교">
-<meta property='og:url' content='https://hwijaekim.github.io/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/'>
-<meta property='og:site_name' content='Kim, Hwijae'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='jekyll' /><meta property='article:tag' content='github' /><meta property='article:tag' content='blog' /><meta property='article:published_time' content='2024-09-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-02T00:00:00&#43;00:00'/><meta property='og:image' content='https://hwijaekim.github.io/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser.webp' />
-<meta name="twitter:title" content="Jekyll 기반의 GitHub블로그 제작">
-<meta name="twitter:description" content="계원예술대학교"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://hwijaekim.github.io/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser.webp' />
-    <meta name="google-site-verification" content="s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI" />
-
-
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="메뉴 여닫기">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/profile_hu_14c890d5cc38f303.jpg" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">Kim, Hwijae</a></h1>
-            <h2 class="site-description">기술 블로그</h2>
-        </div>
-    </header><ol class="menu-social">
-            
-                <li>
-                    <a 
-                        href='https://github.com/HwijaeKim'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='mailto:dusan960766@gmail.com'
-                        target="_blank"
-                        title="Mail"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
-  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>Home</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>README</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>Links</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle" role="switch" tabindex="0" aria-checked="false" aria-label="다크 모드">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>다크 모드</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
-
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">목차</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#-핵심-기술-요약">🔑 핵심 기술 요약</a></li>
-    <li><a href="#-주요-코드">📌 주요 코드</a>
-      <ol>
-        <li><a href="#markdown">Markdown</a></li>
-        <li><a href="#홈-화면-게시물-커스텀">홈 화면 게시물 커스텀</a></li>
-        <li><a href="#카테고리-생성">카테고리 생성</a></li>
-      </ol>
-    </li>
-    <li><a href="#-사용-기술">🖥️ 사용 기술</a></li>
-    <li><a href="#-총평">⌨️ 총평</a></li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
-            <main class="main full-width">
-    <article class="has-image main-article">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/">
-                <img src="/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser_hu_deb18488ba8e3237.webp"
-                        srcset="/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser_hu_deb18488ba8e3237.webp 800w, /p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser_hu_cc5759e4279421fc.webp 1600w"
-                        width="800" 
-                        height="500" 
-                        loading="lazy"
-                        alt="Featured image of post Jekyll 기반의 GitHub블로그 제작" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/projects/" style="background-color: #2a9d8f; color: #fff;">
-                Projects
-            </a>
-        
-            <a href="/categories/code/" style="background-color: #2a9d8f; color: #fff;">
-                Code
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/">Jekyll 기반의 GitHub블로그 제작</a>
-        </h2>
-    
-        
-        <h3 class="article-subtitle">
-            계원예술대학교
-        </h3>
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published" datetime='2024-09-02T00:00:00Z'>2024년 9월 02일</time>
-            </div>
-        
-
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-
-    <section class="article-content">
-    
-    
-    <style>
-  .ico {
-    border-radius: 5px;
-    height: 30px;
-    margin-bottom: 5px;
-  }
-</style>
-<br>
-## 📝 포트폴리오 제작 플렛폼으로 선정한 Jekyll GitHub블로그
-<p>| <strong>기간</strong>    | 2024.09 ~                                                                                       |
-| <strong>인원</strong>    | 개인                                                                                         |
-| <strong>담당분야</strong>  | macOS, Windows 환경에서 Jekyll 환경 구축 및 테마 커스텀과 콘텐츠 삽입                                   |
-| <strong>관련 링크</strong> | <a href="https://hwijaekim.github.io" target="_blank"><a class="link" href="https://hwijaekim.github.io"  target="_blank" rel="noopener"
-    >https://hwijaekim.github.io</a></a> |</p>
-<p><br><br></p>
-<h2 id="-핵심-기술-요약">🔑 핵심 기술 요약
-</h2><ul>
-<li>Jekyll을 설치하고 환경을 구축, 전체적인 워크플로우 숙지</li>
-<li>Markdown 문법 숙지</li>
-<li>GitHub 버전관리 시작</li>
-<li>테마를 직접 커스텀</li>
-</ul>
-<p><br><br></p>
-<h2 id="-주요-코드">📌 주요 코드
-</h2><h3 id="markdown">Markdown
-</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh"># h1
-</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gu">## h2
-</span></span></span><span class="line"><span class="cl"><span class="gu">### h3
-</span></span></span><span class="line"><span class="cl"><span class="gu">#### h4
-</span></span></span><span class="line"><span class="cl"><span class="gu">##### h5
-</span></span></span><span class="line"><span class="cl"><span class="gu">###### h6
-</span></span></span><span class="line"><span class="cl"><span class="gu"></span>*기울임꼴*
-</span></span><span class="line"><span class="cl"><span class="gs">**굵게**</span>
-</span></span><span class="line"><span class="cl"><span class="ge">**</span>*굵은기울임꼴***
-</span></span><span class="line"><span class="cl">![<span class="nt">이미지</span>](<span class="na">/img/img.jpg</span>)
-</span></span><span class="line"><span class="cl">| 기간                	| 내용                              	| 기관                          	| 구분           	|
-</span></span><span class="line"><span class="cl">|:-------------------:	|:--------------------:            	|:---------------------------:  |:----------:	    |
-</span></span><span class="line"><span class="cl">| 2021.09 - 2023.03    	| 육군 제 1보병사단 병장 만기전역     	| 국방부                        	| 병역   	        |
-</span></span><span class="line"><span class="cl">| 2021.01           	| 1종 보통 운전면허     	            | 경찰청(운전면허시험관리단)    	| 면허              	|
-</span></span><span class="line"><span class="cl">| 2019.09           	| 컴퓨터그래픽스운용기능사 	            | 한국산업인력공단               	| 자격              	|
-</span></span><span class="line"><span class="cl"><span class="gh"># 🔑 핵심 기술 요약
-</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="k">-</span> Jekyll을 설치하고 환경을 구축, 전체적인 워크플로우 숙지
-</span></span><span class="line"><span class="cl"><span class="k">-</span> Markdown 문법 숙지
-</span></span><span class="line"><span class="cl"><span class="k">-</span> GitHub 버전관리 시작
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 테마를 직접 커스텀
-</span></span><span class="line"><span class="cl">  [<span class="nt">LinkedIn</span>](<span class="na">https://www.linkedin.com/in/hwijaekim/</span>)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="홈-화면-게시물-커스텀">홈 화면 게시물 커스텀
-</h3><p>기존 홈 화면 최근 게시물을 Project 카테고리명을 가진 게시글들이 표시되도록 변경</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>🖊️ 환영합니다: 포트폴리오<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid__wrapper&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="c">&lt;!-- Jekyll문법은 Markdown 코드블럭에서도 무시되어 작동하는 문제가 있어 작동하지 않도록 의도적으로 슬래시를 삽입함 --&gt;</span>
-</span></span><span class="line"><span class="cl">    {/% assign posts = site.categories.Projects %}
-</span></span><span class="line"><span class="cl">    {/% for post in posts %}
-</span></span><span class="line"><span class="cl">    {/% include archive-single3.html type=&#34;list&#34; %}
-</span></span><span class="line"><span class="cl">    {/% endfor %}
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="카테고리-생성">카테고리 생성
-</h3><p><strong><sub>navigation.yml</sub></strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">main</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;이력서/자기소개서&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">/about</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;최근 게시물&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">/recent-posts</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">sidebar-category</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Union Portfolio&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">children</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">       </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Projects&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/categories/projects&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Projects&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">       </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Code&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/categories/code&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Code&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">       </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Design&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/categories/design&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Design&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Development&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">children</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">       </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Research&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/categories/research&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Research&#34;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p><br><br></p>
-<h2 id="-사용-기술">🖥️ 사용 기술
-</h2><p><sub><i>모든 Jekyll 포함 기술 중 직접 사용한 항목만 나열</i></sub><br>
-<img class="ico" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-<img class="ico" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-<img class="ico" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
-<img class="ico" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white">
-<img class="ico" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
-<img class="ico" src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
-<img class="ico" src="https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515"></p>
-<p><br><br></p>
-<h2 id="-총평">⌨️ 총평
-</h2><ul>
-<li>
-<p>Good Parts</p>
-<ul>
-<li>개발자 포트폴리오로 매우 적합한 플랫폼을 선정</li>
-<li>Jekyll을 설치하고 공부하며 전체적인 워크플로우와 그 안에서 새롭게 배운 것들이 많음(Markdown, Git, 버전관리 등)</li>
-<li>초기셋팅 후 유지보수가 용이하도록 커스텀 및 장식(CSS)</li>
-<li>새로운 것들을 배우며 흥미도 상승</li>
-</ul>
-</li>
-<li>
-<p>Bad Parts</p>
-<ul>
-<li>SCSS, Jekyll문법, yaml 등 아직 제대로 숙지하지 못 한 요소들이 존재</li>
-</ul>
-</li>
-</ul>
-
-</section>
-
-
-    <footer class="article-footer">
-    
-    <section class="article-tags">
-        
-            <a href="/tags/jekyll/">Jekyll</a>
-        
-            <a href="/tags/github/">Github</a>
-        
-            <a href="/tags/blog/">Blog</a>
-        
-    </section>
-
-
-    
-    <section class="article-copyright">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
-</svg>
-
-
-
-        <span>Kim, Hwijae</span>
-    </section>
-    </footer>
-
-
-    
-</article>
-
-    
-
-    
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">관련 글</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/%EC%9B%B9%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-my-origin-wizard/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%EC%9B%B9%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-my-origin-wizard/teaser.a70d72245ff66abf3e3e227831248bda_hu_f624713ed2b7304c.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 웹인터랙션프로그래밍 교과목 프로젝트 [My Origin Wizard]"
-                        
-                        data-hash="md5-pw1yJF/2ar8&#43;PiJ4MSSL2g==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">웹인터랙션프로그래밍 교과목 프로젝트 [My Origin Wizard]</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9C%A0%EB%8B%88%ED%94%BD%EC%8A%A4/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9C%A0%EB%8B%88%ED%94%BD%EC%8A%A4/teaser.0ed4b76fe5f91ddfdf76a7045271666e_hu_903c4524338d30bd.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 서버프로그래밍 교과목 기말 프로젝트 [유니픽스]"
-                        
-                        data-hash="md5-DtS3b&#43;X5Hd/fdqcEUnFmbg==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">서버프로그래밍 교과목 기말 프로젝트 [유니픽스]</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/teaser.c6ef2a4d4bd3ad47f01a1f0ce3d3de25_hu_bf88429c9a9d4549.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 서버프로그래밍 교과목 실습응용 [블로그 express 서버]"
-                        
-                        data-hash="md5-xu8qTUvTrUfwGh8M49PeJQ==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">서버프로그래밍 교과목 실습응용 [블로그 express 서버]</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%EA%B3%84%EC%9B%90%EC%98%88%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90-%EB%94%94%EC%A7%80%ED%84%B8%EB%AF%B8%EB%94%94%EC%96%B4%EB%94%94%EC%9E%90%EC%9D%B8%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88-%ED%95%99%EA%B3%BC%EC%9A%B0%EC%88%98%EC%9E%91%EC%9E%87%ED%86%A0%ED%94%BC%EC%95%84/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%EA%B3%84%EC%9B%90%EC%98%88%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90-%EB%94%94%EC%A7%80%ED%84%B8%EB%AF%B8%EB%94%94%EC%96%B4%EB%94%94%EC%9E%90%EC%9D%B8%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88-%ED%95%99%EA%B3%BC%EC%9A%B0%EC%88%98%EC%9E%91%EC%9E%87%ED%86%A0%ED%94%BC%EC%95%84/teaser.b0af4b3629637ce792b223c3eaacf8d8_hu_a0e59b846db0cd5c.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 계원예술대학교 디지털미디어디자인과 졸업작품 학과우수작[잇토피아]"
-                        
-                        data-hash="md5-sK9LNiljfOeSsiPD6qz42A==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">계원예술대학교 디지털미디어디자인과 졸업작품 학과우수작[잇토피아]</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-no-css-club-%EB%AF%B8%EB%8B%88%EA%B2%8C%EC%9E%84/">
-        
-        
-            <div class="article-image">
-                <img src="/p/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-no-css-club-%EB%AF%B8%EB%8B%88%EA%B2%8C%EC%9E%84/teaser.05129cc3ece4097cc7fdc72ecb430a8e_hu_e76d0ceaf9b252ca.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 자바스크립트프로그래밍 교과목 기말 프로젝트 [No CSS Club 미니게임]"
-                        
-                        data-hash="md5-BRKcw&#43;zkCXzH/ccuy0MKjg==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">자바스크립트프로그래밍 교과목 기말 프로젝트 [No CSS Club 미니게임]</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
-
-     
-    
-        
-    
-
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2025 Kim, Hwijae
-    </section>
-    
-    <section class="powerby">
-        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>로 구동됨 <br />
-        <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>의 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> 테마 사용 중
-    </section>
-</footer>
-
-
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.41e0f9b89b9948187677dd0ee0a0577485fa17dd3e73ae1bb63732da12eaa4a5.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
-</html>
+<!doctype html><html lang=ko dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="계원예술대학교"><title>Jekyll 기반의 GitHub블로그 제작</title><link rel=canonical href=https://hwijaekim.github.io/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/><link rel=stylesheet href=/scss/style.min.2c41e22842a77617df0f77ecf5f47951be0fa0bded07ec841129dd98b0329db1.css><meta property='og:title' content="Jekyll 기반의 GitHub블로그 제작"><meta property='og:description' content="계원예술대학교"><meta property='og:url' content='https://hwijaekim.github.io/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/'><meta property='og:site_name' content='Kim, Hwijae'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='jekyll'><meta property='article:tag' content='github'><meta property='article:tag' content='blog'><meta property='article:published_time' content='2024-09-02T00:00:00+00:00'><meta property='article:modified_time' content='2024-09-02T00:00:00+00:00'><meta property='og:image' content='https://hwijaekim.github.io/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser.webp'><meta name=twitter:title content="Jekyll 기반의 GitHub블로그 제작"><meta name=twitter:description content="계원예술대학교"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://hwijaekim.github.io/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser.webp'><meta name=google-site-verification content="s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="메뉴 여닫기">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/profile_hu_14c890d5cc38f303.jpg width=300 height=300 class=site-logo loading=lazy alt=Avatar></a></figure><div class=site-meta><h1 class=site-name><a href=/>Kim, Hwijae</a></h1><h2 class=site-description>기술 블로그</h2></div></header><ol class=menu-social><li><a href=https://github.com/HwijaeKim target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=mailto:dusan960766@gmail.com target=_blank title=Mail rel=me><svg class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M21 14l-3-3h-7a1 1 0 01-1-1V4a1 1 0 011-1h9a1 1 0 011 1v10"/><path d="M14 15v2a1 1 0 01-1 1H6l-3 3V11a1 1 0 011-1h2"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>Home</span></a></li><li><a href=/about/><svg class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>README</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span></a></li><li><a href=/links/><svg class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>Links</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle role=switch tabindex=0 aria-checked=false aria-label="다크 모드"><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>다크 모드</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">목차</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#-핵심-기술-요약>🔑 핵심 기술 요약</a></li><li><a href=#-주요-코드>📌 주요 코드</a><ol><li><a href=#markdown>Markdown</a></li><li><a href=#홈-화면-게시물-커스텀>홈 화면 게시물 커스텀</a></li><li><a href=#카테고리-생성>카테고리 생성</a></li></ol></li><li><a href=#-사용-기술>🖥️ 사용 기술</a></li><li><a href=#-총평>⌨️ 총평</a></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/><img src=/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser_hu_deb18488ba8e3237.webp srcset="/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser_hu_deb18488ba8e3237.webp 800w, /p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/teaser_hu_cc5759e4279421fc.webp 1600w" width=800 height=500 loading=lazy alt="Featured image of post Jekyll 기반의 GitHub블로그 제작"></a></div><div class=article-details><header class=article-category><a href=/categories/projects/ style=background-color:#2a9d8f;color:#fff>Projects
+</a><a href=/categories/code/ style=background-color:#1e1e1e;color:#fff>Code</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/jekyll-%EA%B8%B0%EB%B0%98%EC%9D%98-github%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91/>Jekyll 기반의 GitHub블로그 제작</a></h2><h3 class=article-subtitle>계원예술대학교</h3></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published datetime=2024-09-02T00:00:00Z>2024년 9월 02일</time></div></footer></div></header><section class=article-content><style>.ico{border-radius:5px;height:30px;margin-bottom:5px}</style><br>## 📝 포트폴리오 제작 플렛폼으로 선정한 Jekyll GitHub블로그<p>| <strong>기간</strong> | 2024.09 ~ |
+| <strong>인원</strong> | 개인 |
+| <strong>담당분야</strong> | macOS, Windows 환경에서 Jekyll 환경 구축 및 테마 커스텀과 콘텐츠 삽입 |
+| <strong>관련 링크</strong> | <a href=https://hwijaekim.github.io target=_blank><a class=link href=https://hwijaekim.github.io target=_blank rel=noopener>https://hwijaekim.github.io</a></a> |</p><p><br><br></p><h2 id=-핵심-기술-요약>🔑 핵심 기술 요약</h2><ul><li>Jekyll을 설치하고 환경을 구축, 전체적인 워크플로우 숙지</li><li>Markdown 문법 숙지</li><li>GitHub 버전관리 시작</li><li>테마를 직접 커스텀</li></ul><p><br><br></p><h2 id=-주요-코드>📌 주요 코드</h2><h3 id=markdown>Markdown</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=gh># h1
+</span></span></span><span class=line><span class=cl><span class=gh></span><span class=gu>## h2
+</span></span></span><span class=line><span class=cl><span class=gu>### h3
+</span></span></span><span class=line><span class=cl><span class=gu>#### h4
+</span></span></span><span class=line><span class=cl><span class=gu>##### h5
+</span></span></span><span class=line><span class=cl><span class=gu>###### h6
+</span></span></span><span class=line><span class=cl><span class=gu></span>*기울임꼴*
+</span></span><span class=line><span class=cl><span class=gs>**굵게**</span>
+</span></span><span class=line><span class=cl><span class=ge>**</span>*굵은기울임꼴***
+</span></span><span class=line><span class=cl>![<span class=nt>이미지</span>](<span class=na>/img/img.jpg</span>)
+</span></span><span class=line><span class=cl>| 기간                	| 내용                              	| 기관                          	| 구분           	|
+</span></span><span class=line><span class=cl>|:-------------------:	|:--------------------:            	|:---------------------------:  |:----------:	    |
+</span></span><span class=line><span class=cl>| 2021.09 - 2023.03    	| 육군 제 1보병사단 병장 만기전역     	| 국방부                        	| 병역   	        |
+</span></span><span class=line><span class=cl>| 2021.01           	| 1종 보통 운전면허     	            | 경찰청(운전면허시험관리단)    	| 면허              	|
+</span></span><span class=line><span class=cl>| 2019.09           	| 컴퓨터그래픽스운용기능사 	            | 한국산업인력공단               	| 자격              	|
+</span></span><span class=line><span class=cl><span class=gh># 🔑 핵심 기술 요약
+</span></span></span><span class=line><span class=cl><span class=gh></span><span class=k>-</span> Jekyll을 설치하고 환경을 구축, 전체적인 워크플로우 숙지
+</span></span><span class=line><span class=cl><span class=k>-</span> Markdown 문법 숙지
+</span></span><span class=line><span class=cl><span class=k>-</span> GitHub 버전관리 시작
+</span></span><span class=line><span class=cl><span class=k>-</span> 테마를 직접 커스텀
+</span></span><span class=line><span class=cl>  [<span class=nt>LinkedIn</span>](<span class=na>https://www.linkedin.com/in/hwijaekim/</span>)
+</span></span></code></pre></td></tr></table></div></div><h3 id=홈-화면-게시물-커스텀>홈 화면 게시물 커스텀</h3><p>기존 홈 화면 최근 게시물을 Project 카테고리명을 가진 게시글들이 표시되도록 변경</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>h1</span><span class=p>&gt;</span>🖊️ 환영합니다: 포트폴리오<span class=p>&lt;/</span><span class=nt>h1</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>div</span> <span class=na>class</span><span class=o>=</span><span class=s>&#34;grid__wrapper&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=c>&lt;!-- Jekyll문법은 Markdown 코드블럭에서도 무시되어 작동하는 문제가 있어 작동하지 않도록 의도적으로 슬래시를 삽입함 --&gt;</span>
+</span></span><span class=line><span class=cl>    {/% assign posts = site.categories.Projects %}
+</span></span><span class=line><span class=cl>    {/% for post in posts %}
+</span></span><span class=line><span class=cl>    {/% include archive-single3.html type=&#34;list&#34; %}
+</span></span><span class=line><span class=cl>    {/% endfor %}
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=카테고리-생성>카테고리 생성</h3><p><strong><sub>navigation.yml</sub></strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>main</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span>- <span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;이력서/자기소개서&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>url</span><span class=p>:</span><span class=w> </span><span class=l>/about</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span>- <span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;최근 게시물&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>url</span><span class=p>:</span><span class=w> </span><span class=l>/recent-posts</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>sidebar-category</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span>- <span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Union Portfolio&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>children</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>       </span>- <span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Projects&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>         </span><span class=nt>url</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;/categories/projects&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>         </span><span class=nt>category</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Projects&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>       </span>- <span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Code&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>         </span><span class=nt>url</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;/categories/code&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>         </span><span class=nt>category</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Code&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>       </span>- <span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Design&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>         </span><span class=nt>url</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;/categories/design&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>         </span><span class=nt>category</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Design&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span>- <span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Development&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>children</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>       </span>- <span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Research&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>         </span><span class=nt>url</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;/categories/research&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>         </span><span class=nt>category</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;Research&#34;</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p><br><br></p><h2 id=-사용-기술>🖥️ 사용 기술</h2><p><sub><i>모든 Jekyll 포함 기술 중 직접 사용한 항목만 나열</i></sub><br><img class=ico src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img class=ico src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img class=ico src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
+<img class=ico src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white">
+<img class=ico src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+<img class=ico src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+<img class=ico src="https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515"></p><p><br><br></p><h2 id=-총평>⌨️ 총평</h2><ul><li><p>Good Parts</p><ul><li>개발자 포트폴리오로 매우 적합한 플랫폼을 선정</li><li>Jekyll을 설치하고 공부하며 전체적인 워크플로우와 그 안에서 새롭게 배운 것들이 많음(Markdown, Git, 버전관리 등)</li><li>초기셋팅 후 유지보수가 용이하도록 커스텀 및 장식(CSS)</li><li>새로운 것들을 배우며 흥미도 상승</li></ul></li><li><p>Bad Parts</p><ul><li>SCSS, Jekyll문법, yaml 등 아직 제대로 숙지하지 못 한 요소들이 존재</li></ul></li></ul></section><footer class=article-footer><section class=article-tags><a href=/tags/jekyll/>Jekyll</a>
+<a href=/tags/github/>Github</a>
+<a href=/tags/blog/>Blog</a></section><section class=article-copyright><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Kim, Hwijae</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>관련 글</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/p/%EC%9B%B9%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-my-origin-wizard/><div class=article-image><img src=/p/%EC%9B%B9%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-my-origin-wizard/teaser.a70d72245ff66abf3e3e227831248bda_hu_f624713ed2b7304c.webp width=250 height=150 loading=lazy alt="Featured image of post 웹인터랙션프로그래밍 교과목 프로젝트 [My Origin Wizard]" data-hash="md5-pw1yJF/2ar8+PiJ4MSSL2g=="></div><div class=article-details><h2 class=article-title>웹인터랙션프로그래밍 교과목 프로젝트 [My Origin Wizard]</h2></div></a></article><article class=has-image><a href=/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9C%A0%EB%8B%88%ED%94%BD%EC%8A%A4/><div class=article-image><img src=/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9C%A0%EB%8B%88%ED%94%BD%EC%8A%A4/teaser.0ed4b76fe5f91ddfdf76a7045271666e_hu_903c4524338d30bd.webp width=250 height=150 loading=lazy alt="Featured image of post 서버프로그래밍 교과목 기말 프로젝트 [유니픽스]" data-hash="md5-DtS3b+X5Hd/fdqcEUnFmbg=="></div><div class=article-details><h2 class=article-title>서버프로그래밍 교과목 기말 프로젝트 [유니픽스]</h2></div></a></article><article class=has-image><a href=/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/><div class=article-image><img src=/p/%EC%84%9C%EB%B2%84%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EC%8B%A4%EC%8A%B5%EC%9D%91%EC%9A%A9-%EB%B8%94%EB%A1%9C%EA%B7%B8-express-%EC%84%9C%EB%B2%84/teaser.c6ef2a4d4bd3ad47f01a1f0ce3d3de25_hu_bf88429c9a9d4549.webp width=250 height=150 loading=lazy alt="Featured image of post 서버프로그래밍 교과목 실습응용 [블로그 express 서버]" data-hash="md5-xu8qTUvTrUfwGh8M49PeJQ=="></div><div class=article-details><h2 class=article-title>서버프로그래밍 교과목 실습응용 [블로그 express 서버]</h2></div></a></article><article class=has-image><a href=/p/%EA%B3%84%EC%9B%90%EC%98%88%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90-%EB%94%94%EC%A7%80%ED%84%B8%EB%AF%B8%EB%94%94%EC%96%B4%EB%94%94%EC%9E%90%EC%9D%B8%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88-%ED%95%99%EA%B3%BC%EC%9A%B0%EC%88%98%EC%9E%91%EC%9E%87%ED%86%A0%ED%94%BC%EC%95%84/><div class=article-image><img src=/p/%EA%B3%84%EC%9B%90%EC%98%88%EC%88%A0%EB%8C%80%ED%95%99%EA%B5%90-%EB%94%94%EC%A7%80%ED%84%B8%EB%AF%B8%EB%94%94%EC%96%B4%EB%94%94%EC%9E%90%EC%9D%B8%EA%B3%BC-%EC%A1%B8%EC%97%85%EC%9E%91%ED%92%88-%ED%95%99%EA%B3%BC%EC%9A%B0%EC%88%98%EC%9E%91%EC%9E%87%ED%86%A0%ED%94%BC%EC%95%84/teaser.b0af4b3629637ce792b223c3eaacf8d8_hu_a0e59b846db0cd5c.webp width=250 height=150 loading=lazy alt="Featured image of post 계원예술대학교 디지털미디어디자인과 졸업작품 학과우수작[잇토피아]" data-hash="md5-sK9LNiljfOeSsiPD6qz42A=="></div><div class=article-details><h2 class=article-title>계원예술대학교 디지털미디어디자인과 졸업작품 학과우수작[잇토피아]</h2></div></a></article><article class=has-image><a href=/p/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-no-css-club-%EB%AF%B8%EB%8B%88%EA%B2%8C%EC%9E%84/><div class=article-image><img src=/p/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B5%90%EA%B3%BC%EB%AA%A9-%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-no-css-club-%EB%AF%B8%EB%8B%88%EA%B2%8C%EC%9E%84/teaser.05129cc3ece4097cc7fdc72ecb430a8e_hu_e76d0ceaf9b252ca.webp width=250 height=150 loading=lazy alt="Featured image of post 자바스크립트프로그래밍 교과목 기말 프로젝트 [No CSS Club 미니게임]" data-hash="md5-BRKcw+zkCXzH/ccuy0MKjg=="></div><div class=article-details><h2 class=article-title>자바스크립트프로그래밍 교과목 기말 프로젝트 [No CSS Club 미니게임]</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2025 Kim, Hwijae</section><section class=powerby><a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a>로 구동됨<br><a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a>의 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.32.0>Stack</a></b> 테마 사용 중</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.41e0f9b89b9948187677dd0ee0a0577485fa17dd3e73ae1bb63732da12eaa4a5.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

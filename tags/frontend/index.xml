@@ -1,65 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Frontend on Kim, Hwijae</title>
-        <link>https://hwijaekim.github.io/tags/frontend/</link>
-        <description>Recent content in Frontend on Kim, Hwijae</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>ko</language>
-        <copyright>Kim, Hwijae</copyright>
-        <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/tags/frontend/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배</title>
-        <link>https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C%EC%B9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.02-%EA%B0%9C%EB%B0%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%B6%84%EB%B0%B0/</link>
-        <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C%EC%B9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.02-%EA%B0%9C%EB%B0%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%B6%84%EB%B0%B0/</guid>
-        <description>&lt;h2 id=&#34;개요&#34;&gt;개요
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Frontend on Kim, Hwijae</title><link>https://hwijaekim.github.io/tags/frontend/</link><description>Recent content in Frontend on Kim, Hwijae</description><generator>Hugo -- gohugo.io</generator><language>ko</language><copyright>Kim, Hwijae</copyright><lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/tags/frontend/index.xml" rel="self" type="application/rss+xml"/><item><title>사이드카 프로젝트 Ep.02 - 개발 컴포넌트 분배</title><link>https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C%EC%B9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.02-%EA%B0%9C%EB%B0%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%B6%84%EB%B0%B0/</link><pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate><guid>https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C%EC%B9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.02-%EA%B0%9C%EB%B0%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%B6%84%EB%B0%B0/</guid><description>&lt;h2 id="개요"&gt;개요
 &lt;/h2&gt;&lt;p&gt;오늘은 개발자들끼리 모여 간단한 컴포넌트 관련 회의를 했다.&lt;br&gt;
 아직 기획, 디자인 모두 나오기 전이라 필수적으로 요구되는 컴포넌트(버튼, 인풋 등)에 대한 기본적인 틀만 잡을 수 있도록 파트분배를 진행했다.&lt;/p&gt;
 &lt;br&gt;
-&lt;h2 id=&#34;회의-내용&#34;&gt;회의 내용
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C%EC%B9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.02-%EA%B0%9C%EB%B0%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%B6%84%EB%B0%B0/components.webp&#34;
-	width=&#34;1961&#34;
-	height=&#34;1284&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;도출된 컴포넌트&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;152&#34;
-		data-flex-basis=&#34;366px&#34;
-	
+&lt;h2 id="회의-내용"&gt;회의 내용
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C%EC%B9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.02-%EA%B0%9C%EB%B0%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%B6%84%EB%B0%B0/components.webp"
+width="1961"
+height="1284"
+loading="lazy"
+alt="도출된 컴포넌트"
+class="gallery-image"
+data-flex-grow="152"
+data-flex-basis="366px"
 &gt;
 컴포넌트는 다음과 같이 토출되었다.&lt;br&gt;
 나는 그중 버튼, 인풋, 투두리스트(인풋, 체크박스) 컴포넌트를 담당했다.&lt;br&gt;
 처음 해봐서 어려워 하는 나에게 감사하게도 배려를 해주셔서 비교적 간단한 컴포넌트를 배정받았다.&lt;br&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&#34;오늘의-회고&#34;&gt;오늘의 회고
+&lt;h2 id="오늘의-회고"&gt;오늘의 회고
 &lt;/h2&gt;&lt;p&gt;회의가 끝난 후 막막한 감정이 제일 많이 들었다.&lt;br&gt;
 어디서부터 어떻게 코드를 작성해야 할지 도저히 감 조차 잡히지 않았지만 어떻게 해서든 최대한 만들어보고 싶다.&lt;br&gt;
 우선 React 관련 강의와 AI에이전트, 인터넷 검색을 통해 최대한 학습해보려 하는 중이다.
 &lt;br&gt;
 일단 컴포넌트 제작 자체는 회사에서 진행 중인 프로젝트에서 컴포넌트를 만드는 것과 살짝은 비슷한 것 같기도 하다. React 기반이라는 것을 제외한다면 큰 논리는 비슷한 것 같다. (사실 React가 생각보다 파일구조, 작성방법이 생소해서 아직도 애를 먹고 있다ㅎ..)&lt;br&gt;
 문제는 DB와 연동하는 것이다. 계원에서 한학기 동안 짧게 백엔드 강의를 수강했지만 응용이 굉장히 어려운 것 같다..백엔드 개발자분께 어떤 요청을 날리고 받아야 하는지 정리해서 알려드려야 하는데 애초에 컴포넌트에서 어떻게 요청을 받고 날리는지도 모른다^^&amp;hellip;&amp;hellip;&lt;br&gt;
-지금은 퍼블영역&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>사이드 프로젝트 Ep.01 - 시작</title>
-        <link>https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.01-%EC%8B%9C%EC%9E%91/</link>
-        <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.01-%EC%8B%9C%EC%9E%91/</guid>
-        <description>&lt;h2 id=&#34;개요&#34;&gt;개요
+지금은 퍼블영역&lt;/p&gt;</description></item><item><title>사이드 프로젝트 Ep.01 - 시작</title><link>https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.01-%EC%8B%9C%EC%9E%91/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://hwijaekim.github.io/p/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-ep.01-%EC%8B%9C%EC%9E%91/</guid><description>&lt;h2 id="개요"&gt;개요
 &lt;/h2&gt;&lt;p&gt;첫 직장 입사 후 개인역량이 많이 부족하다는 것을 느끼고 맨땅에 헤딩 격으로 시작한 React기반 웹앱 개발 프로젝트.&lt;br&gt;
 참고로 React는 프로젝트 생성만 해봤지, 그 외에는 아무 것도 모름. 실시간으로 공부하면서 진행 할 예정&lt;/p&gt;
 &lt;br&gt;
-&lt;h2 id=&#34;프로젝트-소개&#34;&gt;프로젝트 소개
-&lt;/h2&gt;&lt;p&gt;6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;h2 id="프로젝트-소개"&gt;프로젝트 소개
+&lt;/h2&gt;&lt;p&gt;6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨&lt;/p&gt;</description></item></channel></rss>
