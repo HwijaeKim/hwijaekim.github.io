@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Accessibility on Kim, Hwijae</title><link>https://hwijaekim.github.io/tags/web-accessibility/</link><description>Recent content in Web Accessibility on Kim, Hwijae</description><generator>Hugo -- gohugo.io</generator><language>ko</language><copyright>Kim, Hwijae</copyright><lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/tags/web-accessibility/index.xml" rel="self" type="application/rss+xml"/><item><title>웹 접근성</title><link>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</link><pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate><guid>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</guid><description>&lt;img src="https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.webp" alt="Featured image of post 웹 접근성" /&gt;&lt;h1 id="웹-접근성이란"&gt;웹 접근성이란
-&lt;/h1&gt;&lt;p&gt;장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Accessibility on Kim, Hwijae</title><link>https://hwijaekim.github.io/tags/web-accessibility/</link><description>Recent content in Web Accessibility on Kim, Hwijae</description><generator>Hugo -- gohugo.io</generator><language>ko</language><copyright>Kim, Hwijae</copyright><lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hwijaekim.github.io/tags/web-accessibility/index.xml" rel="self" type="application/rss+xml"/><item><title>웹 접근성</title><link>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</link><pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate><guid>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</guid><description>&lt;img src="https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.webp" alt="Featured image of post 웹 접근성" /&gt;&lt;h2 id="웹-접근성이란"&gt;웹 접근성이란
+&lt;/h2&gt;&lt;p&gt;장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
 &lt;br&gt;
 국제 웹 표준기구(W3C)에서 제정한 표준안, 총 33개의 항목으로 평가한다.&lt;/p&gt;
 &lt;br&gt;
@@ -25,18 +25,18 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;br&gt;
-&lt;h1 id="기본적인-웹-접근성-준수-가이드"&gt;기본적인 웹 접근성 준수 가이드
-&lt;/h1&gt;&lt;h2 id="적절한-마크업-시맨틱-태그-사용"&gt;적절한 마크업 시맨틱 태그 사용
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id="기본적인-웹-접근성-준수-가이드"&gt;기본적인 웹 접근성 준수 가이드
+&lt;/h2&gt;&lt;h3 id="적절한-마크업-시맨틱-태그-사용"&gt;적절한 마크업 시맨틱 태그 사용
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;., &amp;lt;main&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;footer&amp;gt;&lt;/code&gt;와 같이 스크린 리더가 각 섹션의 역할을 인식할 수 있도록 적절한 시맨틱 태그를 사용해야 한다.&lt;/li&gt;
 &lt;li&gt;제목태그 사용 &lt;code&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 ---
 &lt;br&gt;
-&lt;h1 id="중요하게-알아야-할-웹-접근성-항목"&gt;중요하게 알아야 할 웹 접근성 항목
-&lt;/h1&gt;&lt;h2 id="텍스트-외-콘텐츠에-대체-텍스트를-제공하여-이해할-수-있도록-해야-한다"&gt;텍스트 외 콘텐츠에 대체 텍스트를 제공하여 이해할 수 있도록 해야 한다.
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id="중요하게-알아야-할-웹-접근성-항목"&gt;중요하게 알아야 할 웹 접근성 항목
+&lt;/h2&gt;&lt;h3 id="텍스트-외-콘텐츠에-대체-텍스트를-제공하여-이해할-수-있도록-해야-한다"&gt;텍스트 외 콘텐츠에 대체 텍스트를 제공하여 이해할 수 있도록 해야 한다.
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;테이블, 이미지 등에 대한 대체 텍스트를 꼭 명시하여야 함.&lt;br&gt;
 (주석, &lt;code&gt;font-size: 0;&lt;/code&gt; 등은 스크린 리더도 인식하지 못 하기 떄문에 의미가 없음. CSS를 이용하여 지우기 &lt;code&gt;clip:rect()&lt;/code&gt; 등)
@@ -85,14 +85,14 @@
 &lt;li&gt;&lt;code&gt;longdesc&lt;/code&gt; 속성은 HTML5부터 사용하지 않음.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h2 id="모든-기능은-키보드-조작만으로-사용할-수-있어야-한다"&gt;모든 기능은 키보드 조작만으로 사용할 수 있어야 한다.
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id="모든-기능은-키보드-조작만으로-사용할-수-있어야-한다"&gt;모든 기능은 키보드 조작만으로 사용할 수 있어야 한다.
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;테이블에 대한 정보(이름, 유형, 분류, 내용, 날짜 등)를 &lt;code&gt;&amp;lt;caption&amp;gt;&lt;/code&gt; 태그에 명시 후 경우에 따라 안 보이게 처리.&lt;/li&gt;
 &lt;li&gt;단순 데이터용 테이블에는 &lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; 요소를 제목 셀로 사용할 때 &lt;code&gt;scope=&amp;quot;row&amp;quot;(행), scope=&amp;quot;col&amp;quot;(열)&lt;/code&gt; 속성을 사용하여 행과 열의 관계를 명시해야 함.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h2 id="콘텐츠는-색에-관계-없이-인식될-수-있어야-함"&gt;콘텐츠는 색에 관계 없이 인식될 수 있어야 함.
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id="콘텐츠는-색에-관계-없이-인식될-수-있어야-함"&gt;콘텐츠는 색에 관계 없이 인식될 수 있어야 함.
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;탭 메뉴 등에서 글꼴 색상만 변화하는 경우 일부 색약 사용자가 구분하기 어럽기 때문에 추가적인 표시 방법을 제공해야 함.&lt;/li&gt;
 &lt;li&gt;텍스트와 배경간 명도 대비는 4.5:1 이상이어야 함.&lt;br&gt;
 &lt;a class="link" href="https://sitero.co.kr/contrast" target="_blank" rel="noopener"
@@ -120,9 +120,9 @@ data-flex-basis="402px"
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id="실제-사이트를-검사하며-새롭게-습득"&gt;실제 사이트를 검사하며 새롭게 습득
-&lt;/h1&gt;&lt;h2 id="버튼에-대한-용도-설명-aria-label"&gt;버튼에 대한 용도 설명 &lt;code&gt;aria-label&lt;/code&gt;
-&lt;/h2&gt;&lt;p&gt;간혹 아이콘만으로 이루어진 버튼에 추가 설명이 제공되지 않는 경우가 있음.&lt;br&gt;
+&lt;h2 id="실제-사이트를-검사하며-새롭게-습득"&gt;실제 사이트를 검사하며 새롭게 습득
+&lt;/h2&gt;&lt;h3 id="버튼에-대한-용도-설명-aria-label"&gt;버튼에 대한 용도 설명 &lt;code&gt;aria-label&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;간혹 아이콘만으로 이루어진 버튼에 추가 설명이 제공되지 않는 경우가 있음.&lt;br&gt;
 &lt;img src="https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX.webp"
 width="998"
 height="344"
@@ -155,8 +155,8 @@ data-flex-grow="244"
 data-flex-basis="587px"
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id="div-ul-li-태그-등이-특정-기능을-한다면-role-속성을-사용하여-명시"&gt;&lt;code&gt;&amp;lt;div&amp;gt;, &amp;lt;ul&amp;gt;, &amp;lt;li&amp;gt;&lt;/code&gt; 태그 등이 특정 기능을 한다면 &lt;code&gt;role&lt;/code&gt; 속성을 사용하여 명시
-&lt;/h2&gt;&lt;p&gt;특정 기능을 하는 요소라면 &lt;code&gt;role=&amp;quot;tab&amp;quot;&lt;/code&gt; 등과 같이 기능을 명시해야 함.&lt;/p&gt;
+&lt;h3 id="div-ul-li-태그-등이-특정-기능을-한다면-role-속성을-사용하여-명시"&gt;&lt;code&gt;&amp;lt;div&amp;gt;, &amp;lt;ul&amp;gt;, &amp;lt;li&amp;gt;&lt;/code&gt; 태그 등이 특정 기능을 한다면 &lt;code&gt;role&lt;/code&gt; 속성을 사용하여 명시
+&lt;/h3&gt;&lt;p&gt;특정 기능을 하는 요소라면 &lt;code&gt;role=&amp;quot;tab&amp;quot;&lt;/code&gt; 등과 같이 기능을 명시해야 함.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="aria"&gt;ARIA
 &lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;

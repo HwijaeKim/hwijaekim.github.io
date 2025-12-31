@@ -6,11 +6,33 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 Node.js와 MongoDB를 이용한 컴퓨터 수리 예약 사이트 [유니픽스]
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.11 ~ 2024.12 (2-2학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 개발환경 구축, MongoDB 연결, &lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드, 그 외 요소 구현 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;sub&gt;학습 교재&lt;/sub&gt;&lt;br&gt;고영희 저 Do it! Node.js 프로그래밍 입문&lt;br&gt;쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기! |&lt;/p&gt;
+&lt;h2 id="-nodejs와-mongodb를-이용한-컴퓨터-수리-예약-사이트-유니픽스"&gt;📝 Node.js와 MongoDB를 이용한 컴퓨터 수리 예약 사이트 [유니픽스]
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.11 ~ 2024.12 (2-2학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개발환경 구축, MongoDB 연결, &lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드, 그 외 요소 구현&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;sub&gt;학습 교재&lt;/sub&gt;&lt;br&gt;고영희 저 Do it! Node.js 프로그래밍 입문&lt;br&gt;쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -509,11 +531,33 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 MongoDB를 이용한 이미지 업로드를 지원하는 블로그 express 서버
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.11 ~ 2024.12 (2-2학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 개발환경 구축, MongoDB 연결, &lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드, 그 외 일부 &lt;code&gt;html, css&lt;/code&gt;를 제외한 요소 구현 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;sub&gt;학습 교재&lt;/sub&gt;&lt;br&gt;고영희 저 Do it! Node.js 프로그래밍 입문&lt;br&gt;쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기! |&lt;/p&gt;
+&lt;h2 id="-mongodb를-이용한-이미지-업로드를-지원하는-블로그-express-서버"&gt;📝 MongoDB를 이용한 이미지 업로드를 지원하는 블로그 express 서버
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.11 ~ 2024.12 (2-2학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개발환경 구축, MongoDB 연결, &lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드, 그 외 일부 &lt;code&gt;html, css&lt;/code&gt;를 제외한 요소 구현&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;sub&gt;학습 교재&lt;/sub&gt;&lt;br&gt;고영희 저 Do it! Node.js 프로그래밍 입문&lt;br&gt;쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;

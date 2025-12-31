@@ -1425,8 +1425,8 @@ data-flex-basis="366px"
 참고로 React는 프로젝트 생성만 해봤지, 그 외에는 아무 것도 모름. 실시간으로 공부하면서 진행 할 예정&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id="프로젝트-소개"&gt;프로젝트 소개
-&lt;/h2&gt;&lt;p&gt;6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨&lt;/p&gt;</description></item><item><title>웹 접근성</title><link>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</link><pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate><guid>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</guid><description>&lt;img src="https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.webp" alt="Featured image of post 웹 접근성" /&gt;&lt;h1 id="웹-접근성이란"&gt;웹 접근성이란
-&lt;/h1&gt;&lt;p&gt;장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
+&lt;/h2&gt;&lt;p&gt;6명의 팀원(기획1, 디자인1, 프론트3, 백엔드1)으로 구성되어 진행됨&lt;/p&gt;</description></item><item><title>웹 접근성</title><link>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</link><pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate><guid>https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/</guid><description>&lt;img src="https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/teaser.webp" alt="Featured image of post 웹 접근성" /&gt;&lt;h2 id="웹-접근성이란"&gt;웹 접근성이란
+&lt;/h2&gt;&lt;p&gt;장애인이나 고령자들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용할 수 있도록 보장하는 것
 &lt;br&gt;
 국제 웹 표준기구(W3C)에서 제정한 표준안, 총 33개의 항목으로 평가한다.&lt;/p&gt;
 &lt;br&gt;
@@ -1452,18 +1452,18 @@ data-flex-basis="366px"
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;br&gt;
-&lt;h1 id="기본적인-웹-접근성-준수-가이드"&gt;기본적인 웹 접근성 준수 가이드
-&lt;/h1&gt;&lt;h2 id="적절한-마크업-시맨틱-태그-사용"&gt;적절한 마크업 시맨틱 태그 사용
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id="기본적인-웹-접근성-준수-가이드"&gt;기본적인 웹 접근성 준수 가이드
+&lt;/h2&gt;&lt;h3 id="적절한-마크업-시맨틱-태그-사용"&gt;적절한 마크업 시맨틱 태그 사용
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;., &amp;lt;main&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;footer&amp;gt;&lt;/code&gt;와 같이 스크린 리더가 각 섹션의 역할을 인식할 수 있도록 적절한 시맨틱 태그를 사용해야 한다.&lt;/li&gt;
 &lt;li&gt;제목태그 사용 &lt;code&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 ---
 &lt;br&gt;
-&lt;h1 id="중요하게-알아야-할-웹-접근성-항목"&gt;중요하게 알아야 할 웹 접근성 항목
-&lt;/h1&gt;&lt;h2 id="텍스트-외-콘텐츠에-대체-텍스트를-제공하여-이해할-수-있도록-해야-한다"&gt;텍스트 외 콘텐츠에 대체 텍스트를 제공하여 이해할 수 있도록 해야 한다.
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id="중요하게-알아야-할-웹-접근성-항목"&gt;중요하게 알아야 할 웹 접근성 항목
+&lt;/h2&gt;&lt;h3 id="텍스트-외-콘텐츠에-대체-텍스트를-제공하여-이해할-수-있도록-해야-한다"&gt;텍스트 외 콘텐츠에 대체 텍스트를 제공하여 이해할 수 있도록 해야 한다.
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;테이블, 이미지 등에 대한 대체 텍스트를 꼭 명시하여야 함.&lt;br&gt;
 (주석, &lt;code&gt;font-size: 0;&lt;/code&gt; 등은 스크린 리더도 인식하지 못 하기 떄문에 의미가 없음. CSS를 이용하여 지우기 &lt;code&gt;clip:rect()&lt;/code&gt; 등)
@@ -1512,14 +1512,14 @@ data-flex-basis="366px"
 &lt;li&gt;&lt;code&gt;longdesc&lt;/code&gt; 속성은 HTML5부터 사용하지 않음.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h2 id="모든-기능은-키보드-조작만으로-사용할-수-있어야-한다"&gt;모든 기능은 키보드 조작만으로 사용할 수 있어야 한다.
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id="모든-기능은-키보드-조작만으로-사용할-수-있어야-한다"&gt;모든 기능은 키보드 조작만으로 사용할 수 있어야 한다.
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;테이블에 대한 정보(이름, 유형, 분류, 내용, 날짜 등)를 &lt;code&gt;&amp;lt;caption&amp;gt;&lt;/code&gt; 태그에 명시 후 경우에 따라 안 보이게 처리.&lt;/li&gt;
 &lt;li&gt;단순 데이터용 테이블에는 &lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; 요소를 제목 셀로 사용할 때 &lt;code&gt;scope=&amp;quot;row&amp;quot;(행), scope=&amp;quot;col&amp;quot;(열)&lt;/code&gt; 속성을 사용하여 행과 열의 관계를 명시해야 함.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h2 id="콘텐츠는-색에-관계-없이-인식될-수-있어야-함"&gt;콘텐츠는 색에 관계 없이 인식될 수 있어야 함.
-&lt;/h2&gt;&lt;ul&gt;
+&lt;h3 id="콘텐츠는-색에-관계-없이-인식될-수-있어야-함"&gt;콘텐츠는 색에 관계 없이 인식될 수 있어야 함.
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;탭 메뉴 등에서 글꼴 색상만 변화하는 경우 일부 색약 사용자가 구분하기 어럽기 때문에 추가적인 표시 방법을 제공해야 함.&lt;/li&gt;
 &lt;li&gt;텍스트와 배경간 명도 대비는 4.5:1 이상이어야 함.&lt;br&gt;
 &lt;a class="link" href="https://sitero.co.kr/contrast" target="_blank" rel="noopener"
@@ -1547,9 +1547,9 @@ data-flex-basis="402px"
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id="실제-사이트를-검사하며-새롭게-습득"&gt;실제 사이트를 검사하며 새롭게 습득
-&lt;/h1&gt;&lt;h2 id="버튼에-대한-용도-설명-aria-label"&gt;버튼에 대한 용도 설명 &lt;code&gt;aria-label&lt;/code&gt;
-&lt;/h2&gt;&lt;p&gt;간혹 아이콘만으로 이루어진 버튼에 추가 설명이 제공되지 않는 경우가 있음.&lt;br&gt;
+&lt;h2 id="실제-사이트를-검사하며-새롭게-습득"&gt;실제 사이트를 검사하며 새롭게 습득
+&lt;/h2&gt;&lt;h3 id="버튼에-대한-용도-설명-aria-label"&gt;버튼에 대한 용도 설명 &lt;code&gt;aria-label&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;간혹 아이콘만으로 이루어진 버튼에 추가 설명이 제공되지 않는 경우가 있음.&lt;br&gt;
 &lt;img src="https://hwijaekim.github.io/p/%EC%9B%B9-%EC%A0%91%EA%B7%BC%EC%84%B1/button_captionX.webp"
 width="998"
 height="344"
@@ -1582,8 +1582,8 @@ data-flex-grow="244"
 data-flex-basis="587px"
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id="div-ul-li-태그-등이-특정-기능을-한다면-role-속성을-사용하여-명시"&gt;&lt;code&gt;&amp;lt;div&amp;gt;, &amp;lt;ul&amp;gt;, &amp;lt;li&amp;gt;&lt;/code&gt; 태그 등이 특정 기능을 한다면 &lt;code&gt;role&lt;/code&gt; 속성을 사용하여 명시
-&lt;/h2&gt;&lt;p&gt;특정 기능을 하는 요소라면 &lt;code&gt;role=&amp;quot;tab&amp;quot;&lt;/code&gt; 등과 같이 기능을 명시해야 함.&lt;/p&gt;
+&lt;h3 id="div-ul-li-태그-등이-특정-기능을-한다면-role-속성을-사용하여-명시"&gt;&lt;code&gt;&amp;lt;div&amp;gt;, &amp;lt;ul&amp;gt;, &amp;lt;li&amp;gt;&lt;/code&gt; 태그 등이 특정 기능을 한다면 &lt;code&gt;role&lt;/code&gt; 속성을 사용하여 명시
+&lt;/h3&gt;&lt;p&gt;특정 기능을 하는 요소라면 &lt;code&gt;role=&amp;quot;tab&amp;quot;&lt;/code&gt; 등과 같이 기능을 명시해야 함.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="aria"&gt;ARIA
 &lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;
@@ -1954,12 +1954,34 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 나의 일대기 9가지 페이지를 JavaScript 기반의 상호작용 사이트로 제작
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.09 ~ 2024.12 (2-2학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 사이트 콘셉트 수립, 9개 콘텐츠 기획 및 기능구현 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;a href="https://hwijaekim.github.io/my-origin-wizard/index.html" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/my-origin-wizard" target="_blank" rel="noopener"
-&gt;https://hwijaekim.github.io/my-origin-wizard&lt;/a&gt;&lt;/a&gt; |&lt;/p&gt;
+&lt;h2 id="-나의-일대기-9가지-페이지를-javascript-기반의-상호작용-사이트로-제작"&gt;📝 나의 일대기 9가지 페이지를 JavaScript 기반의 상호작용 사이트로 제작
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.09 ~ 2024.12 (2-2학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;사이트 콘셉트 수립, 9개 콘텐츠 기획 및 기능구현&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://hwijaekim.github.io/my-origin-wizard/index.html" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/my-origin-wizard" target="_blank" rel="noopener"
+&gt;https://hwijaekim.github.io/my-origin-wizard&lt;/a&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -2216,11 +2238,33 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 Node.js와 MongoDB를 이용한 컴퓨터 수리 예약 사이트 [유니픽스]
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.11 ~ 2024.12 (2-2학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 개발환경 구축, MongoDB 연결, &lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드, 그 외 요소 구현 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;sub&gt;학습 교재&lt;/sub&gt;&lt;br&gt;고영희 저 Do it! Node.js 프로그래밍 입문&lt;br&gt;쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기! |&lt;/p&gt;
+&lt;h2 id="-nodejs와-mongodb를-이용한-컴퓨터-수리-예약-사이트-유니픽스"&gt;📝 Node.js와 MongoDB를 이용한 컴퓨터 수리 예약 사이트 [유니픽스]
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.11 ~ 2024.12 (2-2학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개발환경 구축, MongoDB 연결, &lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드, 그 외 요소 구현&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;sub&gt;학습 교재&lt;/sub&gt;&lt;br&gt;고영희 저 Do it! Node.js 프로그래밍 입문&lt;br&gt;쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -2719,11 +2763,33 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 MongoDB를 이용한 이미지 업로드를 지원하는 블로그 express 서버
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.11 ~ 2024.12 (2-2학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 개발환경 구축, MongoDB 연결, &lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드, 그 외 일부 &lt;code&gt;html, css&lt;/code&gt;를 제외한 요소 구현 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;sub&gt;학습 교재&lt;/sub&gt;&lt;br&gt;고영희 저 Do it! Node.js 프로그래밍 입문&lt;br&gt;쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기! |&lt;/p&gt;
+&lt;h2 id="-mongodb를-이용한-이미지-업로드를-지원하는-블로그-express-서버"&gt;📝 MongoDB를 이용한 이미지 업로드를 지원하는 블로그 express 서버
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.11 ~ 2024.12 (2-2학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개발환경 구축, MongoDB 연결, &lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드, 그 외 일부 &lt;code&gt;html, css&lt;/code&gt;를 제외한 요소 구현&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;sub&gt;학습 교재&lt;/sub&gt;&lt;br&gt;고영희 저 Do it! Node.js 프로그래밍 입문&lt;br&gt;쉽고 빠르게 달리는 백엔드 개발 / 자바스크립트+노드제이에스+익스프레스+몽고DB로 개발 순서에 따라 직접 서버 만들기!&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -3112,12 +3178,34 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 유아기 아이들의 식습관 문제 개선을 위한 XR글래스 콘텐츠
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.09 ~ 2024.11 (2-2학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 기획2, 디자인3, &lt;strong&gt;개발1&lt;/strong&gt; |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 서비스 영상 촬영 및 웹 사이트 구현 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;a href="https://hwijaekim.github.io/eatopia2024" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/eatopia2024" target="_blank" rel="noopener"
-&gt;https://hwijaekim.github.io/eatopia2024&lt;/a&gt;&lt;/a&gt; |&lt;/p&gt;
+&lt;h2 id="-유아기-아이들의-식습관-문제-개선을-위한-xr글래스-콘텐츠"&gt;📝 유아기 아이들의 식습관 문제 개선을 위한 XR글래스 콘텐츠
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.09 ~ 2024.11 (2-2학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;기획2, 디자인3, &lt;strong&gt;개발1&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;서비스 영상 촬영 및 웹 사이트 구현&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://hwijaekim.github.io/eatopia2024" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/eatopia2024" target="_blank" rel="noopener"
+&gt;https://hwijaekim.github.io/eatopia2024&lt;/a&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -3604,12 +3692,34 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 포트폴리오 제작 플렛폼으로 선정한 Jekyll GitHub블로그
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.09 ~ |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | macOS, Windows 환경에서 Jekyll 환경 구축 및 테마 커스텀과 콘텐츠 삽입 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;a href="https://hwijaekim.github.io" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io" target="_blank" rel="noopener"
-&gt;https://hwijaekim.github.io&lt;/a&gt;&lt;/a&gt; |&lt;/p&gt;
+&lt;h2 id="-포트폴리오-제작-플렛폼으로-선정한-jekyll-github블로그"&gt;📝 포트폴리오 제작 플렛폼으로 선정한 Jekyll GitHub블로그
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.09 ~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;macOS, Windows 환경에서 Jekyll 환경 구축 및 테마 커스텀과 콘텐츠 삽입&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://hwijaekim.github.io" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io" target="_blank" rel="noopener"
+&gt;https://hwijaekim.github.io&lt;/a&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -3787,12 +3897,34 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 No CSS Club에 가입하기 위해 마우스 클릭으로 제한시간 내 모든 CSS 클래스를 제거하는 미니게임
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2023.10 ~ 2023.12 (2-1학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 게임 콘텐츠, 웹UI 디자인 구축 및 기능 구현 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;em&gt;&lt;strong&gt;레퍼런스&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;a href="https://nocss.club" target="_blank"&gt;nocss.club&lt;/a&gt;&lt;br&gt; &lt;em&gt;&lt;strong&gt;게임플레이&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;a href="https://hwijaekim.github.io/nocssclub_minigame" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/nocssclub_minigame" target="_blank" rel="noopener"
-&gt;https://hwijaekim.github.io/nocssclub_minigame&lt;/a&gt;&lt;/a&gt; |&lt;/p&gt;
+&lt;h2 id="-no-css-club에-가입하기-위해-마우스-클릭으로-제한시간-내-모든-css-클래스를-제거하는-미니게임"&gt;📝 No CSS Club에 가입하기 위해 마우스 클릭으로 제한시간 내 모든 CSS 클래스를 제거하는 미니게임
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2023.10 ~ 2023.12 (2-1학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;게임 콘텐츠, 웹UI 디자인 구축 및 기능 구현&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;em&gt;&lt;strong&gt;레퍼런스&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;a href="https://nocss.club" target="_blank"&gt;nocss.club&lt;/a&gt;&lt;br&gt; &lt;em&gt;&lt;strong&gt;게임플레이&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;a href="https://hwijaekim.github.io/nocssclub_minigame" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/nocssclub_minigame" target="_blank" rel="noopener"
+&gt;https://hwijaekim.github.io/nocssclub_minigame&lt;/a&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -4073,12 +4205,34 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 학교 밖 청소년들의 미래를 준비하기 위한 솔루션
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.03 ~ 2024.06 (2-1학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 기획1, 디자인1, &lt;strong&gt;개발1&lt;/strong&gt; |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 팀장 및 서비스 비디오 촬영,&lt;br&gt;웹 콘텐츠 소스 제작 및 HTML/CSS/JS를 이용한 웹 제작 및 GitHub 배포 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;a href="https://hwijaekim.github.io/blueprint2024" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/blueprint2024" target="_blank" rel="noopener"
-&gt;https://hwijaekim.github.io/blueprint2024&lt;/a&gt;&lt;/a&gt; |&lt;/p&gt;
+&lt;h2 id="-학교-밖-청소년들의-미래를-준비하기-위한-솔루션"&gt;📝 학교 밖 청소년들의 미래를 준비하기 위한 솔루션
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.03 ~ 2024.06 (2-1학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;기획 1, 디자인 1, &lt;strong&gt;개발 1&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;팀장 및 서비스 비디오 촬영,&lt;br&gt;웹 콘텐츠 소스 제작 및 HTML/CSS/JS를 이용한 웹 제작 및 GitHub 배포&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a class="link" href="https://hwijaekim.github.io/blueprint2024" target="_blank" rel="noopener"
+&gt;https://hwijaekim.github.io/blueprint2024&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -4287,12 +4441,34 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 Apple macOS의 UI를 콘셉트로 제작한 자기PR 페이지
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2023.11 ~ 12 (1-2학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 콘텐츠 구성 및 레이아웃 배치 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;a href="https://hwijaekim.github.io/unionpt" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/unionpt" target="_blank" rel="noopener"
-&gt;https://hwijaekim.github.io/unionpt&lt;/a&gt;&lt;/a&gt; |&lt;/p&gt;
+&lt;h2 id="-apple-macos의-ui를-콘셉트로-제작한-자기pr-페이지"&gt;📝 Apple macOS의 UI를 콘셉트로 제작한 자기PR 페이지
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2023.11 ~ 12 (1-2학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;콘텐츠 구성 및 레이아웃 배치&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://hwijaekim.github.io/unionpt" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/unionpt" target="_blank" rel="noopener"
+&gt;https://hwijaekim.github.io/unionpt&lt;/a&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
@@ -4403,10 +4579,32 @@ margin-bottom: 5px;
 &lt;/style&gt;
 &lt;br&gt;
 &lt;h2 id="-아랍에미리트와-20디르함-두-개의-키워드로-도출한-웹-디자인-콘텐츠"&gt;📝 아랍에미리트와 20디르함, 두 개의 키워드로 도출한 웹 디자인 콘텐츠
-&lt;/h2&gt;&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2023.09 ~ 2023.12 (1-2학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 키워드에 기반한 콘텐츠 도출, 내부 에셋 제작 및 디자인/프로토타입 진행 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;a href="https://www.figma.com/proto/jb39JVsn3Wcy76QfqkwDK3/%EC%BD%98%ED%85%90%EC%B8%A0%EB%94%94%EC%9E%90%EC%9D%B8_2%ED%95%99%EA%B8%B0_%EC%97%B0%ED%95%A9PT-(Copy)?page-id=201%3A25&amp;node-id=828-56&amp;node-type=frame&amp;viewport=1239%2C502%2C0.07&amp;t=qcbsxAFTCJQRVfpB-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=828%3A56&amp;share=1" target="_blank"&gt;figma 프로토타입&lt;/a&gt; |&lt;/p&gt;
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2023.09 ~ 2023.12 (1-2학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;키워드에 기반한 콘텐츠 도출, 내부 에셋 제작 및 디자인/프로토타입 진행&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://www.figma.com/proto/jb39JVsn3Wcy76QfqkwDK3/%EC%BD%98%ED%85%90%EC%B8%A0%EB%94%94%EC%9E%90%EC%9D%B8_2%ED%95%99%EA%B8%B0_%EC%97%B0%ED%95%A9PT-(Copy)?page-id=201%3A25&amp;node-id=828-56&amp;node-type=frame&amp;viewport=1239%2C502%2C0.07&amp;t=qcbsxAFTCJQRVfpB-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=828%3A56&amp;share=1" target="_blank"&gt;figma 프로토타입&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-포인트-요약"&gt;🔑 핵심 포인트 요약
 &lt;/h2&gt;&lt;ul&gt;

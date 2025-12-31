@@ -6,12 +6,34 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 학교 밖 청소년들의 미래를 준비하기 위한 솔루션
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.03 ~ 2024.06 (2-1학기) |
-| &lt;strong&gt;인원&lt;/strong&gt; | 기획1, 디자인1, &lt;strong&gt;개발1&lt;/strong&gt; |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | 팀장 및 서비스 비디오 촬영,&lt;br&gt;웹 콘텐츠 소스 제작 및 HTML/CSS/JS를 이용한 웹 제작 및 GitHub 배포 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;a href="https://hwijaekim.github.io/blueprint2024" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io/blueprint2024" target="_blank" rel="noopener"
-&gt;https://hwijaekim.github.io/blueprint2024&lt;/a&gt;&lt;/a&gt; |&lt;/p&gt;
+&lt;h2 id="-학교-밖-청소년들의-미래를-준비하기-위한-솔루션"&gt;📝 학교 밖 청소년들의 미래를 준비하기 위한 솔루션
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.03 ~ 2024.06 (2-1학기)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;기획 1, 디자인 1, &lt;strong&gt;개발 1&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;팀장 및 서비스 비디오 촬영,&lt;br&gt;웹 콘텐츠 소스 제작 및 HTML/CSS/JS를 이용한 웹 제작 및 GitHub 배포&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a class="link" href="https://hwijaekim.github.io/blueprint2024" target="_blank" rel="noopener"
+&gt;https://hwijaekim.github.io/blueprint2024&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;

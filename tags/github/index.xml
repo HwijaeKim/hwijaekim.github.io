@@ -6,12 +6,34 @@ margin-bottom: 5px;
 }
 &lt;/style&gt;
 &lt;br&gt;
-## 📝 포트폴리오 제작 플렛폼으로 선정한 Jekyll GitHub블로그
-&lt;p&gt;| &lt;strong&gt;기간&lt;/strong&gt; | 2024.09 ~ |
-| &lt;strong&gt;인원&lt;/strong&gt; | 개인 |
-| &lt;strong&gt;담당분야&lt;/strong&gt; | macOS, Windows 환경에서 Jekyll 환경 구축 및 테마 커스텀과 콘텐츠 삽입 |
-| &lt;strong&gt;관련 링크&lt;/strong&gt; | &lt;a href="https://hwijaekim.github.io" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io" target="_blank" rel="noopener"
-&gt;https://hwijaekim.github.io&lt;/a&gt;&lt;/a&gt; |&lt;/p&gt;
+&lt;h2 id="-포트폴리오-제작-플렛폼으로-선정한-jekyll-github블로그"&gt;📝 포트폴리오 제작 플렛폼으로 선정한 Jekyll GitHub블로그
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;구분&lt;/th&gt;
+&lt;th style="text-align: left"&gt;내용&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;기간&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;2024.09 ~&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;인원&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;개인&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;담당분야&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;macOS, Windows 환경에서 Jekyll 환경 구축 및 테마 커스텀과 콘텐츠 삽입&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;관련 링크&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://hwijaekim.github.io" target="_blank"&gt;&lt;a class="link" href="https://hwijaekim.github.io" target="_blank" rel="noopener"
+&gt;https://hwijaekim.github.io&lt;/a&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-핵심-기술-요약"&gt;🔑 핵심 기술 요약
 &lt;/h2&gt;&lt;ul&gt;
