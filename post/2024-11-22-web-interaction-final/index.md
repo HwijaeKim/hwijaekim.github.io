@@ -38,7 +38,7 @@ image = 'teaser.webp'
 - `forEach`를 이용해 `index.html`에서 각 아이콘 클릭에 대한 페이지 전환을 자연스럽고 적은 양의 코드로 구현
 
 <br><br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sVCvbcAeFW4?si=-_R6b9hT8Qhtx_MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/sVCvbcAeFW4?si=-_R6b9hT8Qhtx_MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br><br>
 
 ## 📌 주요 코드

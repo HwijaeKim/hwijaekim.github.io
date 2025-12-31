@@ -39,7 +39,7 @@ image = 'teaser.webp'
 - 여러 HTML 태그를 이용하여 코드를 작성
 
 <br><br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IIg2BRouWUc?si=Y_ywyBKQOWNxdV0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/IIg2BRouWUc?si=Y_ywyBKQOWNxdV0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br><br>
 
 ## 📌 주요 코드

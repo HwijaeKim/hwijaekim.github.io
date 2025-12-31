@@ -40,7 +40,7 @@ image = 'teaser.webp'
 - `multer`를 이용한 이미지 업로드
 
 <br><br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0P2YOqhIdNU?si=8fWrtM4jE-sBGi4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/0P2YOqhIdNU?si=8fWrtM4jE-sBGi4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br><br>
 
 ## 📌 주요 코드

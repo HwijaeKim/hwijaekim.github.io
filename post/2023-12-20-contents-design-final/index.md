@@ -38,7 +38,7 @@ image = 'teaser.webp'
 - After Effects로 3D 오브젝트에 모션 추가
 
 <br><br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qp1wwHoEu5I?si=prBgA7XgFjSiNzpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/Qp1wwHoEu5I?si=prBgA7XgFjSiNzpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
    
 <br>
 *Figma Demo*
