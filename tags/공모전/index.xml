@@ -44,7 +44,7 @@ margin-bottom: 5px;
 &lt;li&gt;&lt;code&gt;Typeit.js&lt;/code&gt; 외부 라이브러리를 사용하여 타이핑 애니메이션 구현.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Lnxbw6FSc_I?si=LyU-lvSpD1P7YVNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.youtube-nocookie.com/embed/Lnxbw6FSc_I?si=LyU-lvSpD1P7YVNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-주요-코드"&gt;📌 주요 코드
 &lt;/h2&gt;&lt;h3 id="web-fonts-및--정리"&gt;Web Fonts 및 &lt;head&gt; 정리

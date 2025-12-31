@@ -45,7 +45,7 @@ margin-bottom: 5px;
 &lt;li&gt;Git을 이용한 GitHub 리포지토리를 Clone, 버전관리&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GXoRwVcUX-Q?si=eMEHC841TNv-l3lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.youtube-nocookie.com/embed/GXoRwVcUX-Q?si=eMEHC841TNv-l3lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-주요-코드"&gt;📌 주요 코드
 &lt;/h2&gt;&lt;h3 id="가상-클래스"&gt;가상 클래스
@@ -316,7 +316,7 @@ margin-bottom: 5px;
 &lt;li&gt;&lt;code&gt;Typeit.js&lt;/code&gt; 외부 라이브러리를 사용하여 타이핑 애니메이션 구현.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Lnxbw6FSc_I?si=LyU-lvSpD1P7YVNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.youtube-nocookie.com/embed/Lnxbw6FSc_I?si=LyU-lvSpD1P7YVNH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-주요-코드"&gt;📌 주요 코드
 &lt;/h2&gt;&lt;h3 id="web-fonts-및--정리"&gt;Web Fonts 및 &lt;head&gt; 정리
@@ -550,7 +550,7 @@ margin-bottom: 5px;
 &lt;li&gt;After Effects로 3D 오브젝트에 모션 추가&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qp1wwHoEu5I?si=prBgA7XgFjSiNzpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.youtube-nocookie.com/embed/Qp1wwHoEu5I?si=prBgA7XgFjSiNzpp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;br&gt;
 *Figma Demo*
 &lt;iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; aspect-ratio: 2 / 1.2;" src="https://embed.figma.com/proto/jb39JVsn3Wcy76QfqkwDK3/%EC%BD%98%ED%85%90%EC%B8%A0%EB%94%94%EC%9E%90%EC%9D%B8_2%ED%95%99%EA%B8%B0_%EC%97%B0%ED%95%A9PT-(Copy)?page-id=201%3A25&amp;node-id=828-56&amp;node-type=canvas&amp;viewport=1239%2C502%2C0.07&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;starting-point-node-id=828%3A56&amp;share=1&amp;embed-host=share" allowfullscreen&gt;&lt;/iframe&gt;

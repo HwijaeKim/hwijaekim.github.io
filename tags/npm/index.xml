@@ -367,7 +367,7 @@ margin-bottom: 5px;
 &lt;li&gt;&lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lcYLc4jGij4?si=4T4IaI89ezR3GTJH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;&lt;br&gt;
+&lt;iframe src="https://www.youtube-nocookie.com/embed/lcYLc4jGij4?si=4T4IaI89ezR3GTJH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;&lt;br&gt;
 &lt;h2 id="-주요-코드"&gt;📌 주요 코드
 &lt;/h2&gt;&lt;h3 id="npm-패키지"&gt;npm 패키지
 &lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
@@ -892,7 +892,7 @@ margin-bottom: 5px;
 &lt;li&gt;&lt;code&gt;multer&lt;/code&gt;를 이용한 이미지 업로드&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0P2YOqhIdNU?si=8fWrtM4jE-sBGi4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.youtube-nocookie.com/embed/0P2YOqhIdNU?si=8fWrtM4jE-sBGi4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;h2 id="-주요-코드"&gt;📌 주요 코드
 &lt;/h2&gt;&lt;h3 id="디렉토리-구조"&gt;디렉토리 구조

@@ -45,7 +45,7 @@ margin-bottom: 5px;
 &lt;li&gt;Git을 이용한 GitHub 리포지토리를 Clone, 버전관리&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GXoRwVcUX-Q?si=eMEHC841TNv-l3lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.youtube-nocookie.com/embed/GXoRwVcUX-Q?si=eMEHC841TNv-l3lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id="-주요-코드"&gt;📌 주요 코드
 &lt;/h2&gt;&lt;h3 id="가상-클래스"&gt;가상 클래스
