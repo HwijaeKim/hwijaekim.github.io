@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="개요 최근 iPad를 구입하고 웹 개발 등에 활용해보고 싶어 여러 IDE 앱을 알아보고 실제로 사용해본 결과, 예상은 했지만 데스트콥 클래스의 IDE를 찾는 것은 불가능에 가까웠다.\n">
 <title>Synology Docker를 이용한 Code-Server</title>
 
 <link rel='canonical' href='http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/'>
 
-<link rel="stylesheet" href="/scss/style.min.2c41e22842a77617df0f77ecf5f47951be0fa0bded07ec841129dd98b0329db1.css"><meta property='og:title' content="Synology Docker를 이용한 Code-Server">
-<meta property='og:description' content="">
+<link rel="stylesheet" href="/scss/style.min.699e2d5f49b705dd8a81bc4ce91896fdebc00e4077bc9026f698a2dd1e1b7126.css"><meta property='og:title' content="Synology Docker를 이용한 Code-Server">
+<meta property='og:description' content="개요 최근 iPad를 구입하고 웹 개발 등에 활용해보고 싶어 여러 IDE 앱을 알아보고 실제로 사용해본 결과, 예상은 했지만 데스트콥 클래스의 IDE를 찾는 것은 불가능에 가까웠다.\n">
 <meta property='og:url' content='http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/'>
 <meta property='og:site_name' content='Kim, Hwijae'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='nas' /><meta property='article:tag' content='synology' /><meta property='article:tag' content='docker' /><meta property='article:tag' content='code-server' /><meta property='article:published_time' content='2025-11-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-11-29T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/teaser.webp' />
 <meta name="twitter:title" content="Synology Docker를 이용한 Code-Server">
-<meta name="twitter:description" content=""><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="개요 최근 iPad를 구입하고 웹 개발 등에 활용해보고 싶어 여러 IDE 앱을 알아보고 실제로 사용해본 결과, 예상은 했지만 데스트콥 클래스의 IDE를 찾는 것은 불가능에 가까웠다.\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/teaser.webp' />
     <meta name="google-site-verification" content="s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI" />
 
@@ -246,7 +246,44 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">목차</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#개요">개요</a></li>
+    <li><a href="#synology를-선택한-이유">Synology를 선택한 이유</a>
+      <ol>
+        <li><a href="#운영체제dsm와-docker">운영체제(DSM)와 Docker</a></li>
+        <li><a href="#서버-환경-통합과-보안">서버 환경 통합과 보안</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -315,7 +352,52 @@
     <section class="article-content">
     
     
-    
+    <h2 id="개요">개요
+</h2><p>최근 iPad를 구입하고 웹 개발 등에 활용해보고 싶어 여러 IDE 앱을 알아보고 실제로 사용해본 결과,
+예상은 했지만 데스트콥 클래스의 IDE를 찾는 것은 불가능에 가까웠다.</p>
+<p>그래도 찾은 앱 중 가장 유용했던 것은 유료 앱인 Code App인데 로컬에서 구동할 수 있는 가장 강력한 IDE같았다.<br>
+사실 웹 이외의 언어 등에는 조예가 깊지 않아 확실하고 객관적인 판단은 물론 아니겠지만
+기본적인 HTML, CSS, JS는 VSCode와 비슷한 경험을 제공했다.</p>
+<p><img src="/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/1.PNG"
+	width="2732"
+	height="2048"
+	srcset="/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/1_hu_f8986528f8fa35ad.PNG 480w, /p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/1_hu_f4ec11dbd56b5ca6.PNG 1024w"
+	loading="lazy"
+	
+		alt="iPad에서 구동 중인 Code App 화면"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+>
+상기 이미지는 React 프로젝트를 클론했지만 사실 작동하지 않는다.<br>
+node.js가 내장되어 있긴 하지만 구버전 등의 문제로 터미널에서 npm 명령어가 제대로 작동하지 않았다.</p>
+<br>
+<h2 id="synology를-선택한-이유">Synology를 선택한 이유
+</h2><p>사용자의 시놀로지 모델은 DS1515+로 10년이 지난 구형 모델이다.<br>
+CPU는 Intel Atom에 기본 RAM 용량은 DDR3 2GB로 VSCode를 구동하기에는 상다히 벅찰 수 있는 사양이다.<br>
+그럼에도 Synology를 선택한 이유는</p>
+<h3 id="운영체제dsm와-docker">운영체제(DSM)와 Docker
+</h3><p>Synology 운영체제는 리눅스를 기반으로 구동되며 기본 패키지로 Docker를 제공한다.<br>
+리눅스 환경을 많이 접해보지 않았던 나는 손쉽게 구축할 수 있었다.
+<img src="/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/3.png"
+	width="947"
+	height="603"
+	srcset="/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/3_hu_f3511face9cda185.png 480w, /p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/3_hu_90b08ef0b339aa87.png 1024w"
+	loading="lazy"
+	
+		alt="시놀로지 NAS 컨테이너 매니저(Docker)에서 실행 중인 code-server 컨테이너의 개요 및 리소스 상태 확인 화면"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="157"
+		data-flex-basis="376px"
+	
+></p>
+<h3 id="서버-환경-통합과-보안">서버 환경 통합과 보안
+</h3>
 </section>
 
 
@@ -367,7 +449,7 @@
         
             2020 - 
         
-        2025 Kim, Hwijae
+        2026 Kim, Hwijae
     </section>
     
     <section class="powerby">
