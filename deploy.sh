@@ -3,7 +3,7 @@
 # 에러 발생 시 즉시 중단
 set -e
 
-echo -e "\033[0;32mDeploying updates to GitHub***\033[0m"
+echo -e "\033[0;32m수정사항을 Github에 배포하기 위한 프로세스가 시작됨***\033[0m"
 
 # 커밋 메시지 설정 (인자가 없으면 현재 시간 사용)
 msg="update: $(date +"%Y-%m-%dT%H:%M:%S%z")"
@@ -15,7 +15,7 @@ fi
 cd themes/Stack
 CURRENT_THEME_BRANCH=$(git branch --show-current 2>/dev/null || echo "master")
 if [ -n "$(git status --porcelain)" ]; then
-    echo -e "\033[0;32mUpdating themes/Stack submodule...\033[0m"
+    echo -e "\033[0;32mthemes/Stack submodule 업데이트...\033[0m"
     git add .
     git commit -m "$msg"
     git push origin "$CURRENT_THEME_BRANCH"
@@ -23,7 +23,7 @@ fi
 cd ../..
 
 # 2. Hugo 빌드
-echo -e "\033[0;32mBuilding site...\033[0m"
+echo -e "\033[0;32m사이트 빌드...\033[0m"
 hugo --gc --minify
 
 # 3. public (source 브랜치) 배포
@@ -56,4 +56,4 @@ if [ -n "$(git status --porcelain)" ]; then
     git push origin main
 fi
 
-echo -e "\033[0;32mDone! All changes pushed successfully.\033[0m"
+echo -e "\033[0;32m배포 성공! 모든 수정사항이 Github에 반영됨.\033[0m"
