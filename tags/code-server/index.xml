@@ -13,7 +13,52 @@
         <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/</guid>
-        <description>&lt;img src="http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/teaser.webp" alt="Featured image of post Synology Docker를 이용한 Code-Server" /&gt;</description>
+        <description>&lt;img src="http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/teaser.webp" alt="Featured image of post Synology Docker를 이용한 Code-Server" /&gt;&lt;h2 id=&#34;개요&#34;&gt;개요
+&lt;/h2&gt;&lt;p&gt;최근 iPad를 구입하고 웹 개발 등에 활용해보고 싶어 여러 IDE 앱을 알아보고 실제로 사용해본 결과,
+예상은 했지만 데스트콥 클래스의 IDE를 찾는 것은 불가능에 가까웠다.&lt;/p&gt;
+&lt;p&gt;그래도 찾은 앱 중 가장 유용했던 것은 유료 앱인 Code App인데 로컬에서 구동할 수 있는 가장 강력한 IDE같았다.&lt;br&gt;
+사실 웹 이외의 언어 등에는 조예가 깊지 않아 확실하고 객관적인 판단은 물론 아니겠지만
+기본적인 HTML, CSS, JS는 VSCode와 비슷한 경험을 제공했다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/1.PNG&#34;
+	width=&#34;2732&#34;
+	height=&#34;2048&#34;
+	srcset=&#34;http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/1_hu_f8986528f8fa35ad.PNG 480w, http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/1_hu_f4ec11dbd56b5ca6.PNG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;iPad에서 구동 중인 Code App 화면&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+상기 이미지는 React 프로젝트를 클론했지만 사실 작동하지 않는다.&lt;br&gt;
+node.js가 내장되어 있긴 하지만 구버전 등의 문제로 터미널에서 npm 명령어가 제대로 작동하지 않았다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;synology를-선택한-이유&#34;&gt;Synology를 선택한 이유
+&lt;/h2&gt;&lt;p&gt;사용자의 시놀로지 모델은 DS1515+로 10년이 지난 구형 모델이다.&lt;br&gt;
+CPU는 Intel Atom에 기본 RAM 용량은 DDR3 2GB로 VSCode를 구동하기에는 상다히 벅찰 수 있는 사양이다.&lt;br&gt;
+그럼에도 Synology를 선택한 이유는&lt;/p&gt;
+&lt;h3 id=&#34;운영체제dsm와-docker&#34;&gt;운영체제(DSM)와 Docker
+&lt;/h3&gt;&lt;p&gt;Synology 운영체제는 리눅스를 기반으로 구동되며 기본 패키지로 Docker를 제공한다.&lt;br&gt;
+리눅스 환경을 많이 접해보지 않았던 나는 손쉽게 구축할 수 있었다.
+&lt;img src=&#34;http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/3.png&#34;
+	width=&#34;947&#34;
+	height=&#34;603&#34;
+	srcset=&#34;http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/3_hu_f3511face9cda185.png 480w, http://localhost:1313/p/synology-docker%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-code-server/3_hu_90b08ef0b339aa87.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;시놀로지 NAS 컨테이너 매니저(Docker)에서 실행 중인 code-server 컨테이너의 개요 및 리소스 상태 확인 화면&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;157&#34;
+		data-flex-basis=&#34;376px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;서버-환경-통합과-보안&#34;&gt;서버 환경 통합과 보안
+&lt;/h3&gt;</description>
         </item>
         
     </channel>
