@@ -3,57 +3,59 @@
 # 에러 발생 시 즉시 중단
 set -e
 
-echo -e "\033[0;32m수정사항을 Github에 배포하기 위한 프로세스가 시작됨***\033[0m"
+echo -e "\033[0;32mGitHub Actions 배포를 위한 프로세스가 시작됨...\033[0m"
 
-# 커밋 메시지 설정 (인자가 없으면 현재 시간 사용)
+# 커밋 메시지 설정
 msg="update: $(date +"%Y-%m-%dT%H:%M:%S%z")"
 if [ $# -eq 1 ]; then
   msg="$1"
 fi
 
+# ------------------------------------------------------------------
 # 1. themes/Stack 업데이트 (변경사항이 있을 때만)
-cd themes/Stack
-CURRENT_THEME_BRANCH=$(git branch --show-current 2>/dev/null || echo "master")
-if [ -n "$(git status --porcelain)" ]; then
-    echo -e "\033[0;32mthemes/Stack submodule 업데이트...\033[0m"
-    git add .
-    git commit -m "$msg"
-    git push origin "$CURRENT_THEME_BRANCH"
+# ------------------------------------------------------------------
+if [ -d "themes/Stack" ]; then
+    cd themes/Stack
+    CURRENT_THEME_BRANCH=$(git branch --show-current 2>/dev/null || echo "master")
+    if [ -n "$(git status --porcelain)" ]; then
+        echo -e "\033[0;32m🎨 themes/Stack submodule 업데이트...\033[0m"
+        git add .
+        git commit -m "$msg"
+        git push origin "$CURRENT_THEME_BRANCH"
+    fi
+    cd ../..
 fi
-cd ../..
 
-# 2. Hugo 빌드
-echo -e "\033[0;32m사이트 빌드...\033[0m"
-hugo --gc --minify
-
-# 3. public (source 브랜치) 배포
-cd public
-git checkout source
-git add .
-if [ -n "$(git status --porcelain)" ]; then
-    git commit -m "$msg"
-    git pull origin source --rebase
-    git push origin source
+# ------------------------------------------------------------------
+# 2. content (content 브랜치) 업데이트
+# 휘재님의 구조: content 폴더가 별도 서브모듈
+# ------------------------------------------------------------------
+if [ -d "content" ]; then
+    cd content
+    git checkout content 2>/dev/null || git checkout main 
+    
+    if [ -n "$(git status --porcelain)" ]; then
+        echo -e "\033[0;32mcontent submodule 업데이트...\033[0m"
+        git add .
+        git commit -m "$msg"
+        # 충돌 방지
+        git pull origin content --rebase 2>/dev/null || git pull origin main --rebase
+        git push origin HEAD
+    fi
+    cd ..
 fi
-cd ..
 
-# 4. content (content 브랜치) 배포
-cd content
-git checkout content
-git add .
-if [ -n "$(git status --porcelain)" ]; then
-    git commit -m "$msg"
-    git pull origin content --rebase
-    git push origin content
-fi
-cd ..
-
-# 5. 메인 저장소 (main 브랜치) 업데이트
+# ------------------------------------------------------------------
+# 3. 메인 저장소 업데이트 (GitHub Actions 트리거)
+# ------------------------------------------------------------------
+echo -e "\033[0;32m메인 소스 코드 저장 및 GitHub Actions 호출...\033[0m"
 git add .
 if [ -n "$(git status --porcelain)" ]; then
     git commit -m "$msg"
     git pull origin main --rebase
     git push origin main
+else
+    echo "메인 저장소에 변경 사항이 없어 푸시하지 않습니다."
 fi
 
-echo -e "\033[0;32m배포 성공! 모든 수정사항이 Github에 반영됨.\033[0m"
+echo -e "\033[0;32m성공! 잠시 후 GitHub Actions가 배포를 수행합니다.\033[0m"
