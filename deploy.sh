@@ -16,7 +16,7 @@ fi
 # ------------------------------------------------------------------
 if [ -d "themes/Stack" ]; then
     cd themes/Stack
-    CURRENT_THEME_BRANCH=$(git branch --show-current 2>/dev/null || echo "main")
+    CURRENT_THEME_BRANCH=$(git branch --show-current 2>/dev/null || echo "master")
     if [ -n "$(git status --porcelain)" ]; then
         echo -e "\033[0;32m🎨 themes/Stack submodule 업데이트...\033[0m"
         git add .
