@@ -18,7 +18,7 @@ if [ -d "themes/Stack" ]; then
     cd themes/Stack
     CURRENT_THEME_BRANCH=$(git branch --show-current 2>/dev/null || echo "master")
     if [ -n "$(git status --porcelain)" ]; then
-        echo -e "\033[0;32m🎨 themes/Stack submodule 업데이트...\033[0m"
+        echo -e "\033[0;32mthemes/Stack submodule 업데이트...\033[0m"
         git add .
         git commit -m "$msg"
         git push origin "$CURRENT_THEME_BRANCH"
@@ -28,7 +28,6 @@ fi
 
 # ------------------------------------------------------------------
 # 2. content (content 브랜치) 업데이트
-# 휘재님의 구조: content 폴더가 별도 서브모듈
 # ------------------------------------------------------------------
 if [ -d "content" ]; then
     cd content
