@@ -38,8 +38,8 @@ pagination:
   pagerSize: 5
 
 permalinks:
-  post: /p/:slug/
-  page: /:slug/
+  post: /p/:contentbasename/
+  page: /:contentbasename/
 
 params:
   googleSiteVerification: "s4h2nzPHg3zRCZuGEMc9yp6tDvB1NGjG7jxpZxHcnsI" # Google Site Verification Code
