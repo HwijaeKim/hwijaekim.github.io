@@ -9,7 +9,7 @@ MSG="${1:-update: $(date -u +"%Y-%m-%dT%H:%M:%SZ")}"
 cd "$(git rev-parse --show-toplevel)"
 
 if [ -d "$CONTENT_PATH" ] && { [ -f "$CONTENT_PATH/.git" ] || [ -d "$CONTENT_PATH/.git" ]; }; then
-  echo "[content] sync"
+  echo "[content] 브렌치 싱크"
   git -C "$CONTENT_PATH" fetch origin "$CONTENT_BRANCH"
 
   if [ -n "$(git -C "$CONTENT_PATH" status --porcelain)" ]; then
@@ -33,18 +33,18 @@ fi
 
 CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 if [ "$CURRENT_BRANCH" != "$MAIN_BRANCH" ]; then
-  echo "run this script on '$MAIN_BRANCH' (current: $CURRENT_BRANCH)" >&2
+  echo "다음에서 스크립트 실행: '$MAIN_BRANCH' (current: $CURRENT_BRANCH)" >&2
   exit 1
 fi
 
-echo "[main] commit & push"
+echo "[main] 브렌치에 커밋 및 푸시"
 git add -A
 if git diff --cached --quiet; then
-  echo "[main] no changes"
+  echo "[main] 브렌치에 변경사항 없음"
   exit 0
 fi
 
 git commit -m "$MSG"
 git pull --rebase origin "$MAIN_BRANCH"
 git push origin "$MAIN_BRANCH"
-echo "[done] GitHub Actions will deploy soon"
+echo "[완료] Github Action에서 빌드 및 배포 시작"
