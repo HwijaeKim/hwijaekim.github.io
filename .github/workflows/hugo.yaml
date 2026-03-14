@@ -26,7 +26,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.152.2
+      HUGO_VERSION: 0.157.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -38,6 +38,9 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - name: Check Hugo version
+        run: hugo version
 
       - name: Build with Hugo
         run: hugo --minify
