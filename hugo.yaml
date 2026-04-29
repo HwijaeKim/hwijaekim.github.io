@@ -3,7 +3,7 @@ languageCode: ko
 title: Kim, Hwijae
 copyright: Kim, Hwijae
 
-enableRobotsTXT: true
+enableRobotsTXT: false
 
 module:
   imports:
