@@ -1,5 +1,5 @@
 ---
-title: Links
+title: 외부링크
 links:
   - title: LinkedIn
     description: https://www.linkedin.com/in/hwijaekim/
