@@ -15,4 +15,3 @@ menu:
             icon: user
 ---
 
-웹 퍼블리셔
