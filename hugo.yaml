@@ -1,6 +1,6 @@
 baseurl: https://hwijaekim.github.io/
 languageCode: ko
-title: Kim, Hwijae
+title: 기술 블로그 - 아카이브
 copyright: Kim, Hwijae
 
 enableRobotsTXT: false
@@ -20,7 +20,7 @@ hasCJKLanguage: true
 languages:
   ko:
     languageName: Korean
-    title: Kim, Hwijae
+    title: 기술 블로그 - 아카이브
     weight: 1
     params:
       mainSections:
